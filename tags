@@ -1,0 +1,2175 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACCESSDENIED	include/fat32.h	17;"	d
+ALT_L	include/keyboard.h	52;"	d
+ALT_R	include/keyboard.h	53;"	d
+APPS	include/keyboard.h	45;"	d
+AR	Makefile	/^AR		= ar$/;"	m
+AR	user/makefile	/^AR 			= ar$/;"	m
+ARDStruct	boot/floppy/loader.asm	/^ARDStruct		equ	BaseOfLoaderPhyAddr + _ARDStruct$/;"	d
+ARDStruct	boot/grub/loader.asm	/^ARDStruct		equ	BaseOfLoaderPhyAddr + _ARDStruct$/;"	d
+ARDStruct	boot/mbr/loader.asm	/^ARDStruct		equ	BaseOfLoaderPhyAddr + _ARDStruct$/;"	d
+ARFLAGS	Makefile	/^ARFLAGS		= rcs$/;"	m
+ARFLAGS	user/makefile	/^ARFLAGS		= rcs$/;"	m
+ASM	Makefile	/^ASM		= nasm$/;"	m
+ASM	user/makefile	/^ASM			= nasm$/;"	m
+ASMBFLAGS	Makefile	/^ASMBFLAGS	= -I boot\/floppy\/include\/	#added by mingxuan 2019-5-17$/;"	m
+ASMBFLAGS_grub	Makefile	/^ASMBFLAGS_grub  = -I boot\/grub\/include\/ #added by mingxuan 2019-5-17$/;"	m
+ASMBFLAGS_mbr	Makefile	/^ASMBFLAGS_mbr   = -I boot\/mbr\/include\/	#added by mingxuan 2019-5-17$/;"	m
+ASMFLAGS	user/makefile	/^ASMFLAGS	= -I ..\/include\/ -f elf$/;"	m
+ASMKFLAGS	Makefile	/^ASMKFLAGS	= -I include\/ -f elf$/;"	m
+ATA_IDENTIFY	include/hd.h	275;"	d
+ATA_READ	include/hd.h	276;"	d
+ATA_WRITE	include/hd.h	277;"	d
+AT_WINI_IRQ	include/const.h	81;"	d
+AddCluster	kernel/base.c	/^STATE AddCluster(DWORD startClusterIndex,DWORD num)\/\/cluster表示该文件或目录所在目录的簇,num表示增加几个簇$/;"	f
+AddElement	kernel/array.c	/^void AddElement(DArray *array,DArrayElem element)$/;"	f
+AllotClustersForEmptyFile	kernel/base.c	/^STATE AllotClustersForEmptyFile(PFile pfile,DWORD size)$/;"	f
+ArgLinBase	include/const.h	115;"	d
+ArgLinLimitMAX	include/const.h	116;"	d
+BACKSPACE	include/keyboard.h	41;"	d
+BIN	init/makefile	/^BIN = $(INIT)$/;"	m
+BIN	user/makefile	/^BIN = $(INIT)$/;"	m
+BLACK	include/const.h	22;"	d
+BLANK1	fs_flags/fat32_flag.asm	/^BLANK1   DB  0$/;"	d
+BLANK2	fs_flags/fat32_flag.asm	/^BLANK2   DB  0$/;"	d
+BLANK3	fs_flags/fat32_flag.asm	/^BLANK3   DB  0$/;"	d
+BLUE	include/const.h	26;"	d
+BOOT_FAT32_INFO	boot/mbr/boot.asm	/^BOOT_FAT32_INFO		equ		0x5A		;位于boot中的FAT32配置信息的长度$/;"	d
+BPB_BytesPerSec	boot/grub/boot.asm	/^	BPB_BytesPerSec	DW	0x200		;每扇区字节数$/;"	d
+BPB_BytesPerSec	boot/mbr/boot.asm	/^BPB_BytesPerSec	    equ		(OffsetOfBoot + 0xb)	;每扇区字节数$/;"	d
+BPB_FATSz16	boot/grub/boot.asm	/^	BPB_FATSz16	DW	0		;每个FAT表的大小扇区数$/;"	d
+BPB_FATSz16	boot/mbr/boot.asm	/^BPB_FATSz16			equ		(OffsetOfBoot + 0x16)	;每个FAT表的大小扇区数(FAT32不使用)$/;"	d
+BPB_HiddSec	boot/grub/boot.asm	/^	BPB_HiddSec	DD	0		;分区已使用扇区数$/;"	d
+BPB_HiddSec	boot/mbr/boot.asm	/^BPB_HiddSec			equ	    (OffsetOfBoot + 0x1c)	;分区已使用扇区数$/;"	d
+BPB_Media	boot/grub/boot.asm	/^	BPB_Media	DB 	0xf8		;介质描述符$/;"	d
+BPB_Media	boot/mbr/boot.asm	/^BPB_Media			equ 	(OffsetOfBoot + 0x15)	;介质描述符$/;"	d
+BPB_NumFATs	boot/grub/boot.asm	/^	BPB_NumFATs	DB	2		;FAT表数$/;"	d
+BPB_NumFATs	boot/mbr/boot.asm	/^BPB_NumFATs			equ		(OffsetOfBoot + 0x10)	;FAT表数$/;"	d
+BPB_NumHeads	boot/grub/boot.asm	/^	BPB_NumHeads	DW	0xff		;磁头数$/;"	d
+BPB_NumHeads	boot/mbr/boot.asm	/^BPB_NumHeads		equ		(OffsetOfBoot + 0x1a)	;磁头数$/;"	d
+BPB_RootEntCnt	boot/grub/boot.asm	/^	BPB_RootEntCnt	DW 	0		;FAT32不使用$/;"	d
+BPB_RootEntCnt	boot/mbr/boot.asm	/^BPB_RootEntCnt		equ 	(OffsetOfBoot + 0x11)	;FAT32不使用$/;"	d
+BPB_RsvdSecCnt	boot/grub/boot.asm	/^	BPB_RsvdSecCnt	DW	0x20		;保留扇区数$/;"	d
+BPB_RsvdSecCnt	boot/mbr/boot.asm	/^BPB_RsvdSecCnt		equ		(OffsetOfBoot + 0xe)	;保留扇区数$/;"	d
+BPB_SecPerClu	boot/grub/boot.asm	/^	BPB_SecPerClu 	DB	1		;每簇扇区数$/;"	d
+BPB_SecPerClu	boot/mbr/boot.asm	/^BPB_SecPerClu 		equ		(OffsetOfBoot + 0xd)	;每簇扇区数 $/;"	d
+BPB_SecPerTrk	boot/grub/boot.asm	/^	BPB_SecPerTrk	DW	0x3f		;每磁道扇区数$/;"	d
+BPB_SecPerTrk	boot/mbr/boot.asm	/^BPB_SecPerTrk		equ		(OffsetOfBoot + 0x18)	;每磁道扇区数$/;"	d
+BPB_TotSec16	boot/grub/boot.asm	/^	BPB_TotSec16	DW	0		;扇区总数$/;"	d
+BPB_TotSec16	boot/mbr/boot.asm	/^BPB_TotSec16		equ		(OffsetOfBoot + 0x13)	;扇区总数$/;"	d
+BPB_TotSec32	boot/grub/boot.asm	/^	BPB_TotSec32	DD	0x015791	;文件系统大小扇区数$/;"	d
+BPB_TotSec32	boot/mbr/boot.asm	/^BPB_TotSec32		equ		(OffsetOfBoot + 0x20)	;文件系统大小扇区数$/;"	d
+BRIGHT	include/const.h	28;"	d
+BS_BackBootSec	boot/grub/boot.asm	/^	BS_BackBootSec 	DW	6		;备份引导扇区位置$/;"	d
+BS_BackBootSec	boot/mbr/boot.asm	/^BS_BackBootSec 		equ	    (OffsetOfBoot + 0x32)	;备份引导扇区位置$/;"	d
+BS_DriveNum	boot/grub/boot.asm	/^	BS_DriveNum	DB	0x80		;设备号$/;"	d
+BS_DriveNum	boot/mbr/boot.asm	/^BS_DriveNum			equ		(OffsetOfBoot + 0x40)	;设备号$/;"	d
+BS_ExtBootFlag	boot/grub/boot.asm	/^	BS_ExtBootFlag	DB	0x29		;扩展引导标志$/;"	d
+BS_ExtBootFlag	boot/mbr/boot.asm	/^BS_ExtBootFlag		equ		(OffsetOfBoot + 0x42)	;扩展引导标志$/;"	d
+BS_Flag	boot/grub/boot.asm	/^	BS_Flag		DW	0		;标记$/;"	d
+BS_Flag	boot/mbr/boot.asm	/^BS_Flag				equ		(OffsetOfBoot + 0x28)	;标记$/;"	d
+BS_FsInfoSec	boot/grub/boot.asm	/^	BS_FsInfoSec 	DW	1		;FSINFO扇区号$/;"	d
+BS_FsInfoSec	boot/mbr/boot.asm	/^BS_FsInfoSec 		equ		(OffsetOfBoot + 0x30)	;FSINFO扇区号$/;"	d
+BS_OEM	boot/grub/boot.asm	/^	BS_OEM		DB	'mkfs.fat'	;文件系统标志$/;"	d
+BS_RootClus	boot/grub/boot.asm	/^	BS_RootClus	DD	2		;根目录簇号$/;"	d
+BS_RootClus	boot/mbr/boot.asm	/^BS_RootClus			equ		(OffsetOfBoot + 0x2c)	;根目录簇号$/;"	d
+BS_SecPerFAT	boot/grub/boot.asm	/^	BS_SecPerFAT	DD	0x02a5		;每个FAT表大小扇区数$/;"	d
+BS_SecPerFAT	boot/mbr/boot.asm	/^BS_SecPerFAT		equ		(OffsetOfBoot + 0x24)	;每个FAT表大小扇区数$/;"	d
+BS_Unuse1	boot/grub/boot.asm	/^	BS_Unuse1	DD	0		;未使用$/;"	d
+BS_Unuse1	boot/mbr/boot.asm	/^BS_Unuse1			equ		(OffsetOfBoot + 0x34)	;未使用$/;"	d
+BS_Unuse2	boot/grub/boot.asm	/^	BS_Unuse2	DD	0		;未使用$/;"	d
+BS_Unuse3	boot/grub/boot.asm	/^	BS_Unuse3	DD 	0		;未使用$/;"	d
+BS_Unuse4	boot/grub/boot.asm	/^	BS_Unuse4	DB	0x01		;未使用$/;"	d
+BS_Unuse4	boot/mbr/boot.asm	/^BS_Unuse4			equ		(OffsetOfBoot + 0x41)	;未使用$/;"	d
+BS_Version	boot/grub/boot.asm	/^	BS_Version	DW	0		;版本号$/;"	d
+BS_Version	boot/mbr/boot.asm	/^BS_Version			equ		(OffsetOfBoot + 0x2a)	;版本号$/;"	d
+BS_VolName	boot/grub/boot.asm	/^	BS_VolName	DB	'MZY hd boot'	;卷标$/;"	d
+BS_VolName	boot/mbr/boot.asm	/^BS_VolName			equ		(OffsetOfBoot + 0x47)	;卷标$/;"	d
+BS_VolNum	boot/grub/boot.asm	/^	BS_VolNum	DD	0xbe3a8ff5	;卷序列号$/;"	d
+BS_VolNum	boot/mbr/boot.asm	/^BS_VolNum			equ		(OffsetOfBoot + 0x43)	;卷序列号$/;"	d
+BUF	include/fs_const.h	24;"	d
+BYTE	include/fat32.h	/^typedef unsigned char   BYTE;\/\/字节$/;"	t
+BaseOfBoot	boot/mbr/boot.asm	/^BaseOfBoot 					equ	1000h 		; added by mingxuan 2020-9-12$/;"	d
+BaseOfBoot	boot/mbr/mbr.asm	/^BaseOfBoot 					equ	1000h 		; 段地址，mbr加载loader到这个段$/;"	d
+BaseOfEchoFilePhyAddr	kernel/file.c	15;"	d	file:
+BaseOfStack	boot/floppy/boot.asm	/^BaseOfStack		equ	0100h	; 调试状态下堆栈基地址(栈底, 从这个位置向低地址生长)$/;"	d
+BaseOfStack	boot/floppy/boot.asm	/^BaseOfStack		equ	07c00h	; Boot状态下堆栈基地址(栈底, 从这个位置向低地址生长)$/;"	d
+BaseOfStack	boot/floppy/loader.asm	/^BaseOfStack	equ	0100h$/;"	d
+BaseOfStack	boot/grub/boot.asm	/^BaseOfStack		equ	0x07c00		; Boot状态下堆栈基地址$/;"	d
+BaseOfStack	boot/mbr/boot.asm	/^BaseOfStack			equ		0x07c00		; Boot状态下堆栈基地址$/;"	d
+BootMessage	boot/floppy/boot.asm	/^BootMessage:		db	"Booting  "; 9字节, 不够则用空格补齐. 序号 0$/;"	d
+BootMessage	boot/mbr/mbr.asm	/^BootMessage:		db	"Finding active partition..."	; 27字节, 不够则用空格补齐. 序号 0$/;"	d
+Bytes_Per_Sector	kernel/base.c	/^WORD  Bytes_Per_Sector=0;\/\/每个扇区的字节数，当载入磁盘时，才从DBR中读取。$/;"	v
+C	include/fat32.h	19;"	d
+CAPS_LOCK	include/keyboard.h	56;"	d
+CASCADE_IRQ	include/const.h	74;"	d
+CC	Makefile	/^CC		= gcc$/;"	m
+CC	user/makefile	/^CC			= gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS		= -I include\/ -m32 -c -fno-builtin -fno-stack-protector -Wall -Wextra -g$/;"	m
+CFLAGS	user/makefile	/^CFLAGS		= -I ..\/include\/ -m32 -c -fno-builtin -fno-stack-protector -Wall -Wextra -g$/;"	m
+CFLAGS_app	Makefile	/^CFLAGS_app	= -I include\/ -m32 -c -fno-builtin -fno-stack-protector -Wall -Wextra -g$/;"	m
+CHAR	include/fat32.h	/^typedef char		    CHAR;\/\/字符类型$/;"	t
+CHECK_PARTITION	boot/mbr/mbr.asm	/^CHECK_PARTITION:$/;"	l
+CLOCK_IRQ	include/const.h	72;"	d
+CLOSE	include/type.h	/^	OPEN, CLOSE, READ, WRITE, LSEEK, STAT, UNLINK,$/;"	e	enum:msgtype
+CLUSTER_LAST	boot/grub/boot.asm	/^CLUSTER_LAST    	equ  	0FFFFFF8H   	;0xFFFFFFF8-0xFFFFFFFF表示文件的最后一个簇$/;"	d
+CLUSTER_LAST	boot/mbr/boot.asm	/^CLUSTER_LAST    	equ  	0FFFFFF8H   	;0xFFFFFFF8-0xFFFFFFFF表示文件的最后一个簇$/;"	d
+CLUSTER_MASK	boot/grub/boot.asm	/^CLUSTER_MASK    	equ  	0FFFFFFFH 	; 簇号掩码$/;"	d
+CLUSTER_MASK	boot/mbr/boot.asm	/^CLUSTER_MASK    	equ  	0FFFFFFFH 	; 簇号掩码$/;"	d
+CNT	include/fs_const.h	19;"	d
+CONSOLE	include/console.h	/^}CONSOLE;$/;"	t	typeref:struct:s_console
+CRTC_ADDR_REG	include/const.h	173;"	d
+CRTC_DATA_REG	include/const.h	174;"	d
+CSREG	include/proc.h	34;"	d
+CTRL_L	include/keyboard.h	50;"	d
+CTRL_R	include/keyboard.h	51;"	d
+CURRENT_CLUSTER	boot/grub/boot.asm	/^CURRENT_CLUSTER  	equ  	20  		; 当前正在处理的簇号 DWORD$/;"	d
+CURRENT_CLUSTER	boot/mbr/boot.asm	/^CURRENT_CLUSTER  	equ  	20  		; 当前正在处理的簇号 DWORD$/;"	d
+CURSOR_H	include/const.h	177;"	d
+CURSOR_L	include/const.h	178;"	d
+ChangeCurrentPath	kernel/assist.c	/^void ChangeCurrentPath(PCHAR addpath)$/;"	f
+ClearClusters	kernel/base.c	/^void ClearClusters(DWORD cluster)$/;"	f
+ClearFATs	kernel/base.c	/^void ClearFATs(DWORD startClusterIndex)$/;"	f
+ClearRecord	kernel/base.c	/^STATE ClearRecord(DWORD parentCluster,PCHAR name,PDWORD startCluster)$/;"	f
+CloseFile	kernel/fat32.c	/^STATE CloseFile(int fd)$/;"	f
+CreateDir	kernel/fat32.c	/^STATE CreateDir(PCHAR dirname)$/;"	f
+CreateFile	kernel/fat32.c	/^STATE CreateFile(PCHAR filename)$/;"	f
+CreateRecord	kernel/base.c	/^void CreateRecord(PCHAR filename,BYTE type,DWORD startCluster,DWORD size,PRecord precord)$/;"	f
+CurPartNo	boot/mbr/mbr.asm	/^CurPartNo			db	"0"$/;"	d
+CurPartNum	boot/mbr/mbr.asm	/^CurPartNum  db  0 ;added by mingxuan 2020-9-29$/;"	d
+D	include/fat32.h	25;"	d
+DAPS	boot/mbr/mbr.asm	/^DAPS:   $/;"	l
+DAP_BUFFER_OFF	boot/grub/boot.asm	/^DAP_BUFFER_OFF  	equ  	12  		; 缓冲区偏移   ( 每次调用需要重置 ) WORD  $/;"	d
+DAP_BUFFER_OFF	boot/mbr/boot.asm	/^DAP_BUFFER_OFF  	equ  	12  		; 缓冲区偏移   ( 每次调用需要重置 ) WORD  $/;"	d
+DAP_BUFFER_SEG	boot/grub/boot.asm	/^DAP_BUFFER_SEG  	equ  	10  		; 缓冲区段地址   ( 每次调用需要重置 ) WORD$/;"	d
+DAP_BUFFER_SEG	boot/mbr/boot.asm	/^DAP_BUFFER_SEG  	equ  	10  		; 缓冲区段地址   ( 每次调用需要重置 ) WORD$/;"	d
+DAP_PACKET_SIZE	boot/grub/boot.asm	/^DAP_PACKET_SIZE  	equ  	16  		; 包的大小为16字节$/;"	d
+DAP_PACKET_SIZE	boot/mbr/boot.asm	/^DAP_PACKET_SIZE  	equ  	16  		; 包的大小为16字节$/;"	d
+DAP_READ_SECTORS	boot/grub/boot.asm	/^DAP_READ_SECTORS 	equ  	14  		; 要处理的扇区数(1 - 127 )$/;"	d
+DAP_READ_SECTORS	boot/mbr/boot.asm	/^DAP_READ_SECTORS 	equ  	14  		; 要处理的扇区数(1 - 127 )$/;"	d
+DAP_RESERVED1	boot/grub/boot.asm	/^DAP_RESERVED1  		equ  	15  		; 保留字节$/;"	d
+DAP_RESERVED1	boot/mbr/boot.asm	/^DAP_RESERVED1  		equ  	15  		; 保留字节$/;"	d
+DAP_RESERVED2	boot/grub/boot.asm	/^DAP_RESERVED2  		equ  	13  		; 保留字节$/;"	d
+DAP_RESERVED2	boot/mbr/boot.asm	/^DAP_RESERVED2  		equ  	13  		; 保留字节$/;"	d
+DAP_SECTOR_HIGH	boot/grub/boot.asm	/^DAP_SECTOR_HIGH  	equ  	4  		; 起始扇区号的高32位 ( 每次调用需要重置 ) DWORD$/;"	d
+DAP_SECTOR_HIGH	boot/mbr/boot.asm	/^DAP_SECTOR_HIGH  	equ  	4  			; 起始扇区号的高32位 ( 每次调用需要重置 ) DWORD$/;"	d
+DAP_SECTOR_LOW	boot/grub/boot.asm	/^DAP_SECTOR_LOW  	equ  	8  		; 起始扇区号的低32位 ( 每次调用需要重置 ) DWORD$/;"	d
+DAP_SECTOR_LOW	boot/mbr/boot.asm	/^DAP_SECTOR_LOW  	equ  	8  			; 起始扇区号的低32位 ( 每次调用需要重置 ) DWORD$/;"	d
+DASM	Makefile	/^DASM	= ndisasm$/;"	m
+DASM	user/makefile	/^DASM		= objdump$/;"	m
+DASMFLAGS	Makefile	/^DASMFLAGS	= -u -o $(ENTRYPOINT) -e $(ENTRYOFFSET)$/;"	m
+DASMFLAGS	user/makefile	/^DASMFLAGS	= -D$/;"	m
+DASMOUTPUT	Makefile	/^DASMOUTPUT	= kernel.bin.asm$/;"	m
+DATA_BUF_OFF	boot/grub/boot.asm	/^DATA_BUF_OFF 		equ  	0x2000		; 目录被加载的缓冲区地址$/;"	d
+DATA_BUF_OFF	boot/mbr/boot.asm	/^DATA_BUF_OFF 		equ  	0x2000		; 目录 被加载的缓冲区地址$/;"	d
+DATA_START_SECTOR	boot/grub/boot.asm	/^DATA_START_SECTOR 	equ  	0xd6a	  	; 数据区起始扇区号  DWORD$/;"	d
+DATA_START_SECTOR	boot/mbr/boot.asm	/^	DATA_START_SECTOR 	DD  0 ;数据区起始扇区号 ;added by mingxuan 2020-9-17$/;"	d
+DATA_START_SECTOR	boot/mbr/loader.asm	/^DATA_START_SECTOR 	DD  0 ;数据区起始扇区号 ;added by mingxuan 2020-9-17$/;"	d
+DA_32	include/protect.h	95;"	d
+DA_386CGate	include/protect.h	113;"	d
+DA_386IGate	include/protect.h	114;"	d
+DA_386TGate	include/protect.h	115;"	d
+DA_386TSS	include/protect.h	112;"	d
+DA_C	include/protect.h	105;"	d
+DA_CCO	include/protect.h	107;"	d
+DA_CCOR	include/protect.h	108;"	d
+DA_CR	include/protect.h	106;"	d
+DA_DPL0	include/protect.h	97;"	d
+DA_DPL1	include/protect.h	98;"	d
+DA_DPL2	include/protect.h	99;"	d
+DA_DPL3	include/protect.h	100;"	d
+DA_DR	include/protect.h	102;"	d
+DA_DRW	include/protect.h	103;"	d
+DA_DRWA	include/protect.h	104;"	d
+DA_LDT	include/protect.h	110;"	d
+DA_LIMIT_4K	include/protect.h	96;"	d
+DA_TaskGate	include/protect.h	111;"	d
+DArray	include/fat32.h	/^}DArray;$/;"	t	typeref:struct:__anon11
+DArrayElem	include/fat32.h	/^}DArrayElem;$/;"	t	typeref:struct:__anon10
+DEFAULT_CHAR_COLOR	include/console.h	36;"	d
+DELETE	include/keyboard.h	78;"	d
+DESCRIPTOR	include/protect.h	/^}DESCRIPTOR;$/;"	t	typeref:struct:s_descriptor
+DEVICE	include/fs_const.h	22;"	d
+DEV_CDROM	include/fs_const.h	44;"	d
+DEV_CHAR_TTY	include/fs_const.h	46;"	d
+DEV_CLOSE	include/type.h	/^	DEV_CLOSE,$/;"	e	enum:msgtype
+DEV_FLOPPY	include/fs_const.h	43;"	d
+DEV_HD	include/fs_const.h	45;"	d
+DEV_IOCTL	include/type.h	/^	DEV_IOCTL$/;"	e	enum:msgtype
+DEV_NAME_LEN	include/vfs.h	7;"	d
+DEV_OPEN	include/type.h	/^	DEV_OPEN = 1001,$/;"	e	enum:msgtype
+DEV_READ	include/type.h	/^	DEV_READ,$/;"	e	enum:msgtype
+DEV_SCSI	include/fs_const.h	47;"	d
+DEV_WRITE	include/type.h	/^	DEV_WRITE,$/;"	e	enum:msgtype
+DIOCTL_GET_GEO	include/fs_const.h	34;"	d
+DIR_ENTRY_SIZE	boot/grub/boot.asm	/^DIR_ENTRY_SIZE    	equ  	32  		; 每个目录项的尺寸$/;"	d
+DIR_ENTRY_SIZE	boot/mbr/boot.asm	/^DIR_ENTRY_SIZE    	equ  	32  		; 每个目录项的尺寸$/;"	d
+DIR_ENTRY_SIZE	include/fs_misc.h	111;"	d
+DIR_NAME_FREE	boot/grub/boot.asm	/^DIR_NAME_FREE    	equ  	0x00  		; 该项是空闲的$/;"	d
+DIR_NAME_FREE	boot/mbr/boot.asm	/^DIR_NAME_FREE    	equ  	0x00  		; 该项是空闲的$/;"	d
+DIR_PER_SECTOR	boot/grub/boot.asm	/^DIR_PER_SECTOR  	equ  	0x10  		; 每个扇区所容纳的目录 BYTE$/;"	d
+DIR_PER_SECTOR	boot/mbr/boot.asm	/^DIR_PER_SECTOR  	equ  	0x10  		; 每个扇区所容纳的目录 BYTE$/;"	d
+DOWN	include/keyboard.h	84;"	d
+DRV_OF_DEV	kernel/hd.c	51;"	d	file:
+DSREG	include/proc.h	23;"	d
+DWORD	include/fat32.h	/^typedef unsigned long   DWORD;\/\/四字节$/;"	t
+D_BX	boot/mbr/mbr.asm	/^	D_BX	DW OffsetOfBoot     ; transfer buffer (16 bit segment:16 bit offset) $/;"	d
+D_CL	boot/mbr/mbr.asm	/^	D_CL	DW 1          		; number of sectors to transfer$/;"	d
+D_ES	boot/mbr/mbr.asm	/^	D_ES	DW BaseOfBoot	$/;"	d
+DataLinBase	include/const.h	105;"	d
+DataLinLimitMAX	include/const.h	106;"	d
+DeleteAllRecord	kernel/base.c	/^void DeleteAllRecord(DWORD startCluster)$/;"	f
+DeleteDir	kernel/fat32.c	/^STATE DeleteDir(PCHAR dirname)$/;"	f
+DeleteFile	kernel/fat32.c	/^STATE DeleteFile(PCHAR filename)$/;"	f
+DestroyDArray	kernel/array.c	/^void DestroyDArray(DArray *array)$/;"	f
+DisErrorInfo	kernel/fat32.c	/^void DisErrorInfo(STATE state)$/;"	f
+DispAL	boot/floppy/loader.asm	/^DispAL:$/;"	l
+DispAL	boot/grub/loader.asm	/^DispAL:$/;"	l
+DispAL	boot/mbr/loader.asm	/^DispAL:$/;"	l
+DispEchoSize	boot/floppy/loader.asm	/^DispEchoSize:$/;"	l
+DispEchoSize	boot/grub/loader.asm	/^DispEchoSize:$/;"	l
+DispEchoSize	boot/mbr/loader.asm	/^DispEchoSize:$/;"	l
+DispInt	boot/floppy/loader.asm	/^DispInt:$/;"	l
+DispInt	boot/grub/loader.asm	/^DispInt:$/;"	l
+DispInt	boot/mbr/loader.asm	/^DispInt:$/;"	l
+DispMemInfo	boot/floppy/loader.asm	/^DispMemInfo:$/;"	l
+DispMemInfo	boot/grub/loader.asm	/^DispMemInfo:$/;"	l
+DispMemInfo	boot/mbr/loader.asm	/^DispMemInfo:$/;"	l
+DispReturn	boot/floppy/loader.asm	/^DispReturn:$/;"	l
+DispReturn	boot/grub/loader.asm	/^DispReturn:$/;"	l
+DispReturn	boot/mbr/loader.asm	/^DispReturn:$/;"	l
+DispStr	boot/floppy/boot.asm	/^DispStr:$/;"	l
+DispStr	boot/floppy/loader.asm	/^DispStr:$/;"	l
+DispStr	boot/grub/loader.asm	/^DispStr:$/;"	l
+DispStr	boot/mbr/loader.asm	/^DispStr:$/;"	l
+DispStr	boot/mbr/mbr.asm	/^DispStr:$/;"	l
+DispStrRealMode	boot/floppy/loader.asm	/^DispStrRealMode:$/;"	l
+DispStrRealMode	boot/grub/loader.asm	/^DispStrRealMode:$/;"	l
+DispStrRealMode	boot/mbr/loader.asm	/^DispStrRealMode:$/;"	l
+EAXREG	include/proc.h	31;"	d
+EBPREG	include/proc.h	26;"	d
+EBXREG	include/proc.h	28;"	d
+ECXREG	include/proc.h	30;"	d
+EDIREG	include/proc.h	24;"	d
+EDXREG	include/proc.h	29;"	d
+EFLAGSREG	include/proc.h	35;"	d
+EIPREG	include/proc.h	33;"	d
+EI_NIDENT	include/elf.h	5;"	d
+END	include/keyboard.h	80;"	d
+ENTER	include/keyboard.h	40;"	d
+ENTRYOFFSET	Makefile	/^ENTRYOFFSET	=   0x400$/;"	m
+ENTRYPOINT	Makefile	/^ENTRYPOINT	= 0xC0030400$/;"	m
+EOF	include/stdio.h	50;"	d
+ESC	include/keyboard.h	38;"	d
+ESIREG	include/proc.h	25;"	d
+ESPREG	include/proc.h	36;"	d
+ESREG	include/proc.h	22;"	d
+ETHER_IRQ	include/const.h	75;"	d
+EXE_CHECK_NEXT_ROOT_CLUSTER	boot/grub/loader.asm	/^EXE_CHECK_NEXT_ROOT_CLUSTER:$/;"	l
+EXE_CHECK_NEXT_ROOT_CLUSTER	boot/mbr/loader.asm	/^EXE_CHECK_NEXT_ROOT_CLUSTER:$/;"	l
+EXE_DISK_ERROR	boot/grub/loader.asm	/^EXE_DISK_ERROR:$/;"	l
+EXE_DISK_ERROR	boot/mbr/loader.asm	/^EXE_DISK_ERROR:$/;"	l
+EXE_FOUND_LOADER	boot/grub/loader.asm	/^EXE_FOUND_LOADER:$/;"	l
+EXE_FOUND_LOADER	boot/mbr/loader.asm	/^EXE_FOUND_LOADER:$/;"	l
+EXE_LABEL_CMP_FILENAME	boot/floppy/loader.asm	/^EXE_LABEL_CMP_FILENAME:$/;"	l
+EXE_LABEL_DIFFERENT	boot/floppy/loader.asm	/^EXE_LABEL_DIFFERENT:$/;"	l
+EXE_LABEL_FILENAME_FOUND	boot/floppy/loader.asm	/^EXE_LABEL_FILENAME_FOUND:		; 找到 echo 后便来到这里继续$/;"	l
+EXE_LABEL_FILE_LOADED	boot/floppy/loader.asm	/^EXE_LABEL_FILE_LOADED:$/;"	l
+EXE_LABEL_GOON_LOADING_FILE	boot/floppy/loader.asm	/^EXE_LABEL_GOON_LOADING_FILE:$/;"	l
+EXE_LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	boot/floppy/loader.asm	/^EXE_LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+EXE_LABEL_GO_ON	boot/floppy/loader.asm	/^EXE_LABEL_GO_ON:$/;"	l
+EXE_LABEL_NO_ECHO	boot/floppy/loader.asm	/^EXE_LABEL_NO_ECHO:$/;"	l
+EXE_LABEL_SEARCH_FOR_ECHO	boot/floppy/loader.asm	/^EXE_LABEL_SEARCH_FOR_ECHO:$/;"	l
+EXE_LABEL_SEARCH_IN_ROOT_DIR_BEGIN	boot/floppy/loader.asm	/^EXE_LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+EXE_LABEL_START	boot/floppy/loader.asm	/^EXE_LABEL_START:			; <--- 从这里开始 *************$/;"	l
+EXE_MISSING_LOADER	boot/grub/loader.asm	/^EXE_MISSING_LOADER:$/;"	l
+EXE_MISSING_LOADER	boot/mbr/loader.asm	/^EXE_MISSING_LOADER:$/;"	l
+EXE_NEXT_DATA_CLUSTER	boot/grub/loader.asm	/^EXE_NEXT_DATA_CLUSTER:$/;"	l
+EXE_NEXT_DATA_CLUSTER	boot/mbr/loader.asm	/^EXE_NEXT_DATA_CLUSTER:$/;"	l
+EXE_NEXT_DATA_SECTOR	boot/grub/loader.asm	/^EXE_NEXT_DATA_SECTOR:$/;"	l
+EXE_NEXT_DATA_SECTOR	boot/mbr/loader.asm	/^EXE_NEXT_DATA_SECTOR:$/;"	l
+EXE_NEXT_ROOT_CLUSTER	boot/grub/loader.asm	/^EXE_NEXT_ROOT_CLUSTER:$/;"	l
+EXE_NEXT_ROOT_CLUSTER	boot/mbr/loader.asm	/^EXE_NEXT_ROOT_CLUSTER:$/;"	l
+EXE_NEXT_ROOT_ENTRY	boot/grub/loader.asm	/^EXE_NEXT_ROOT_ENTRY:$/;"	l
+EXE_NEXT_ROOT_ENTRY	boot/mbr/loader.asm	/^EXE_NEXT_ROOT_ENTRY:$/;"	l
+EXE_NEXT_ROOT_SECTOR	boot/grub/loader.asm	/^EXE_NEXT_ROOT_SECTOR:$/;"	l
+EXE_NEXT_ROOT_SECTOR	boot/mbr/loader.asm	/^EXE_NEXT_ROOT_SECTOR:$/;"	l
+EXE_RUN_LOADER	boot/grub/loader.asm	/^EXE_RUN_LOADER: $/;"	l
+EXE_RUN_LOADER	boot/mbr/loader.asm	/^EXE_RUN_LOADER: $/;"	l
+EXE_SEARCH_LOADER	boot/grub/loader.asm	/^EXE_SEARCH_LOADER:$/;"	l
+EXE_SEARCH_LOADER	boot/mbr/loader.asm	/^EXE_SEARCH_LOADER:$/;"	l
+EXTERN	include/const.h	32;"	d
+EXTERN	kernel/global.c	14;"	d	file:
+EXTERN	kernel/global.c	15;"	d	file:
+EXTNum	boot/mbr/mbr.asm	/^EXTNum		db  0 ;added by mingxuan 2020-9-29$/;"	d
+EXT_PART	include/fs_const.h	108;"	d
+EbrNum	boot/mbr/mbr.asm	/^EbrNum		db	0$/;"	d
+EchoFileName	boot/floppy/loader.asm	/^EchoFileName		db	"INIT    BIN", 0	;add by liang 2016.04.20  ;edit by visual 2016.5.16$/;"	d
+EchoFileName	boot/grub/loader.asm	/^EchoFileName		db	"INIT    BIN", 0	;add by liang 2016.04.20  ;edit by visual 2016.5.16$/;"	d
+EchoFileName	boot/mbr/loader.asm	/^EchoFileName		db	"INIT    BIN", 0	;add by liang 2016.04.20  ;edit by visual 2016.5.16$/;"	d
+Elf32_Ehdr	include/elf.h	/^}Elf32_Ehdr;$/;"	t	typeref:struct:__anon4
+Elf32_Phdr	include/elf.h	/^}Elf32_Phdr;$/;"	t	typeref:struct:__anon5
+Elf32_Shdr	include/elf.h	/^}Elf32_Shdr;$/;"	t	typeref:struct:__anon6
+EndInExt	boot/mbr/mbr.asm	/^EndInExt	db	0 ;added by mingxuan 2020-9-29$/;"	d
+F	include/fat32.h	24;"	d
+F1	include/keyboard.h	61;"	d
+F10	include/keyboard.h	70;"	d
+F11	include/keyboard.h	71;"	d
+F12	include/keyboard.h	72;"	d
+F2	include/keyboard.h	62;"	d
+F3	include/keyboard.h	63;"	d
+F4	include/keyboard.h	64;"	d
+F5	include/keyboard.h	65;"	d
+F6	include/keyboard.h	66;"	d
+F7	include/keyboard.h	67;"	d
+F8	include/keyboard.h	68;"	d
+F9	include/keyboard.h	69;"	d
+FALSE	include/const.h	40;"	d
+FALSE	include/fat32.h	9;"	d
+FAT32_FLAG1	fs_flags/fat32_flag.asm	/^FAT32_FLAG1     DD 	0x4f44534d$/;"	d
+FAT32_FLAG2	fs_flags/fat32_flag.asm	/^FAT32_FLAG2     DD 	0x302e3553/;"	d
+FAT32_FS_START_OFFSET	Makefile	/^FAT32_FS_START_OFFSET = 7340544$/;"	m
+FAT32_H	include/fat32.h	6;"	d
+FAT32_TYPE	include/hd.h	252;"	d
+FATBuf	kernel/base.c	/^BYTE FATBuf[1024]={0};$/;"	v
+FAT_END	kernel/base.c	/^DWORD FAT_END=268435455;\/\/文件簇号结束标记$/;"	v
+FAT_START_SECTOR	boot/grub/boot.asm	/^FAT_START_SECTOR 	equ  	0x820	  	; FAT表的起始扇区号  DWORD$/;"	d
+FAT_START_SECTOR	boot/mbr/boot.asm	/^	FAT_START_SECTOR 	DD 	0 ;FAT表的起始扇区号 ;added by mingxuan 2020-9-17$/;"	d
+FAT_START_SECTOR	boot/mbr/loader.asm	/^FAT_START_SECTOR 	DD 	0 ;FAT表的起始扇区号 ;added by mingxuan 2020-9-17$/;"	d
+FD	include/fs_const.h	15;"	d
+FILE_MAX_LEN	include/vfs.h	13;"	d
+FLAGS	include/fs_const.h	17;"	d
+FLAG_ALT_L	include/keyboard.h	28;"	d
+FLAG_ALT_R	include/keyboard.h	29;"	d
+FLAG_BREAK	include/keyboard.h	22;"	d
+FLAG_CTRL_L	include/keyboard.h	26;"	d
+FLAG_CTRL_R	include/keyboard.h	27;"	d
+FLAG_EXT	include/keyboard.h	23;"	d
+FLAG_PAD	include/keyboard.h	30;"	d
+FLAG_SHIFT_L	include/keyboard.h	24;"	d
+FLAG_SHIFT_R	include/keyboard.h	25;"	d
+FLASH	include/const.h	27;"	d
+FLOPPY_IRQ	include/const.h	79;"	d
+FMIBuff	include/memman.h	11;"	d
+FREEINFO	include/memman.h	/^struct FREEINFO{$/;"	s
+FSBUF_SIZE	include/fs_const.h	132;"	d
+FSREG	include/proc.h	21;"	d
+FS_H	include/fs.h	9;"	d
+FS_MISC_H	include/fs_misc.h	8;"	d
+File	include/fat32.h	/^}File,*PFile;$/;"	t	typeref:struct:__anon9
+FindClusterForDir	kernel/base.c	/^STATE FindClusterForDir(PDWORD pcluster)$/;"	f
+FindClusterForFile	kernel/base.c	/^STATE FindClusterForFile(DWORD totalClusters,PDWORD clusters)$/;"	f
+FindSpaceInDir	kernel/base.c	/^STATE FindSpaceInDir(DWORD parentClusterIndex,PCHAR name,PDWORD sectorIndex,PDWORD off_in_sector)$/;"	f
+FirstInExt	boot/mbr/mbr.asm	/^FirstInExt	db  0 ;added by mingxuan 2020-9-29$/;"	d
+FormatDirNameAndExt	kernel/assist.c	/^void FormatDirNameAndExt(PCHAR dirname,PCHAR name,PCHAR ext)$/;"	f
+FormatFileNameAndExt	kernel/assist.c	/^void FormatFileNameAndExt(PCHAR filename,PCHAR name,PCHAR ext)$/;"	f
+GATE	include/protect.h	/^}GATE;$/;"	t	typeref:struct:s_gate
+GDBBIN	Makefile	/^GDBBIN = kernel.gdb.bin init\/init.gdb.bin$/;"	m
+GDT_SIZE	include/const.h	43;"	d
+GET_TICKS	include/type.h	/^	GET_TICKS,$/;"	e	enum:msgtype
+GRAY_CHAR	include/console.h	37;"	d
+GREEN	include/const.h	25;"	d
+GSREG	include/proc.h	20;"	d
+GUI_L	include/keyboard.h	43;"	d
+GUI_R	include/keyboard.h	44;"	d
+GdtLen	boot/floppy/loader.asm	/^GdtLen		equ	$ - LABEL_GDT$/;"	d
+GdtLen	boot/grub/loader.asm	/^GdtLen		equ	$ - LABEL_GDT$/;"	d
+GdtLen	boot/mbr/loader.asm	/^GdtLen		equ	$ - LABEL_GDT$/;"	d
+GdtPtr	boot/floppy/loader.asm	/^GdtPtr		dw	GdtLen - 1				; 段界限$/;"	d
+GdtPtr	boot/grub/loader.asm	/^GdtPtr		dw	GdtLen - 1				; 段界限$/;"	d
+GdtPtr	boot/mbr/loader.asm	/^GdtPtr		dw	GdtLen - 1							; 段界限$/;"	d
+GetFATEntry	boot/floppy/boot.asm	/^GetFATEntry:$/;"	l
+GetFATEntry	boot/floppy/loader.asm	/^GetFATEntry:$/;"	l
+GetFileOffset	kernel/base.c	/^void GetFileOffset(PFile pfile,PDWORD sectorIndex,PDWORD off_in_sector,PUINT isLastSector)$/;"	f
+GetNameFromPath	kernel/assist.c	/^void GetNameFromPath(PCHAR path,PCHAR name)$/;"	f
+GetNameFromRecord	kernel/base.c	/^void GetNameFromRecord(Record record,PCHAR fullname)$/;"	f
+GetNextCluster	kernel/base.c	/^STATE GetNextCluster(DWORD clusterIndex,PDWORD nextCluster)$/;"	f
+GetNextSector	kernel/base.c	/^void GetNextSector(PFile pfile,DWORD curSectorIndex,PDWORD nextSectorIndex,PUINT isLastSector)$/;"	f
+GetParentFromPath	kernel/assist.c	/^void GetParentFromPath(PCHAR fullpath,PCHAR parent)$/;"	f
+HARD_INT	include/type.h	/^	HARD_INT = 1,$/;"	e	enum:msgtype
+HD	init/makefile	/^HD = ..\/b.img$/;"	m
+HD	user/makefile	/^HD = ..\/b.img$/;"	m
+HDQueue	include/hd.h	/^} HDQueue;$/;"	t	typeref:struct:__anon1
+HD_TIMEOUT	include/hd.h	273;"	d
+HOME	include/keyboard.h	79;"	d
+HZ	include/const.h	68;"	d
+HeapLinBase	include/const.h	111;"	d
+HeapLinLimitMAX	include/const.h	112;"	d
+IDLE	include/proc.h	/^enum proc_stat	{IDLE,READY,SLEEPING,KILLED};	\/* add KILLED state. when a process's state is KILLED, the process$/;"	e	enum:proc_stat
+IDT_SIZE	include/const.h	44;"	d
+INDEX_DUMMY	include/protect.h	68;"	d
+INDEX_FLAT_C	include/protect.h	69;"	d
+INDEX_FLAT_RW	include/protect.h	70;"	d
+INDEX_LDT_C	include/protect.h	90;"	d
+INDEX_LDT_FIRST	include/protect.h	73;"	d
+INDEX_LDT_RW	include/protect.h	91;"	d
+INDEX_TSS	include/protect.h	72;"	d
+INDEX_VIDEO	include/protect.h	71;"	d
+INIT	init/makefile	/^INIT = init.bin$/;"	m
+INIT	user/makefile	/^INIT = shell_0.bin shell_1.bin shell_2.bin \\$/;"	m
+INIT_STACK_SIZE	include/proc.h	18;"	d
+INODE_SIZE	include/fs_misc.h	94;"	d
+INSERT	include/keyboard.h	77;"	d
+INSTALL_FILENAME	init/makefile	/^	INSTALL_FILENAME:=$(INIT)$/;"	m
+INSTALL_FILENAME	init/makefile	/^	INSTALL_FILENAME:=$(TAR_NAME)$/;"	m
+INSTALL_FILENAME	user/makefile	/^	INSTALL_FILENAME:=$(INIT)$/;"	m
+INSTALL_FILENAME	user/makefile	/^	INSTALL_FILENAME:=$(TAR_NAME)$/;"	m
+INSTALL_NR_SECTORS	init/makefile	/^INSTALL_NR_SECTORS = 1000$/;"	m
+INSTALL_NR_SECTORS	user/makefile	/^INSTALL_NR_SECTORS = 1000$/;"	m
+INSTALL_PHY_SECTOR	init/makefile	/^INSTALL_PHY_SECTOR = 7095	# modified by mingxuan 2020-10-12$/;"	m
+INSTALL_PHY_SECTOR	user/makefile	/^INSTALL_PHY_SECTOR = 5047	# modified by mingxuan 2020-10-12$/;"	m
+INSTALL_START_SECTOR	init/makefile	/^INSTALL_START_SECTOR = $(shell echo $$(($(INSTALL_PHY_SECTOR)-$(PART_START_SECTOR))))$/;"	m
+INSTALL_START_SECTOR	user/makefile	/^INSTALL_START_SECTOR = $(shell echo $$(($(INSTALL_PHY_SECTOR)-$(PART_START_SECTOR))))$/;"	m
+INSTALL_TYPE	init/makefile	/^INSTALL_TYPE = INSTALL_TAR$/;"	m
+INSTALL_TYPE	user/makefile	/^INSTALL_TYPE = INSTALL_TAR$/;"	m
+INSUFFICIENTSPACE	include/fat32.h	14;"	d
+INT_M_CTL	include/const.h	56;"	d
+INT_M_CTLMASK	include/const.h	57;"	d
+INT_S_CTL	include/const.h	58;"	d
+INT_S_CTLMASK	include/const.h	59;"	d
+INT_VECTOR_BOUNDS	include/protect.h	135;"	d
+INT_VECTOR_BREAKPOINT	include/protect.h	133;"	d
+INT_VECTOR_COPROC_ERR	include/protect.h	145;"	d
+INT_VECTOR_COPROC_NOT	include/protect.h	137;"	d
+INT_VECTOR_COPROC_SEG	include/protect.h	139;"	d
+INT_VECTOR_DEBUG	include/protect.h	131;"	d
+INT_VECTOR_DIVIDE	include/protect.h	130;"	d
+INT_VECTOR_DOUBLE_FAULT	include/protect.h	138;"	d
+INT_VECTOR_INVAL_OP	include/protect.h	136;"	d
+INT_VECTOR_INVAL_TSS	include/protect.h	140;"	d
+INT_VECTOR_IRQ0	include/protect.h	148;"	d
+INT_VECTOR_IRQ8	include/protect.h	149;"	d
+INT_VECTOR_NMI	include/protect.h	132;"	d
+INT_VECTOR_OVERFLOW	include/protect.h	134;"	d
+INT_VECTOR_PAGE_FAULT	include/protect.h	144;"	d
+INT_VECTOR_PROTECTION	include/protect.h	143;"	d
+INT_VECTOR_SEG_NOT	include/protect.h	141;"	d
+INT_VECTOR_STACK_FAULT	include/protect.h	142;"	d
+INT_VECTOR_SYS_CALL	include/protect.h	152;"	d
+INT_VECTOR_SYS_CALL	kernel/syscall.asm	/^INT_VECTOR_SYS_CALL equ 0x90$/;"	d
+INVALID_INODE	include/fs_const.h	57;"	d
+I_BLOCK_SPECIAL	include/fs_const.h	120;"	d
+I_CHAR_SPECIAL	include/fs_const.h	122;"	d
+I_DIRECTORY	include/fs_const.h	121;"	d
+I_NAMED_PIPE	include/fs_const.h	123;"	d
+I_REGULAR	include/fs_const.h	119;"	d
+I_TYPE_MASK	include/fs_const.h	118;"	d
+InitDArray	kernel/array.c	/^DArray* InitDArray(UINT initialCapacity,UINT capacityIncrement)$/;"	f
+InitKernel	boot/floppy/loader.asm	/^InitKernel:	; 遍历每一个 Program Header，根据 Program Header 中的信息来确定把什么放进内存，放到什么位置，以及放多少。$/;"	l
+InitKernel	boot/grub/loader.asm	/^InitKernel:	; 遍历每一个 Program Header，根据 Program Header 中的信息来确定把什么放进内存，放到什么位置，以及放多少。$/;"	l
+InitKernel	boot/mbr/loader.asm	/^InitKernel:	; 遍历每一个 Program Header，根据 Program Header 中的信息来确定把什么放进内存，放到什么位置，以及放多少。$/;"	l
+IsFile	kernel/fat32.c	/^STATE IsFile(PCHAR path,PUINT tag)$/;"	f
+IsFullPath	kernel/assist.c	/^STATE IsFullPath(PCHAR path)$/;"	f
+KBCMD_EN_MOUSE_INTFACE	include/const.h	166;"	d
+KBC_MODE	include/const.h	162;"	d
+KBSTATUS_IBF	include/const.h	155;"	d
+KBSTATUS_OBF	include/const.h	156;"	d
+KB_ACK	include/const.h	169;"	d
+KB_CMD	include/const.h	148;"	d
+KB_DATA	include/const.h	143;"	d
+KB_INPUT	include/keyboard.h	/^} KB_INPUT;$/;"	t	typeref:struct:kb_inbuf
+KB_IN_BYTES	include/keyboard.h	17;"	d
+KB_STA	include/const.h	153;"	d
+KERNELESPREG	include/proc.h	27;"	d
+KEYBOARD_IRQ	include/const.h	73;"	d
+KEYCMD_SENDTO_MOUSE	include/const.h	164;"	d
+KEYCMD_WRITE_MODE	include/const.h	161;"	d
+KEYSTA_SEND_NOTREADY	include/const.h	154;"	d
+KILLED	include/proc.h	/^enum proc_stat	{IDLE,READY,SLEEPING,KILLED};	\/* add KILLED state. when a process's state is KILLED, the process$/;"	e	enum:proc_stat
+KWALL	include/memman.h	12;"	d
+K_LIN2PHY	include/const.h	98;"	d
+K_PHY2LIN	include/const.h	97;"	d
+KernelFileName	boot/floppy/loader.asm	/^KernelFileName		db	"KERNEL  BIN", 0	; KERNEL.BIN 之文件名$/;"	d
+KernelFileName	boot/grub/loader.asm	/^KernelFileName		db	"KERNEL  BIN", 0	; KERNEL.BIN 之文件名$/;"	d
+KernelFileName	boot/mbr/loader.asm	/^KernelFileName		db	"KERNEL  BIN", 0	; KERNEL.BIN 之文件名$/;"	d
+KernelLinBase	include/const.h	117;"	d
+KernelLinLimitMAX	include/const.h	118;"	d
+KernelPageTblAddr	include/const.h	94;"	d
+KernelSize	include/const.h	96;"	d
+KernelStackSpace	kernel/kernel.asm	/^KernelStackSpace	resb	2 * 1024$/;"	l
+KernelStackTop	kernel/kernel.asm	/^KernelStackTop:	; used as stack of kernel itself$/;"	l
+KillMotor	boot/floppy/loader.asm	/^KillMotor:$/;"	l
+KillMotor	boot/grub/loader.asm	/^KillMotor:$/;"	l
+KillMotor	boot/mbr/loader.asm	/^KillMotor:$/;"	l
+LABEL_CMP_FILENAME	boot/floppy/boot.asm	/^LABEL_CMP_FILENAME:$/;"	l
+LABEL_CMP_FILENAME	boot/floppy/loader.asm	/^LABEL_CMP_FILENAME:$/;"	l
+LABEL_DATA	boot/floppy/loader.asm	/^LABEL_DATA:$/;"	l
+LABEL_DATA	boot/grub/loader.asm	/^LABEL_DATA:$/;"	l
+LABEL_DATA	boot/mbr/loader.asm	/^LABEL_DATA:$/;"	l
+LABEL_DESC_FLAT_C	boot/floppy/loader.asm	/^LABEL_DESC_FLAT_C:		Descriptor             0,              0fffffh, DA_CR  | DA_32 | DA_LIMIT_4K			; 0 ~ 4G$/;"	l
+LABEL_DESC_FLAT_C	boot/grub/loader.asm	/^LABEL_DESC_FLAT_C:		Descriptor             0,              0fffffh, DA_CR  | DA_32 | DA_LIMIT_4K			; 0 ~ 4G$/;"	l
+LABEL_DESC_FLAT_C	boot/mbr/loader.asm	/^LABEL_DESC_FLAT_C:		Descriptor             0,              0fffffh, DA_CR  | DA_32 | DA_LIMIT_4K			; 0 ~ 4G$/;"	l
+LABEL_DESC_FLAT_RW	boot/floppy/loader.asm	/^LABEL_DESC_FLAT_RW:		Descriptor             0,              0fffffh, DA_DRW | DA_32 | DA_LIMIT_4K			; 0 ~ 4G$/;"	l
+LABEL_DESC_FLAT_RW	boot/grub/loader.asm	/^LABEL_DESC_FLAT_RW:		Descriptor             0,              0fffffh, DA_DRW | DA_32 | DA_LIMIT_4K			; 0 ~ 4G$/;"	l
+LABEL_DESC_FLAT_RW	boot/mbr/loader.asm	/^LABEL_DESC_FLAT_RW:		Descriptor             0,              0fffffh, DA_DRW | DA_32 | DA_LIMIT_4K			; 0 ~ 4G$/;"	l
+LABEL_DESC_VIDEO	boot/floppy/loader.asm	/^LABEL_DESC_VIDEO:		Descriptor		 0B8000h,               0ffffh, DA_DRW | DA_DPL3	; 显存首地址$/;"	l
+LABEL_DESC_VIDEO	boot/grub/loader.asm	/^LABEL_DESC_VIDEO:		Descriptor		 0B8000h,               0ffffh, DA_DRW | DA_DPL3	; 显存首地址$/;"	l
+LABEL_DESC_VIDEO	boot/mbr/loader.asm	/^LABEL_DESC_VIDEO:		Descriptor		 0B8000h,               0ffffh, DA_DRW | DA_DPL3	; 显存首地址$/;"	l
+LABEL_DIFFERENT	boot/floppy/boot.asm	/^LABEL_DIFFERENT:$/;"	l
+LABEL_DIFFERENT	boot/floppy/loader.asm	/^LABEL_DIFFERENT:$/;"	l
+LABEL_EVEN_2	boot/floppy/boot.asm	/^LABEL_EVEN_2:$/;"	l
+LABEL_EVEN_2	boot/floppy/loader.asm	/^LABEL_EVEN_2:$/;"	l
+LABEL_FILENAME_FOUND	boot/floppy/boot.asm	/^LABEL_FILENAME_FOUND:			; 找到 LOADER.BIN 后便来到这里继续$/;"	l
+LABEL_FILENAME_FOUND	boot/floppy/loader.asm	/^LABEL_FILENAME_FOUND:			; 找到 KERNEL.BIN 后便来到这里继续$/;"	l
+LABEL_FILE_LOADED	boot/floppy/boot.asm	/^LABEL_FILE_LOADED:$/;"	l
+LABEL_FILE_LOADED	boot/floppy/loader.asm	/^LABEL_FILE_LOADED:$/;"	l
+LABEL_GDT	boot/floppy/loader.asm	/^LABEL_GDT:				Descriptor             0,                    0, 0						; 空描述符$/;"	l
+LABEL_GDT	boot/grub/loader.asm	/^LABEL_GDT:				Descriptor             0,                    0, 0						; 空描述符$/;"	l
+LABEL_GDT	boot/mbr/loader.asm	/^LABEL_GDT:				Descriptor             0,                    0, 0						; 空描述符$/;"	l
+LABEL_GET_FAT_ENRY_OK	boot/floppy/boot.asm	/^LABEL_GET_FAT_ENRY_OK:$/;"	l
+LABEL_GET_FAT_ENRY_OK	boot/floppy/loader.asm	/^LABEL_GET_FAT_ENRY_OK:$/;"	l
+LABEL_GOON_LOADING_FILE	boot/floppy/boot.asm	/^LABEL_GOON_LOADING_FILE:$/;"	l
+LABEL_GOON_LOADING_FILE	boot/floppy/loader.asm	/^LABEL_GOON_LOADING_FILE:$/;"	l
+LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	boot/floppy/boot.asm	/^LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	boot/floppy/loader.asm	/^LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+LABEL_GO_ON	boot/floppy/boot.asm	/^LABEL_GO_ON:$/;"	l
+LABEL_GO_ON	boot/floppy/loader.asm	/^LABEL_GO_ON:$/;"	l
+LABEL_NO_KERNELBIN	boot/floppy/loader.asm	/^LABEL_NO_KERNELBIN:$/;"	l
+LABEL_NO_LOADERBIN	boot/floppy/boot.asm	/^LABEL_NO_LOADERBIN:$/;"	l
+LABEL_PM_START	boot/floppy/loader.asm	/^LABEL_PM_START:$/;"	l
+LABEL_PM_START	boot/grub/loader.asm	/^LABEL_PM_START:$/;"	l
+LABEL_PM_START	boot/mbr/loader.asm	/^LABEL_PM_START:$/;"	l
+LABEL_SEARCH_FOR_KERNELBIN	boot/floppy/loader.asm	/^LABEL_SEARCH_FOR_KERNELBIN:$/;"	l
+LABEL_SEARCH_FOR_LOADERBIN	boot/floppy/boot.asm	/^LABEL_SEARCH_FOR_LOADERBIN:$/;"	l
+LABEL_SEARCH_IN_ROOT_DIR_BEGIN	boot/floppy/boot.asm	/^LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+LABEL_SEARCH_IN_ROOT_DIR_BEGIN	boot/floppy/loader.asm	/^LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+LABEL_START	boot/floppy/boot.asm	/^LABEL_START:	$/;"	l
+LABEL_START	boot/floppy/loader.asm	/^LABEL_START:			; <--- 从这里开始 *************$/;"	l
+LABEL_START	boot/grub/loader.asm	/^LABEL_START:			; <--- 从这里开始 *************$/;"	l
+LABEL_START	boot/mbr/loader.asm	/^LABEL_START:			; <--- 从这里开始 *************$/;"	l
+LABEL_START	boot/mbr/mbr.asm	/^LABEL_START:	$/;"	l
+LABLE_ACTIVE	boot/mbr/mbr.asm	/^LABLE_ACTIVE:$/;"	l
+LABLE_END_EXTENDED	boot/mbr/mbr.asm	/^LABLE_END_EXTENDED:$/;"	l
+LABLE_EXTENDED	boot/mbr/mbr.asm	/^LABLE_EXTENDED:$/;"	l
+LABLE_IN_EXTENDED	boot/mbr/mbr.asm	/^LABLE_IN_EXTENDED:					;在分区表中发现扩展分区后，跳转到这里来执行$/;"	l
+LABLE_NOT_FOUND	boot/mbr/mbr.asm	/^LABLE_NOT_FOUND:$/;"	l
+LBA_Hi	boot/mbr/mbr.asm	/^	LBA_Hi	DD 0	      		; upper 32-bits of 48-bit starting LBAs$/;"	d
+LBA_Lo	boot/mbr/mbr.asm	/^	LBA_Lo	DD 1	      		; lower 32-bits of 48-bit starting LBA$/;"	d
+LD	Makefile	/^LD		= ld$/;"	m
+LD	user/makefile	/^LD			= ld$/;"	m
+LDFLAGS	user/makefile	/^LDFLAGS		= -m elf_i386 -s$/;"	m
+LDFLAGS_init	Makefile	/^LDFLAGS_init	= -m elf_i386 -s -Map init\/init.map$/;"	m
+LDFLAGS_init_gdb	Makefile	/^LDFLAGS_init_gdb	= -m elf_i386$/;"	m
+LDFLAGS_kernel	Makefile	/^LDFLAGS_kernel	= -m elf_i386 -s -Ttext $(ENTRYPOINT) -Map misc\/kernel.map$/;"	m
+LDFLAGS_kernel_gdb	Makefile	/^LDFLAGS_kernel_gdb	= -m elf_i386 -Ttext $(ENTRYPOINT)$/;"	m
+LDT_SIZE	include/protect.h	87;"	d
+LED_CODE	include/const.h	168;"	d
+LEFT	include/keyboard.h	85;"	d
+LENGTH_OF_ARGV	include/shell.h	5;"	d
+LIN_MEMMAP	include/proc.h	/^}LIN_MEMMAP;$/;"	t	typeref:struct:s_lin_memmap
+LONGNAME	include/fat32.h	/^}LONGNAME;$/;"	t	typeref:struct:__anon8
+LSEEK	include/type.h	/^	OPEN, CLOSE, READ, WRITE, LSEEK, STAT, UNLINK,$/;"	e	enum:msgtype
+LoadMessage	boot/floppy/loader.asm	/^LoadMessage:		db	"Loading  "$/;"	d
+LoadMessage	boot/grub/loader.asm	/^LoadMessage:		db	"Loading  "$/;"	d
+LoadMessage	boot/mbr/loader.asm	/^LoadMessage:		db	"Loading  "$/;"	d
+LoaderFileName	boot/floppy/boot.asm	/^LoaderFileName		db	"LOADER  BIN", 0	; LOADER.BIN 之文件名$/;"	d
+LoaderName	boot/grub/boot.asm	/^LoaderName     db "LOADER  BIN"       ; 第二阶段启动程序 FDOSLDR.BIN$/;"	d
+LoaderName	boot/mbr/boot.asm	/^LoaderName     db "LOADER  BIN"       ; 第二阶段启动程序 FDOSLDR.BIN$/;"	d
+MAGIC_V1	include/fs_misc.h	22;"	d
+MAJOR	include/fs_const.h	54;"	d
+MAJOR_FAT	include/fs_const.h	95;"	d
+MAJOR_SHIFT	include/fs_const.h	50;"	d
+MAKE_COLOR	include/const.h	29;"	d
+MAKE_DEV	include/fs_const.h	51;"	d
+MAKE_DEVICE_REG	include/hd.h	279;"	d
+MAP_COLS	include/keyboard.h	19;"	d
+MASK_RAW	include/keyboard.h	32;"	d
+MAX_DRIVES	include/fs_const.h	61;"	d
+MAX_FILENAME_LEN	include/fs.h	20;"	d
+MAX_FILENAME_LEN	include/stdio.h	26;"	d
+MAX_INT	include/const.h	13;"	d
+MAX_PATH	include/fs.h	19;"	d
+MAX_PATH	include/stdio.h	27;"	d
+MAX_PRIM	include/fs_const.h	76;"	d
+MAX_SUBPARTITIONS	include/fs_const.h	77;"	d
+MAX_UNSIGNED_INT	include/const.h	12;"	d
+MEMEND	include/memman.h	16;"	d
+MEMMAN	include/memman.h	/^struct MEMMAN{$/;"	s
+MEMMAN_ADDR	include/memman.h	10;"	d
+MEMMAN_FREES	include/memman.h	9;"	d
+MEMSTART	include/memman.h	15;"	d
+MESSAGE	include/type.h	/^} MESSAGE;$/;"	t	typeref:struct:__anon2
+MINOR	include/fs_const.h	55;"	d
+MINOR_BOOT	include/fs_const.h	98;"	d
+MINOR_hd0	include/fs_const.h	87;"	d
+MINOR_hd1	include/fs_const.h	88;"	d
+MINOR_hd1a	include/fs_const.h	91;"	d
+MINOR_hd2	include/fs_const.h	89;"	d
+MINOR_hd2a	include/fs_const.h	92;"	d
+MKFS	Makefile	/^MKFS = fs_flags\/orange_flag.bin fs_flags\/fat32_flag.bin$/;"	m
+MOUSECMD_ENABLE	include/const.h	165;"	d
+MOUSE_INPUT	include/keyboard.h	/^}MOUSE_INPUT;$/;"	t	typeref:struct:mouse_inbuf
+MOUSE_IN_BYTES	include/keyboard.h	18;"	d
+MOUSE_IRQ	include/const.h	82;"	d
+MOUSE_UPDOWN_BOUND	include/keyboard.h	139;"	d
+MakeFullPath	kernel/assist.c	/^void MakeFullPath(PCHAR parent,PCHAR name,PCHAR fullpath)$/;"	f
+MemChkBuf	boot/floppy/loader.asm	/^MemChkBuf		equ	BaseOfLoaderPhyAddr + _MemChkBuf$/;"	d
+MemChkBuf	boot/grub/loader.asm	/^MemChkBuf		equ	BaseOfLoaderPhyAddr + _MemChkBuf$/;"	d
+MemChkBuf	boot/mbr/loader.asm	/^MemChkBuf		equ	BaseOfLoaderPhyAddr + _MemChkBuf$/;"	d
+MemCpy	boot/floppy/loader.asm	/^MemCpy:$/;"	l
+MemCpy	boot/grub/loader.asm	/^MemCpy:$/;"	l
+MemCpy	boot/mbr/loader.asm	/^MemCpy:$/;"	l
+MemInfo	kernel/memman.c	/^u32 MemInfo[256] = {0};			\/\/存放FMIBuff后1k内容$/;"	v
+Message1	boot/floppy/boot.asm	/^Message1		db	"Ready.   "; 9字节, 不够则用空格补齐. 序号 1$/;"	d
+Message1	boot/floppy/loader.asm	/^Message1		db	"Ready.   "$/;"	d
+Message1	boot/grub/loader.asm	/^Message1		db	"Ready.   "$/;"	d
+Message1	boot/mbr/loader.asm	/^Message1		db	"Ready.   "$/;"	d
+Message1	boot/mbr/mbr.asm	/^Message1			db	"    partition "$/;"	d
+Message2	boot/floppy/boot.asm	/^Message2		db	"No LOADER"; 9字节, 不够则用空格补齐. 序号 2$/;"	d
+Message2	boot/floppy/loader.asm	/^Message2		db	"No KERNEL"$/;"	d
+Message2	boot/grub/loader.asm	/^Message2		db	"No KERNEL"$/;"	d
+Message2	boot/mbr/loader.asm	/^Message2		db	"No KERNEL"$/;"	d
+Message3	boot/floppy/loader.asm	/^Message3		db	"exLoading"		;add by liang 2016.04.20$/;"	d
+Message3	boot/grub/loader.asm	/^Message3		db	"exLoading"		;add by liang 2016.04.20$/;"	d
+Message3	boot/mbr/loader.asm	/^Message3		db	"exLoading"		;add by liang 2016.04.20$/;"	d
+Message3	boot/mbr/mbr.asm	/^Message3			db	"active partition not found!"	 $/;"	d
+Message4	boot/floppy/loader.asm	/^Message4		db	"exReady. "		;add by liang 2016.04.20$/;"	d
+Message4	boot/grub/loader.asm	/^Message4		db	"exReady. "		;add by liang 2016.04.20$/;"	d
+Message4	boot/mbr/loader.asm	/^Message4		db	"exReady. "		;add by liang 2016.04.20$/;"	d
+Message5	boot/floppy/loader.asm	/^Message5		db	"No ECHO  "		;add by liang 2016.04.20$/;"	d
+Message5	boot/grub/loader.asm	/^Message5		db	"No ECHO  "		;add by liang 2016.04.20$/;"	d
+Message5	boot/mbr/loader.asm	/^Message5		db	"No ECHO  "		;add by liang 2016.04.20$/;"	d
+MessageLength	boot/floppy/boot.asm	/^MessageLength		equ	9$/;"	d
+MessageLength	boot/floppy/loader.asm	/^MessageLength		equ	9$/;"	d
+MessageLength	boot/grub/loader.asm	/^MessageLength		equ	9$/;"	d
+MessageLength	boot/mbr/loader.asm	/^MessageLength		equ	9$/;"	d
+MessageLength	boot/mbr/mbr.asm	/^MessageLength		equ	27$/;"	d
+NAMEEXIST	include/fat32.h	16;"	d
+NAME_LEN	include/fs_const.h	18;"	d
+NO_DEV	include/fs_const.h	42;"	d
+NO_FS_TYPE	include/hd.h	250;"	d
+NO_PART	include/fs_const.h	107;"	d
+NR_CHILD_MAX	include/proc.h	63;"	d
+NR_CONSOLES	include/const.h	90;"	d
+NR_CONSOLES	include/fs_const.h	8;"	d
+NR_CPUS	include/proc.h	52;"	d
+NR_DEFAULT_FILE_SECTS	include/fs_const.h	128;"	d
+NR_FILES	include/proc.h	53;"	d
+NR_FILE_DESC	include/fs_const.h	112;"	d
+NR_FS	include/vfs.h	6;"	d
+NR_FS_OP	include/vfs.h	9;"	d
+NR_INODE	include/fs_const.h	113;"	d
+NR_IRQ	include/const.h	71;"	d
+NR_K_PCBS	include/proc.h	48;"	d
+NR_PART_PER_DRIVE	include/fs_const.h	62;"	d
+NR_PCBS	include/proc.h	45;"	d
+NR_PRIM_PER_DRIVE	include/fs_const.h	65;"	d
+NR_SB_OP	include/vfs.h	10;"	d
+NR_SCAN_CODES	include/keyboard.h	20;"	d
+NR_SUB_PER_DRIVE	include/fs_const.h	64;"	d
+NR_SUB_PER_PART	include/fs_const.h	63;"	d
+NR_SUPER_BLOCK	include/fs_const.h	114;"	d
+NR_SYS_CALL	include/const.h	86;"	d
+NR_TASKS	include/proc.h	47;"	d
+NULL	include/type.h	90;"	d
+NUM_LOCK	include/keyboard.h	57;"	d
+NeedMoreCluster	kernel/base.c	/^STATE NeedMoreCluster(PFile pfile,DWORD size,PDWORD number)$/;"	f
+NextElement	kernel/array.c	/^DArrayElem* NextElement(DArray *array)$/;"	f
+OBJS	Makefile	/^OBJS		= kernel\/kernel.o kernel\/syscall.o kernel\/start.o kernel\/main.o kernel\/clock.o\\$/;"	m
+OBJSINIT	Makefile	/^OBJSINIT	= init\/init.o init\/initstart.o lib\/ulib.a$/;"	m
+OBJSULIB	Makefile	/^OBJSULIB 	= lib\/string.o kernel\/syscall.o lib\/printf.o lib\/vsprintf.o lib\/scanf.o #added by mingxuan 2019-5-19$/;"	m
+OBJSULIB	user/makefile	/^OBJSULIB 	= ..\/lib\/ulib.a$/;"	m
+OFFSET	include/fs_const.h	25;"	d
+OFF_START_CLUSTER_HIGH	boot/grub/boot.asm	/^OFF_START_CLUSTER_HIGH  equ  	20  		; 起始簇号高位  WORD$/;"	d
+OFF_START_CLUSTER_HIGH	boot/mbr/boot.asm	/^OFF_START_CLUSTER_HIGH  equ  	20  		; 起始簇号高位  WORD$/;"	d
+OFF_START_CLUSTER_LOW	boot/grub/boot.asm	/^OFF_START_CLUSTER_LOW  	equ  	26  		; 起始簇号低位  WORD$/;"	d
+OFF_START_CLUSTER_LOW	boot/mbr/boot.asm	/^OFF_START_CLUSTER_LOW  	equ  	26  		; 起始簇号低位  WORD$/;"	d
+OK	include/fat32.h	11;"	d
+OPEN	include/type.h	/^	OPEN, CLOSE, READ, WRITE, LSEEK, STAT, UNLINK,$/;"	e	enum:msgtype
+ORANGESBOOT	Makefile	/^ORANGESBOOT	= boot\/floppy\/boot.bin boot\/floppy\/loader.bin \\$/;"	m
+ORANGESINIT	Makefile	/^ORANGESINIT	= init\/init.bin$/;"	m
+ORANGESKERNEL	Makefile	/^ORANGESKERNEL	= kernel.bin$/;"	m
+ORANGES_PART	include/fs_const.h	106;"	d
+ORANGE_FLAG	fs_flags/orange_flag.asm	/^ORANGE_FLAG     DB 	0x11/;"	d
+ORANGE_FS_START_OFFSET	Makefile	/^ORANGE_FS_START_OFFSET = 3146240$/;"	m
+ORANGE_TYPE	include/hd.h	251;"	d
+OSBOOT_OFFSET	Makefile	/^OSBOOT_OFFSET = 1048576$/;"	m
+OSBOOT_START_OFFSET	Makefile	/^OSBOOT_START_OFFSET = 1048666 # for test12.img$/;"	m
+OSLOADER_SEG	boot/grub/boot.asm	/^OSLOADER_SEG 		equ  	0x09000 	; 起始段地址     $/;"	d
+OSLOADER_SEG	boot/mbr/boot.asm	/^OSLOADER_SEG 		equ  	0x09000 	; 起始段地址     $/;"	d
+OSLOADER_SEG_OFF	boot/grub/boot.asm	/^OSLOADER_SEG_OFF	equ		0x0100$/;"	d
+OSLOADER_SEG_OFF	boot/mbr/boot.asm	/^OSLOADER_SEG_OFF	equ		0x0100$/;"	d
+O_CREAT	include/fs.h	12;"	d
+O_CREAT	include/stdio.h	28;"	d
+O_RDWR	include/fs.h	13;"	d
+O_RDWR	include/stdio.h	29;"	d
+OffsetOfActiPartStartSec	boot/mbr/boot.asm	/^OffsetOfActiPartStartSec	equ 7e00h		; 活动分区的起始扇区号相对于BaseOfBoot的偏移量	;added by mingxuan 2020-9-12 $/;"	d
+OffsetOfActiPartStartSec	boot/mbr/mbr.asm	/^OffsetOfActiPartStartSec	equ 7e00h		; 活动分区的起始扇区号相对于BaseOfBoot的偏移量	;added by mingxuan 2020-9-12 $/;"	d
+OffsetOfBoot	boot/mbr/boot.asm	/^OffsetOfBoot				equ	7c00h		; load Boot sector to BaseOfBoot:OffsetOfBoot$/;"	d
+OffsetOfBoot	boot/mbr/mbr.asm	/^OffsetOfBoot				equ	7c00h		; load Boot sector to BaseOfBoot:OffsetOfBoot $/;"	d
+OpenDir	kernel/fat32.c	/^STATE OpenDir(PCHAR dirname)$/;"	f
+OpenFile	kernel/fat32.c	/^STATE OpenFile(PCHAR filename,UINT mode)$/;"	f
+PAD_0	include/keyboard.h	100;"	d
+PAD_1	include/keyboard.h	101;"	d
+PAD_2	include/keyboard.h	102;"	d
+PAD_3	include/keyboard.h	103;"	d
+PAD_4	include/keyboard.h	104;"	d
+PAD_5	include/keyboard.h	105;"	d
+PAD_6	include/keyboard.h	106;"	d
+PAD_7	include/keyboard.h	107;"	d
+PAD_8	include/keyboard.h	108;"	d
+PAD_9	include/keyboard.h	109;"	d
+PAD_DEL	include/keyboard.h	120;"	d
+PAD_DOT	include/keyboard.h	99;"	d
+PAD_DOWN	include/keyboard.h	111;"	d
+PAD_END	include/keyboard.h	115;"	d
+PAD_ENTER	include/keyboard.h	98;"	d
+PAD_HOME	include/keyboard.h	114;"	d
+PAD_INS	include/keyboard.h	118;"	d
+PAD_LEFT	include/keyboard.h	112;"	d
+PAD_MID	include/keyboard.h	119;"	d
+PAD_MINUS	include/keyboard.h	96;"	d
+PAD_PAGEDOWN	include/keyboard.h	117;"	d
+PAD_PAGEUP	include/keyboard.h	116;"	d
+PAD_PLUS	include/keyboard.h	97;"	d
+PAD_RIGHT	include/keyboard.h	113;"	d
+PAD_SLASH	include/keyboard.h	94;"	d
+PAD_STAR	include/keyboard.h	95;"	d
+PAD_UP	include/keyboard.h	110;"	d
+PAGEDOWN	include/keyboard.h	82;"	d
+PAGEUP	include/keyboard.h	81;"	d
+PARTITION_ENTRY	include/hd.h	/^} PARTITION_ENTRY;$/;"	v	typeref:struct:part_ent
+PARTITION_TABLE_OFFSET	include/hd.h	274;"	d
+PART_START_SECTOR	init/makefile	/^PART_START_SECTOR = 6144	# modified by mingxuan 2020-10-12$/;"	m
+PART_START_SECTOR	user/makefile	/^PART_START_SECTOR = 4096	# modified by mingxuan 2020-10-12$/;"	m
+PATHNAME	include/fs_const.h	16;"	d
+PAUSEBREAK	include/keyboard.h	76;"	d
+PBYTE	include/fat32.h	/^typedef unsigned char*  PBYTE;$/;"	t
+PCHAR	include/fat32.h	/^typedef char*           PCHAR;\/\/字符指针$/;"	t
+PDWORD	include/fat32.h	/^typedef unsigned long*  PDWORD;\/\/四字节指针$/;"	t
+PFile	include/fat32.h	/^}File,*PFile;$/;"	t	typeref:struct:__anon9
+PG_P	include/const.h	133;"	d
+PG_PS	include/const.h	138;"	d
+PG_RWR	include/const.h	134;"	d
+PG_RWW	include/const.h	135;"	d
+PG_USS	include/const.h	136;"	d
+PG_USU	include/const.h	137;"	d
+POSITION	include/fs_const.h	23;"	d
+POWER	include/keyboard.h	89;"	d
+PRIMARY_MASTER	include/fs_const.h	81;"	d
+PRIMARY_SLAVE	include/fs_const.h	82;"	d
+PRINTER_IRQ	include/const.h	80;"	d
+PRINTSCREEN	include/keyboard.h	75;"	d
+PRIVATE	include/const.h	36;"	d
+PRIVILEGE_KRNL	include/const.h	47;"	d
+PRIVILEGE_TASK	include/const.h	48;"	d
+PRIVILEGE_USER	include/const.h	49;"	d
+PROCESS	include/proc.h	/^}PROCESS;$/;"	t	typeref:union:task_union
+PROCESS_0	include/proc.h	/^}PROCESS_0;$/;"	t	typeref:struct:s_proc
+PROC_NR	include/fs_const.h	21;"	d
+PRecord	include/fat32.h	/^}Record,*PRecord;$/;"	t	typeref:struct:__anon7
+PUBLIC	include/const.h	35;"	d
+PUINT	include/fat32.h	/^typedef unsigned int*   PUINT;\/\/无符号整型指针$/;"	t
+PWORD	include/fat32.h	/^typedef unsigned short* PWORD;$/;"	t
+P_EXTENDED	include/fs_const.h	104;"	d
+P_PRIMARY	include/fs_const.h	103;"	d
+P_STACKBASE	include/proc.h	19;"	d
+P_STACKTOP	include/proc.h	38;"	d
+PageTblNumAddr	include/const.h	93;"	d
+PathToCluster	kernel/base.c	/^STATE PathToCluster(PCHAR path, PDWORD cluster)$/;"	f
+Position_Of_FAT1	kernel/base.c	/^UINT Position_Of_FAT1=0;\/\/FAT1的位置。$/;"	v
+Position_Of_FAT2	kernel/base.c	/^UINT Position_Of_FAT2=0;\/\/FAT2的位置。$/;"	v
+Position_Of_RootDir	kernel/base.c	/^UINT Position_Of_RootDir=0;\/\/根目录的位置。$/;"	v
+Properties	include/fat32.h	/^}Properties;$/;"	t	typeref:struct:__anon12
+R	include/fat32.h	20;"	d
+RATE_GENERATOR	include/const.h	64;"	d
+RD_SECT	include/fs_misc.h	141;"	d
+RD_SECT_FAT	include/fs_misc.h	166;"	d
+RD_SECT_SCHED	include/fs_misc.h	192;"	d
+RD_SECT_SCHED_FAT	include/fs_misc.h	217;"	d
+READ	include/type.h	/^	OPEN, CLOSE, READ, WRITE, LSEEK, STAT, UNLINK,$/;"	e	enum:msgtype
+READY	include/proc.h	/^enum proc_stat	{IDLE,READY,SLEEPING,KILLED};	\/* add KILLED state. when a process's state is KILLED, the process$/;"	e	enum:proc_stat
+RED	include/const.h	24;"	d
+RED_CHAR	include/console.h	38;"	d
+REG_ALT_STATUS	include/hd.h	231;"	d
+REG_CMD	include/hd.h	187;"	d
+REG_DATA	include/hd.h	119;"	d
+REG_DEVICE	include/hd.h	145;"	d
+REG_DEV_CTRL	include/hd.h	211;"	d
+REG_DRV_ADDR	include/hd.h	236;"	d
+REG_ERROR	include/hd.h	121;"	d
+REG_FEATURES	include/hd.h	120;"	d
+REG_LBA_HIGH	include/hd.h	144;"	d
+REG_LBA_LOW	include/hd.h	142;"	d
+REG_LBA_MID	include/hd.h	143;"	d
+REG_NSECTOR	include/hd.h	141;"	d
+REG_STATUS	include/hd.h	162;"	d
+REQUEST	include/fs_const.h	20;"	d
+RESET_SecOffset_SELF	boot/mbr/mbr.asm	/^RESET_SecOffset_SELF:$/;"	l
+RETADR	include/proc.h	32;"	d
+RETVAL	include/fs_const.h	30;"	d
+RIGHT	include/keyboard.h	86;"	d
+ROOT_INODE	include/fs_const.h	58;"	d
+RPL_KRNL	include/const.h	51;"	d
+RPL_TASK	include/const.h	52;"	d
+RPL_USER	include/const.h	53;"	d
+RS232_IRQ	include/const.h	77;"	d
+RW	include/fat32.h	22;"	d
+RWInfo	include/hd.h	/^} RWInfo;$/;"	t	typeref:struct:rdwt_info
+ReadFile	kernel/fat32.c	/^STATE ReadFile(int fd,BYTE buf[], DWORD length)$/;"	f
+ReadRecord	kernel/base.c	/^STATE ReadRecord(DWORD parentCluster,PCHAR name,PRecord record,PDWORD sectorIndex,PDWORD off_in_sector)$/;"	f
+ReadSector	boot/floppy/boot.asm	/^ReadSector:$/;"	l
+ReadSector	boot/floppy/loader.asm	/^ReadSector:$/;"	l
+ReadSector	boot/grub/boot.asm	/^ReadSector:$/;"	l
+ReadSector	boot/grub/loader.asm	/^ReadSector:$/;"	l
+ReadSector	boot/mbr/boot.asm	/^ReadSector:$/;"	l
+ReadSector	boot/mbr/loader.asm	/^ReadSector:$/;"	l
+ReadSector	boot/mbr/mbr.asm	/^ReadSector:$/;"	l
+ReadSector	kernel/base.c	/^void ReadSector(BYTE* buf,DWORD sectorIndex)$/;"	f
+Record	include/fat32.h	/^}Record,*PRecord;$/;"	t	typeref:struct:__anon7
+Reserved_Sector	kernel/base.c	/^WORD  Reserved_Sector=0;\/\/保留扇区数，当载入磁盘时，才从DBR中读取。$/;"	v
+SA_RPL0	include/protect.h	120;"	d
+SA_RPL1	include/protect.h	121;"	d
+SA_RPL2	include/protect.h	122;"	d
+SA_RPL3	include/protect.h	123;"	d
+SA_RPL_MASK	include/protect.h	119;"	d
+SA_TIG	include/protect.h	126;"	d
+SA_TIL	include/protect.h	127;"	d
+SA_TI_MASK	include/protect.h	125;"	d
+SCROLL_LOCK	include/keyboard.h	58;"	d
+SCR_DN	include/console.h	31;"	d
+SCR_SIZE	include/console.h	33;"	d
+SCR_UP	include/console.h	30;"	d
+SCR_WIDTH	include/console.h	34;"	d
+SECONDARY_IRQ	include/const.h	76;"	d
+SECONDARY_MASTER	include/fs_const.h	83;"	d
+SECONDARY_SLAVE	include/fs_const.h	84;"	d
+SECTOR_BITS	include/fs_const.h	38;"	d
+SECTOR_SIZE	include/fs_const.h	37;"	d
+SECTOR_SIZE_SHIFT	include/fs_const.h	39;"	d
+SEEK_CUR	include/fs.h	16;"	d
+SEEK_CUR	include/stdio.h	31;"	d
+SEEK_END	include/fs.h	17;"	d
+SEEK_END	include/stdio.h	32;"	d
+SEEK_SET	include/fs.h	15;"	d
+SEEK_SET	include/stdio.h	30;"	d
+SELECTOR_DUMMY	include/protect.h	75;"	d
+SELECTOR_FLAT_C	include/protect.h	76;"	d
+SELECTOR_FLAT_RW	include/protect.h	77;"	d
+SELECTOR_KERNEL_CS	include/protect.h	82;"	d
+SELECTOR_KERNEL_DS	include/protect.h	83;"	d
+SELECTOR_KERNEL_GS	include/protect.h	84;"	d
+SELECTOR_LDT_FIRST	include/protect.h	80;"	d
+SELECTOR_TSS	include/protect.h	79;"	d
+SELECTOR_VIDEO	include/protect.h	78;"	d
+SHIFT_L	include/keyboard.h	48;"	d
+SHIFT_R	include/keyboard.h	49;"	d
+SLEEP	include/keyboard.h	90;"	d
+SLEEPING	include/proc.h	/^enum proc_stat	{IDLE,READY,SLEEPING,KILLED};	\/* add KILLED state. when a process's state is KILLED, the process$/;"	e	enum:proc_stat
+SSREG	include/proc.h	37;"	d
+STACK_ADDR	boot/grub/boot.asm	/^STACK_ADDR  		equ  	0x7bea 		; 堆栈栈顶$/;"	d
+STACK_ADDR	boot/mbr/boot.asm	/^STACK_ADDR  		equ  	0x7bea 		; 堆栈栈顶$/;"	d
+STACK_FRAME	include/proc.h	/^}STACK_FRAME;$/;"	t	typeref:struct:s_stackframe
+STACK_SIZE_TASK	include/proc.h	170;"	d
+START	boot/grub/boot.asm	/^START:	$/;"	l
+START	boot/mbr/boot.asm	/^START:	$/;"	l
+START_ADDR_H	include/const.h	175;"	d
+START_ADDR_L	include/const.h	176;"	d
+START_O	user/makefile	/^START_O 	= initstart.o$/;"	m
+STAT	include/type.h	/^	OPEN, CLOSE, READ, WRITE, LSEEK, STAT, UNLINK,$/;"	e	enum:msgtype
+STATE	include/fat32.h	/^typedef int STATE;\/\/函数返回状态$/;"	t
+STATUS_BSY	include/hd.h	178;"	d
+STATUS_CORR	include/hd.h	183;"	d
+STATUS_DFSE	include/hd.h	180;"	d
+STATUS_DRDY	include/hd.h	179;"	d
+STATUS_DRQ	include/hd.h	182;"	d
+STATUS_DSC	include/hd.h	181;"	d
+STATUS_ERR	include/hd.h	185;"	d
+STATUS_IDX	include/hd.h	184;"	d
+STD_ERR	include/const.h	184;"	d
+STD_IN	include/const.h	182;"	d
+STD_OUT	include/const.h	183;"	d
+SUPER_BLOCK_ADDR	init/makefile	/^SUPER_BLOCK_ADDR = $(shell echo $$((($(PART_START_SECTOR)+1)*512)))$/;"	m
+SUPER_BLOCK_ADDR	user/makefile	/^SUPER_BLOCK_ADDR = $(shell echo $$((($(PART_START_SECTOR)+1)*512)))$/;"	m
+SUPER_BLOCK_SIZE	include/fs_misc.h	61;"	d
+SYSERROR	include/fat32.h	12;"	d
+SecOffset_EXT	boot/mbr/mbr.asm	/^SecOffset_EXT 	dd 	0 ;modifed by mingxuan 2020-9-29$/;"	d
+SecOffset_SELF	boot/mbr/mbr.asm	/^SecOffset_SELF 	dd 	0 ;modifed by mingxuan 2020-9-29$/;"	d
+Sectors_Per_Cluster	kernel/base.c	/^BYTE  Sectors_Per_Cluster=0;\/\/每个簇的扇区数，当载入磁盘时，才从DBR中读取。$/;"	v
+Sectors_Per_FAT	kernel/base.c	/^DWORD Sectors_Per_FAT=0;\/\/每个FAT所占的扇区数，当载入磁盘时，才从DBR中读取。$/;"	v
+SelectorFlatC	boot/floppy/loader.asm	/^SelectorFlatC		equ	LABEL_DESC_FLAT_C	- LABEL_GDT$/;"	d
+SelectorFlatC	boot/grub/loader.asm	/^SelectorFlatC		equ	LABEL_DESC_FLAT_C	- LABEL_GDT$/;"	d
+SelectorFlatC	boot/mbr/loader.asm	/^SelectorFlatC		equ	LABEL_DESC_FLAT_C	- LABEL_GDT$/;"	d
+SelectorFlatRW	boot/floppy/loader.asm	/^SelectorFlatRW		equ	LABEL_DESC_FLAT_RW	- LABEL_GDT$/;"	d
+SelectorFlatRW	boot/grub/loader.asm	/^SelectorFlatRW		equ	LABEL_DESC_FLAT_RW	- LABEL_GDT$/;"	d
+SelectorFlatRW	boot/mbr/loader.asm	/^SelectorFlatRW		equ	LABEL_DESC_FLAT_RW	- LABEL_GDT$/;"	d
+SelectorVideo	boot/floppy/loader.asm	/^SelectorVideo		equ	LABEL_DESC_VIDEO	- LABEL_GDT + SA_RPL3$/;"	d
+SelectorVideo	boot/grub/loader.asm	/^SelectorVideo		equ	LABEL_DESC_VIDEO	- LABEL_GDT + SA_RPL3$/;"	d
+SelectorVideo	boot/mbr/loader.asm	/^SelectorVideo		equ	LABEL_DESC_VIDEO	- LABEL_GDT + SA_RPL3$/;"	d
+SetupPaging	boot/floppy/loader.asm	/^SetupPaging:$/;"	l
+SetupPaging	boot/grub/loader.asm	/^SetupPaging:$/;"	l
+SetupPaging	boot/mbr/loader.asm	/^SetupPaging:$/;"	l
+SharePageBase	include/const.h	109;"	d
+SharePageLimit	include/const.h	110;"	d
+StackLinBase	include/const.h	114;"	d
+StackLinLimitMAX	include/const.h	113;"	d
+StackSpace	boot/floppy/loader.asm	/^StackSpace:	times	1000h	db	0$/;"	l
+StackSpace	boot/grub/loader.asm	/^StackSpace:	times	1000h	db	0$/;"	l
+StackSpace	boot/mbr/loader.asm	/^StackSpace:	times	1000h	db	0$/;"	l
+StackSpace	kernel/kernel.asm	/^StackSpace		resb	2 * 1024$/;"	l
+StackTop	kernel/kernel.asm	/^StackTop:		; used only as irq-stack in minios. added by xw$/;"	l
+TAB	include/keyboard.h	39;"	d
+TAR_NAME	init/makefile	/^TAR_NAME = app.tar$/;"	m
+TAR_NAME	user/makefile	/^TAR_NAME = app.tar$/;"	m
+TASK	include/proc.h	/^}TASK;$/;"	t	typeref:struct:s_task
+TEST	include/memman.h	17;"	d
+TIMER0	include/const.h	62;"	d
+TIMER_FREQ	include/const.h	67;"	d
+TIMER_MODE	include/const.h	63;"	d
+TOLOWER	include/stdio.h	57;"	d
+TREE_INFO	include/proc.h	/^}TREE_INFO;$/;"	t	typeref:struct:s_tree_info
+TRUE	include/const.h	39;"	d
+TRUE	include/fat32.h	8;"	d
+TSS	include/protect.h	/^}TSS;$/;"	t	typeref:struct:s_tss
+TTY	include/tty.h	/^}TTY;$/;"	t	typeref:struct:s_tty
+TTY_END	kernel/keyboard.c	52;"	d	file:
+TTY_END	kernel/tty.c	95;"	d	file:
+TTY_FIRST	kernel/keyboard.c	51;"	d	file:
+TTY_FIRST	kernel/tty.c	94;"	d	file:
+TTY_FS_TYPE	include/hd.h	253;"	d
+TTY_IN_BYTES	include/tty.h	18;"	d
+TTY_OUT_BUF_LEN	include/tty.h	19;"	d
+TTY_STATE_DISPLAY	include/tty.h	28;"	d
+TTY_STATE_WAIT_ENTER	include/tty.h	26;"	d
+TTY_STATE_WAIT_SPACE	include/tty.h	27;"	d
+TYPE_PROCESS	include/proc.h	64;"	d
+TYPE_THREAD	include/proc.h	65;"	d
+TextLinBase	include/const.h	103;"	d
+TextLinLimitMAX	include/const.h	104;"	d
+TimeToBytes	kernel/assist.c	/^void TimeToBytes(WORD result[])\/\/t是一个WORD类型的数组，长度为2，第0个元素为日期，第1个元素为时间$/;"	f
+ToFullPath	kernel/assist.c	/^void ToFullPath(PCHAR path,PCHAR fullpath)$/;"	f
+TopOfStack	boot/floppy/loader.asm	/^TopOfStack	equ	BaseOfLoaderPhyAddr + $	; 栈顶$/;"	d
+TopOfStack	boot/grub/loader.asm	/^TopOfStack	equ	BaseOfLoaderPhyAddr + $	; 栈顶$/;"	d
+TopOfStack	boot/mbr/loader.asm	/^TopOfStack	equ	BaseOfLoaderPhyAddr + $	; 栈顶$/;"	d
+TotalSectors	kernel/base.c	/^DWORD TotalSectors=0;\/\/总扇区数，当载入磁盘时，才从DBR中读取。$/;"	v
+UINT	include/fat32.h	/^typedef unsigned int    UINT;\/\/无符号整型$/;"	t
+UNLINK	include/type.h	/^	OPEN, CLOSE, READ, WRITE, LSEEK, STAT, UNLINK,$/;"	e	enum:msgtype
+UP	include/keyboard.h	83;"	d
+UWALL	include/memman.h	14;"	d
+VDISKERROR	include/fat32.h	13;"	d
+VDiskPath	kernel/fat32.c	/^CHAR VDiskPath[256]={0};$/;"	v
+V_MEM_BASE	include/const.h	179;"	d
+V_MEM_SIZE	include/const.h	180;"	d
+VpageLinBase	include/const.h	107;"	d
+VpageLinLimitMAX	include/const.h	108;"	d
+W	include/fat32.h	21;"	d
+WAKE	include/keyboard.h	91;"	d
+WALL	include/memman.h	13;"	d
+WHENCE	include/fs_const.h	26;"	d
+WHITE	include/const.h	23;"	d
+WORD	include/fat32.h	/^typedef unsigned short  WORD;\/\/双字节$/;"	t
+WRITE	include/type.h	/^	OPEN, CLOSE, READ, WRITE, LSEEK, STAT, UNLINK,$/;"	e	enum:msgtype
+WRONGPATH	include/fat32.h	15;"	d
+WR_SECT	include/fs_misc.h	149;"	d
+WR_SECT_FAT	include/fs_misc.h	183;"	d
+WR_SECT_SCHED	include/fs_misc.h	200;"	d
+WR_SECT_SCHED_FAT	include/fs_misc.h	235;"	d
+WriteFAT	kernel/base.c	/^STATE WriteFAT(DWORD totalclusters,PDWORD clusters)$/;"	f
+WriteFile	kernel/fat32.c	/^STATE WriteFile(int fd,BYTE buf[],DWORD length)$/;"	f
+WriteRecord	kernel/base.c	/^STATE WriteRecord(Record record,DWORD sectorIndex,DWORD off_in_sector)$/;"	f
+WriteSector	kernel/base.c	/^void WriteSector(BYTE* buf,DWORD sectorIndex)$/;"	f
+XT_WINI_IRQ	include/const.h	78;"	d
+_ARDStruct	boot/floppy/loader.asm	/^_ARDStruct:			; Address Range Descriptor Structure$/;"	l
+_ARDStruct	boot/grub/loader.asm	/^_ARDStruct:			; Address Range Descriptor Structure$/;"	l
+_ARDStruct	boot/mbr/loader.asm	/^_ARDStruct:			; Address Range Descriptor Structure$/;"	l
+_CHECK_NEXT_ROOT_CLUSTER	boot/grub/boot.asm	/^_CHECK_NEXT_ROOT_CLUSTER:$/;"	l
+_CHECK_NEXT_ROOT_CLUSTER	boot/grub/loader.asm	/^_CHECK_NEXT_ROOT_CLUSTER:$/;"	l
+_CHECK_NEXT_ROOT_CLUSTER	boot/mbr/boot.asm	/^_CHECK_NEXT_ROOT_CLUSTER: ; 检查是否还有下一个簇$/;"	l
+_CHECK_NEXT_ROOT_CLUSTER	boot/mbr/loader.asm	/^_CHECK_NEXT_ROOT_CLUSTER:$/;"	l
+_DISK_ERROR	boot/grub/boot.asm	/^_DISK_ERROR:      ; 显示磁盘错误信息   $/;"	l
+_DISK_ERROR	boot/grub/loader.asm	/^_DISK_ERROR:$/;"	l
+_DISK_ERROR	boot/mbr/boot.asm	/^_DISK_ERROR:      	 ; 显示磁盘错误信息$/;"	l
+_DISK_ERROR	boot/mbr/loader.asm	/^_DISK_ERROR:$/;"	l
+_FOUND_KERNEL	boot/mbr/loader.asm	/^_FOUND_KERNEL: ;modified by mingxuan 2020-9-16$/;"	l
+_FOUND_LOADER	boot/grub/boot.asm	/^_FOUND_LOADER:$/;"	l
+_FOUND_LOADER	boot/grub/loader.asm	/^_FOUND_LOADER:$/;"	l
+_FOUND_LOADER	boot/mbr/boot.asm	/^_FOUND_LOADER:$/;"	l
+_INTSIZEOF	include/stdio.h	51;"	d
+_MISSING_KERNEL	boot/mbr/loader.asm	/^_MISSING_KERNEL:	;modified by mingxuan 2020-9-16$/;"	l
+_MISSING_LOADER	boot/grub/boot.asm	/^_MISSING_LOADER:     ; 显示没有装载程序$/;"	l
+_MISSING_LOADER	boot/grub/loader.asm	/^_MISSING_LOADER:$/;"	l
+_MISSING_LOADER	boot/mbr/boot.asm	/^_MISSING_LOADER:     ; 显示没有装载程序$/;"	l
+_MemChkBuf	boot/floppy/loader.asm	/^_MemChkBuf:	times	256	db	0$/;"	l
+_MemChkBuf	boot/grub/loader.asm	/^_MemChkBuf:	times	256	db	0$/;"	l
+_MemChkBuf	boot/mbr/loader.asm	/^_MemChkBuf:	times	256	db	0$/;"	l
+_NEXT_DATA_CLUSTER	boot/grub/boot.asm	/^_NEXT_DATA_CLUSTER:$/;"	l
+_NEXT_DATA_CLUSTER	boot/grub/loader.asm	/^_NEXT_DATA_CLUSTER:$/;"	l
+_NEXT_DATA_CLUSTER	boot/mbr/boot.asm	/^_NEXT_DATA_CLUSTER:$/;"	l
+_NEXT_DATA_CLUSTER	boot/mbr/loader.asm	/^_NEXT_DATA_CLUSTER:$/;"	l
+_NEXT_DATA_SECTOR	boot/grub/boot.asm	/^_NEXT_DATA_SECTOR:$/;"	l
+_NEXT_DATA_SECTOR	boot/grub/loader.asm	/^_NEXT_DATA_SECTOR:$/;"	l
+_NEXT_DATA_SECTOR	boot/mbr/boot.asm	/^_NEXT_DATA_SECTOR:$/;"	l
+_NEXT_DATA_SECTOR	boot/mbr/loader.asm	/^_NEXT_DATA_SECTOR:$/;"	l
+_NEXT_ROOT_CLUSTER	boot/grub/boot.asm	/^_NEXT_ROOT_CLUSTER:$/;"	l
+_NEXT_ROOT_CLUSTER	boot/grub/loader.asm	/^_NEXT_ROOT_CLUSTER:$/;"	l
+_NEXT_ROOT_CLUSTER	boot/mbr/boot.asm	/^_NEXT_ROOT_CLUSTER:$/;"	l
+_NEXT_ROOT_CLUSTER	boot/mbr/loader.asm	/^_NEXT_ROOT_CLUSTER:$/;"	l
+_NEXT_ROOT_ENTRY	boot/grub/boot.asm	/^_NEXT_ROOT_ENTRY:$/;"	l
+_NEXT_ROOT_ENTRY	boot/grub/loader.asm	/^_NEXT_ROOT_ENTRY:$/;"	l
+_NEXT_ROOT_ENTRY	boot/mbr/boot.asm	/^_NEXT_ROOT_ENTRY:$/;"	l
+_NEXT_ROOT_ENTRY	boot/mbr/loader.asm	/^_NEXT_ROOT_ENTRY:$/;"	l
+_NEXT_ROOT_SECTOR	boot/grub/boot.asm	/^_NEXT_ROOT_SECTOR:$/;"	l
+_NEXT_ROOT_SECTOR	boot/grub/loader.asm	/^_NEXT_ROOT_SECTOR:$/;"	l
+_NEXT_ROOT_SECTOR	boot/mbr/boot.asm	/^_NEXT_ROOT_SECTOR:$/;"	l
+_NEXT_ROOT_SECTOR	boot/mbr/loader.asm	/^_NEXT_ROOT_SECTOR:$/;"	l
+_NR_ARGV	include/shell.h	4;"	d
+_NR_close	kernel/syscall.asm	/^_NR_close			equ 18 ;	\/\/added by xw, 18\/6\/18$/;"	d
+_NR_create	kernel/syscall.asm	/^_NR_create			equ 23 ;    \/\/added by mingxuan 2019-5-17$/;"	d
+_NR_createdir	kernel/syscall.asm	/^_NR_createdir  		equ 26 ;    \/\/added by mingxuan 2019-5-17$/;"	d
+_NR_delete	kernel/syscall.asm	/^_NR_delete 			equ 24 ;    \/\/added by mingxuan 2019-5-17$/;"	d
+_NR_deletedir	kernel/syscall.asm	/^_NR_deletedir   	equ 27 ;    \/\/added by mingxuan 2019-5-17$/;"	d
+_NR_exec	kernel/syscall.asm	/^_NR_exec     		equ 12 ;	\/\/add by visual 2016.5.16$/;"	d
+_NR_fork	kernel/syscall.asm	/^_NR_fork     		equ 8 ;	\/\/add by visual 2016.4.8$/;"	d
+_NR_free	kernel/syscall.asm	/^_NR_free      		equ 6 ;	\/\/add by visual 2016.4.7$/;"	d
+_NR_free_4k	kernel/syscall.asm	/^_NR_free_4k      	equ 7 ;	\/\/add by visual 2016.4.7$/;"	d
+_NR_get_pid	kernel/syscall.asm	/^_NR_get_pid       	equ 1 ;	\/\/add by visual 2016.4.6$/;"	d
+_NR_get_ticks	kernel/syscall.asm	/^_NR_get_ticks       equ 0 ; 要跟 global.c 中 sys_call_table 的定义相对应！$/;"	d
+_NR_kmalloc	kernel/syscall.asm	/^_NR_kmalloc       	equ 2 ;	\/\/add by visual 2016.4.6$/;"	d
+_NR_kmalloc_4k	kernel/syscall.asm	/^_NR_kmalloc_4k      equ 3 ;	\/\/add by visual 2016.4.7$/;"	d
+_NR_lseek	kernel/syscall.asm	/^_NR_lseek			equ 21 ;	\/\/added by xw, 18\/6\/18$/;"	d
+_NR_malloc	kernel/syscall.asm	/^_NR_malloc      	equ 4 ;	\/\/add by visual 2016.4.7$/;"	d
+_NR_malloc_4k	kernel/syscall.asm	/^_NR_malloc_4k      	equ 5 ;	\/\/add by visual 2016.4.7$/;"	d
+_NR_open	kernel/syscall.asm	/^_NR_open			equ 17 ;	\/\/added by xw, 18\/6\/18$/;"	d
+_NR_opendir	kernel/syscall.asm	/^_NR_opendir 		equ 25 ;    \/\/added by mingxuan 2019-5-17$/;"	d
+_NR_print_E	kernel/syscall.asm	/^_NR_print_E			equ 15 ;	\/\/added by xw, 18\/4\/27$/;"	d
+_NR_print_F	kernel/syscall.asm	/^_NR_print_F			equ 16 ;	\/\/added by xw, 18\/4\/27$/;"	d
+_NR_pthread	kernel/syscall.asm	/^_NR_pthread     	equ 9 ;	\/\/add by visual 2016.4.11$/;"	d
+_NR_read	kernel/syscall.asm	/^_NR_read			equ 19 ;	\/\/added by xw, 18\/6\/18$/;"	d
+_NR_sleep	kernel/syscall.asm	/^_NR_sleep			equ 14 ;	\/\/added by xw, 17\/12$/;"	d
+_NR_udisp_int	kernel/syscall.asm	/^_NR_udisp_int     	equ 10 ;	\/\/add by visual 2016.5.16$/;"	d
+_NR_udisp_str	kernel/syscall.asm	/^_NR_udisp_str     	equ 11 ;	\/\/add by visual 2016.5.16$/;"	d
+_NR_unlink	kernel/syscall.asm	/^_NR_unlink			equ 22 ;	\/\/added by xw, 18\/6\/18$/;"	d
+_NR_write	kernel/syscall.asm	/^_NR_write			equ 20 ;	\/\/added by xw, 18\/6\/18$/;"	d
+_NR_yield	kernel/syscall.asm	/^_NR_yield			equ 13 ;	\/\/added by xw, 17\/12$/;"	d
+_ORANGES_CONSOLE_H_	include/console.h	15;"	d
+_ORANGES_CONST_H_	include/const.h	9;"	d
+_ORANGES_HD_H_	include/hd.h	11;"	d
+_ORANGES_KEYBOARD_H_	include/keyboard.h	11;"	d
+_ORANGES_KEYMAP_H_	include/keymap.h	2;"	d
+_ORANGES_PROTECT_H_	include/protect.h	9;"	d
+_ORANGES_TTY_H_	include/tty.h	15;"	d
+_ORANGES_TYPE_H_	include/type.h	9;"	d
+_RUN_LOADER	boot/grub/boot.asm	/^_RUN_LOADER: $/;"	l
+_RUN_LOADER	boot/mbr/boot.asm	/^_RUN_LOADER: $/;"	l
+_SEARCH_KERNEL	boot/mbr/loader.asm	/^_SEARCH_KERNEL:		;modified by mingxuan 2020-9-16$/;"	l
+_SEARCH_LOADER	boot/grub/boot.asm	/^_SEARCH_LOADER:$/;"	l
+_SEARCH_LOADER	boot/grub/loader.asm	/^_SEARCH_LOADER:$/;"	l
+_SEARCH_LOADER	boot/mbr/boot.asm	/^_SEARCH_LOADER:$/;"	l
+_SHELL_H	include/shell.h	2;"	d
+_STDIO_H_	include/stdio.h	8;"	d
+__TTY_DEBUG__	kernel/console.c	14;"	d	file:
+_dwBaseAddrHigh	boot/floppy/loader.asm	/^	_dwBaseAddrHigh:	dd	0$/;"	d
+_dwBaseAddrHigh	boot/grub/loader.asm	/^	_dwBaseAddrHigh:	dd	0$/;"	d
+_dwBaseAddrHigh	boot/mbr/loader.asm	/^	_dwBaseAddrHigh:	dd	0$/;"	d
+_dwBaseAddrLow	boot/floppy/loader.asm	/^	_dwBaseAddrLow:		dd	0$/;"	d
+_dwBaseAddrLow	boot/grub/loader.asm	/^	_dwBaseAddrLow:		dd	0$/;"	d
+_dwBaseAddrLow	boot/mbr/loader.asm	/^	_dwBaseAddrLow:		dd	0$/;"	d
+_dwDispPos	boot/floppy/loader.asm	/^_dwDispPos:			dd	(80 * 6 + 0) * 2	; 屏幕第 6 行, 第 0 列。$/;"	d
+_dwDispPos	boot/grub/loader.asm	/^_dwDispPos:			dd	(80 * 6 + 0) * 2	; 屏幕第 6 行, 第 0 列。$/;"	d
+_dwDispPos	boot/mbr/loader.asm	/^_dwDispPos:			dd	(80 * 6 + 0) * 2	; 屏幕第 6 行, 第 0 列。$/;"	d
+_dwEchoSize	boot/floppy/loader.asm	/^_dwEchoSize		dd	0		;echo size    add by liang 2016.04.20$/;"	d
+_dwEchoSize	boot/grub/loader.asm	/^_dwEchoSize		dd	0		;echo size    add by liang 2016.04.20$/;"	d
+_dwEchoSize	boot/mbr/loader.asm	/^_dwEchoSize		dd	0		;echo size    add by liang 2016.04.20$/;"	d
+_dwFMINumber	boot/floppy/loader.asm	/^_dwFMINumber:			dd	0		;add by liang 2016.04.13$/;"	d
+_dwFMINumber	boot/grub/loader.asm	/^_dwFMINumber:			dd	0		;add by liang 2016.04.13$/;"	d
+_dwFMINumber	boot/mbr/loader.asm	/^_dwFMINumber:			dd	0		;add by liang 2016.04.13$/;"	d
+_dwLengthHigh	boot/floppy/loader.asm	/^	_dwLengthHigh:		dd	0$/;"	d
+_dwLengthHigh	boot/grub/loader.asm	/^	_dwLengthHigh:		dd	0$/;"	d
+_dwLengthHigh	boot/mbr/loader.asm	/^	_dwLengthHigh:		dd	0$/;"	d
+_dwLengthLow	boot/floppy/loader.asm	/^	_dwLengthLow:		dd	0$/;"	d
+_dwLengthLow	boot/grub/loader.asm	/^	_dwLengthLow:		dd	0$/;"	d
+_dwLengthLow	boot/mbr/loader.asm	/^	_dwLengthLow:		dd	0$/;"	d
+_dwMCRNumber	boot/floppy/loader.asm	/^_dwMCRNumber:			dd	0	; Memory Check Result$/;"	d
+_dwMCRNumber	boot/grub/loader.asm	/^_dwMCRNumber:			dd	0	; Memory Check Result$/;"	d
+_dwMCRNumber	boot/mbr/loader.asm	/^_dwMCRNumber:			dd	0	; Memory Check Result$/;"	d
+_dwMemSize	boot/floppy/loader.asm	/^_dwMemSize:			dd	0$/;"	d
+_dwMemSize	boot/grub/loader.asm	/^_dwMemSize:			dd	0$/;"	d
+_dwMemSize	boot/mbr/loader.asm	/^_dwMemSize:			dd	0$/;"	d
+_dwType	boot/floppy/loader.asm	/^	_dwType:		dd	0$/;"	d
+_dwType	boot/grub/loader.asm	/^	_dwType:		dd	0$/;"	d
+_dwType	boot/mbr/loader.asm	/^	_dwType:		dd	0$/;"	d
+_start	command/start.asm	/^_start:$/;"	l
+_start	init/initstart.asm	/^_start:$/;"	l
+_start	kernel/kernel.asm	/^_start:$/;"	l
+_start	user/initstart.asm	/^_start:$/;"	l
+_szMemChkTitle	boot/floppy/loader.asm	/^_szMemChkTitle:			db	"BaseAddrL BaseAddrH LengthLow LengthHigh   Type", 0Ah, 0$/;"	d
+_szMemChkTitle	boot/grub/loader.asm	/^_szMemChkTitle:			db	"BaseAddrL BaseAddrH LengthLow LengthHigh   Type", 0Ah, 0$/;"	d
+_szMemChkTitle	boot/mbr/loader.asm	/^_szMemChkTitle:			db	"BaseAddrL BaseAddrH LengthLow LengthHigh   Type", 0Ah, 0$/;"	d
+_szRAMSize	boot/floppy/loader.asm	/^_szRAMSize:			db	"RAM size:", 0$/;"	d
+_szRAMSize	boot/grub/loader.asm	/^_szRAMSize:			db	"RAM size:", 0$/;"	d
+_szRAMSize	boot/mbr/loader.asm	/^_szRAMSize:			db	"RAM size:", 0$/;"	d
+_szReturn	boot/floppy/loader.asm	/^_szReturn:			db	0Ah, 0$/;"	d
+_szReturn	boot/grub/loader.asm	/^_szReturn:			db	0Ah, 0$/;"	d
+_szReturn	boot/mbr/loader.asm	/^_szReturn:			db	0Ah, 0$/;"	d
+_unused	include/fs_misc.h	/^	u8	_unused[16];	\/**< Stuff for alignment *\/$/;"	m	struct:inode
+acquire	kernel/spinlock.c	/^acquire(struct spinlock *lock)$/;"	f
+addr	include/global.h	/^	u32	addr;$/;"	m	struct:memfree
+addr	include/memman.h	/^	u32 addr,size;$/;"	m	struct:FREEINFO
+alloc_PCB	kernel/proc.c	/^PUBLIC PROCESS* alloc_PCB()$/;"	f
+alloc_imap_bit	kernel/fs.c	/^PRIVATE int alloc_imap_bit(int dev)$/;"	f
+alloc_smap_bit	kernel/fs.c	/^PRIVATE int alloc_smap_bit(int dev, int nr_sects_to_alloc)$/;"	f
+alt_l	kernel/keyboard.c	/^PRIVATE	int		alt_l;		\/* l alt state		*\/$/;"	v
+alt_r	kernel/keyboard.c	/^PRIVATE	int		alt_r;		\/* r left state		*\/$/;"	v
+arg_lin_base	include/proc.h	/^	u32 arg_lin_base;						\/\/参数内存基址$/;"	m	struct:s_lin_memmap
+arg_lin_limit	include/proc.h	/^	u32 arg_lin_limit;						\/\/参数内存界限$/;"	m	struct:s_lin_memmap
+argc	include/shell.h	/^int argc;$/;"	v
+argv	include/shell.h	/^char argv[_NR_ARGV][LENGTH_OF_ARGV];$/;"	v
+atoi	lib/vsprintf.c	/^int  atoi(const     char  *nptr)$/;"	f
+attr	include/protect.h	/^	u8	attr;		\/* P(1) DPL(2) DT(1) TYPE(4) *\/$/;"	m	struct:s_gate
+attr1	include/protect.h	/^	u8	attr1;			\/* P(1) DPL(2) DT(1) TYPE(4) *\/$/;"	m	struct:s_descriptor
+bOdd	boot/floppy/boot.asm	/^bOdd			db	0		; 奇数还是偶数$/;"	d
+bOdd	boot/floppy/loader.asm	/^bOdd			db	0		; 奇数还是偶数$/;"	d
+bOdd	boot/grub/loader.asm	/^bOdd			db	0		; 奇数还是偶数$/;"	d
+bOdd	boot/mbr/loader.asm	/^bOdd			db	0		; 奇数还是偶数$/;"	d
+backlink	include/protect.h	/^	u32	backlink;$/;"	m	struct:s_tss
+base	include/fat32.h	/^	DArrayElem *base;\/\/数组基地址$/;"	m	struct:__anon11
+base	include/hd.h	/^	u32	base;		\/* # of start sector (NOT byte offset, but SECTOR) *\/$/;"	m	struct:part_info
+base_high	include/protect.h	/^	u8	base_high;		\/* Base *\/$/;"	m	struct:s_descriptor
+base_low	include/protect.h	/^	u16	base_low;		\/* Base *\/$/;"	m	struct:s_descriptor
+base_mid	include/protect.h	/^	u8	base_mid;		\/* Base *\/$/;"	m	struct:s_descriptor
+bits	command/start.asm	/^bits 32$/;"	l
+bits	init/initstart.asm	/^bits 32$/;"	l
+bits	kernel/kernel.asm	/^bits 32$/;"	l
+bits	kernel/syscall.asm	/^bits 32$/;"	l
+bits	user/initstart.asm	/^bits 32$/;"	l
+boot_ind	include/hd.h	/^	u8 boot_ind;		\/**$/;"	m	struct:part_ent
+bounds_check	kernel/kernel.asm	/^bounds_check:					; vector_no	= 5$/;"	l
+breakpoint_exception	kernel/kernel.asm	/^breakpoint_exception:			; vector_no	= 3$/;"	l
+buf	include/keyboard.h	/^	u8	buf[KB_IN_BYTES];$/;"	m	struct:kb_inbuf
+buf	include/keyboard.h	/^	u8 buf[MOUSE_IN_BYTES];$/;"	m	struct:mouse_inbuf
+buf	kernel/fat32.c	/^u8* buf;$/;"	v
+capacity	include/fat32.h	/^	UINT capacity;\/\/数组的总容量$/;"	m	struct:__anon11
+caps_lock	kernel/keyboard.c	/^PRIVATE	int		caps_lock;	\/* Caps Lock		*\/$/;"	v
+channel	include/proc.h	/^	void* channel;			\/*if non-zero, sleeping on channel, which is a pointer of the target field$/;"	m	struct:s_proc
+child_p_num	include/proc.h	/^	int child_p_num;	\/\/子进程数量$/;"	m	struct:s_tree_info
+child_process	include/proc.h	/^	int child_process[NR_CHILD_MAX];\/\/子进程列表$/;"	m	struct:s_tree_info
+child_t_num	include/proc.h	/^	int child_t_num;		\/\/子线程数量$/;"	m	struct:s_tree_info
+child_thread	include/proc.h	/^	int child_thread[NR_CHILD_MAX];\/\/子线程列表	$/;"	m	struct:s_tree_info
+chksum	kernel/ktest.c	/^	char chksum[8];		\/* 148 *\/$/;"	m	struct:posix_tar_header	file:
+clear_kernel_pagepte_low	kernel/pagetbl.c	/^void clear_kernel_pagepte_low()$/;"	f
+clear_screen	kernel/console.c	/^PRIVATE void clear_screen(int pos, int len)$/;"	f
+clock_handler	kernel/clock.c	/^PUBLIC void clock_handler(int irq)$/;"	f
+clock_int_msg	kernel/kernel.asm	/^clock_int_msg		db	"^", 0$/;"	d
+close	include/vfs.h	/^	int (*close)   (int);$/;"	m	struct:file_op
+close	kernel/syscall.asm	/^close:$/;"	l
+cmpxchg	kernel/spinlock.c	/^cmpxchg(uint oldval, uint newval, volatile uint* lock_addr)$/;"	f	file:
+code_with_E0	kernel/keyboard.c	/^PRIVATE	int		code_with_E0;$/;"	v
+column	kernel/keyboard.c	/^PRIVATE	int		column;$/;"	v
+command	include/hd.h	/^	u8	command;$/;"	m	struct:hd_cmd
+con_size	include/console.h	/^	unsigned int	con_size;   \/* how many words does the console have *\/$/;"	m	struct:s_console
+console	include/tty.h	/^	struct s_console *	console;$/;"	m	struct:s_tty	typeref:struct:s_tty::s_console
+console_table	kernel/global.c	/^PUBLIC CONSOLE console_table[NR_CONSOLES];	\/\/added by mingxuan 2019-5-19/;"	v
+contain	include/fat32.h	/^		UINT contain[2];\/\/目录中的文件个数和子目录的个数，当type为目录时有效$/;"	m	union:__anon12::__anon13
+copr_error	kernel/kernel.asm	/^copr_error:						; vector_no	= 16$/;"	l
+copr_not_available	kernel/kernel.asm	/^copr_not_available:				; vector_no	= 7$/;"	l
+copr_seg_overrun	kernel/kernel.asm	/^copr_seg_overrun:				; vector_no	= 9$/;"	l
+count	include/hd.h	/^	u8	count;$/;"	m	struct:hd_cmd
+count	include/keyboard.h	/^	int	count;	\/**< how many bytes to be handled in the buffer *\/$/;"	m	struct:kb_inbuf
+count	include/keyboard.h	/^	int count;$/;"	m	struct:mouse_inbuf
+cpu	include/spinlock.h	/^  int  cpu;      \/\/ The number of the cpu holding the lock.$/;"	m	struct:spinlock
+cpu_table	kernel/global.c	/^PUBLIC	PROCESS			cpu_table[NR_CPUS];$/;"	v
+cr2_count	kernel/pagetbl.c	/^u32 cr2_count = 0;$/;"	v
+cr2_save	kernel/pagetbl.c	/^u32 cr2_save;$/;"	v
+cr3	include/proc.h	/^	u32 cr3;						\/\/add by visual 2016.4.5$/;"	m	struct:s_proc
+cr3	include/protect.h	/^	u32	cr3;$/;"	m	struct:s_tss
+cr3_ready	include/global.h	/^EXTERN	u32 cr3_ready;		\/\/当前进程的页目录		add by visual 2016.4.5$/;"	v
+create	include/vfs.h	/^    int (*create)   (const char*);$/;"	m	struct:file_op
+create	kernel/syscall.asm	/^create:$/;"	l
+createDate	include/fat32.h	/^	WORD createDate;\/\/文件创建日期：占2个字节$/;"	m	struct:__anon7
+createMsecond	include/fat32.h	/^	BYTE createMsecond;\/\/创建时间的10毫秒位：占1个字节$/;"	m	struct:__anon7
+createTime	include/fat32.h	/^	CHAR  createTime[20];\/\/创建时间型如：yyyy-MM-dd hh:mm:ss类型$/;"	m	struct:__anon12
+createTime	include/fat32.h	/^	WORD createTime;\/\/文件创建时间：占2个字节$/;"	m	struct:__anon7
+create_file	kernel/fs.c	/^PRIVATE struct inode * create_file(char * path, int flags)$/;"	f
+createdir	include/vfs.h	/^	int (*createdir) (const char *);$/;"	m	struct:file_op
+createdir	kernel/syscall.asm	/^createdir:$/;"	l
+crtc_start	include/console.h	/^	unsigned int	crtc_start; \/* set CRTC start addr reg *\/$/;"	m	struct:s_console
+cs	include/proc.h	/^	u32	cs;			\/*  ┃						│			*\/$/;"	m	struct:s_stackframe
+cs	include/protect.h	/^	u32	cs;$/;"	m	struct:s_tss
+csinit	kernel/kernel.asm	/^csinit:		; “这个跳转指令强制使用刚刚初始化的结构”——<<OS:D&I 2nd>> P90.$/;"	l
+cstart	kernel/start.c	/^PUBLIC void cstart()$/;"	f
+ctrl_l	kernel/keyboard.c	/^PRIVATE	int		ctrl_l;		\/* l ctrl state		*\/$/;"	v
+ctrl_r	kernel/keyboard.c	/^PRIVATE	int		ctrl_r;		\/* l ctrl state		*\/$/;"	v
+cur_path	kernel/fat32.c	/^CHAR cur_path[256]={0};$/;"	v
+current_console	kernel/tty.c	/^PUBLIC  int current_console;  \/\/当前显示在屏幕上的console$/;"	v
+current_line	include/console.h	/^	unsigned int 	current_line;$/;"	m	struct:s_console
+cursor	include/console.h	/^	unsigned int	cursor;$/;"	m	struct:s_console
+data_hold	include/proc.h	/^	int data_hold;			\/\/是否拥有数据$/;"	m	struct:s_tree_info
+data_lin_base	include/proc.h	/^	u32 data_lin_base;						\/\/数据段基址$/;"	m	struct:s_lin_memmap
+data_lin_limit	include/proc.h	/^	u32 data_lin_limit;						\/\/数据段界限$/;"	m	struct:s_lin_memmap
+dcount	include/protect.h	/^	u8	dcount;		\/* 该字段只在调用门描述符中有效。$/;"	m	struct:s_gate
+debug	kernel/fat32.c	/^void debug(char * s) {$/;"	f
+dec	boot/floppy/boot.asm	/^	dec	dx					; ┛就跳到下一个 Sector$/;"	d
+dec	boot/floppy/boot.asm	/^dec	cx$/;"	l
+dec	boot/floppy/loader.asm	/^	dec	dx					; ┛$/;"	d
+dec	boot/grub/boot.asm	/^	dec	dl$/;"	d
+dec	boot/grub/loader.asm	/^	dec	dl$/;"	d
+dec	boot/mbr/boot.asm	/^	dec		dl$/;"	d
+dec	boot/mbr/loader.asm	/^	dec		dl$/;"	d
+dec	boot/mbr/loader.asm	/^	dec	dl$/;"	d
+deint	kernel/fat32.c	/^void deint(int t) {$/;"	f
+delay	lib/klib.c	/^PUBLIC void delay(int time)$/;"	f
+delete	kernel/syscall.asm	/^delete:$/;"	l
+deletedir	include/vfs.h	/^	int (*deletedir) (const char *);$/;"	m	struct:file_op
+deletedir	kernel/syscall.asm	/^deletedir:$/;"	l
+dev_drv_map	include/fs_misc.h	/^struct dev_drv_map {$/;"	s
+dev_index	include/fs_misc.h	/^	int 	dev_index;$/;"	m	struct:file_desc
+device	include/hd.h	/^	u8	device;$/;"	m	struct:hd_cmd
+devmajor	kernel/ktest.c	/^	char devmajor[8];	\/* 329 *\/$/;"	m	struct:posix_tar_header	file:
+devminor	kernel/ktest.c	/^	char devminor[8];	\/* 337 *\/$/;"	m	struct:posix_tar_header	file:
+dir_ent_fname_off	include/fs_misc.h	/^	u32	dir_ent_fname_off;\/**< Offset of `struct dir_entry::name' *\/$/;"	m	struct:super_block
+dir_ent_inode_off	include/fs_misc.h	/^	u32	dir_ent_inode_off;\/**< Offset of `struct dir_entry::inode_nr' *\/$/;"	m	struct:super_block
+dir_ent_size	include/fs_misc.h	/^	u32	dir_ent_size;     \/**< DIR_ENTRY_SIZE *\/$/;"	m	struct:super_block
+dir_entry	include/fs_misc.h	/^struct dir_entry {$/;"	s
+dis_already	lib/kliba.asm	/^dis_already:$/;"	l
+disable_0	lib/kliba.asm	/^disable_0:$/;"	l
+disable_8	lib/kliba.asm	/^disable_8:$/;"	l
+disable_int	lib/kliba.asm	/^disable_int:$/;"	l
+disable_irq	lib/kliba.asm	/^disable_irq:$/;"	l
+disp_Elf	kernel/elf.c	/^PUBLIC void disp_Elf(Elf32_Ehdr* Echo_Ehdr,Elf32_Phdr Echo_Phdr[])$/;"	f
+disp_color_str	lib/kliba.asm	/^disp_color_str:$/;"	l
+disp_free	kernel/memman.c	/^PUBLIC void disp_free()$/;"	f
+disp_int	lib/klib.c	/^PUBLIC void disp_int(int input)$/;"	f
+disp_pos	command/echo.c	/^int disp_pos;$/;"	v
+disp_pos	include/global.h	/^EXTERN	int		disp_pos;$/;"	v
+disp_str	lib/kliba.asm	/^disp_str:$/;"	l
+divide_error	kernel/kernel.asm	/^divide_error:					; vector_no	= 0$/;"	l
+divide_error_handler	kernel/protect.c	/^PUBLIC void divide_error_handler()$/;"	f
+do_close	kernel/fs.c	/^PRIVATE int do_close(int fd)$/;"	f
+do_free	kernel/memman.c	/^PUBLIC u32 do_free(u32 addr,u32 size)$/;"	f
+do_free_4k	kernel/memman.c	/^PUBLIC u32 do_free_4k(u32 addr)$/;"	f
+do_kmalloc	kernel/memman.c	/^PUBLIC u32 do_kmalloc(u32 size)$/;"	f
+do_kmalloc_4k	kernel/memman.c	/^PUBLIC u32 do_kmalloc_4k()$/;"	f
+do_lseek	kernel/fs.c	/^PRIVATE int do_lseek(MESSAGE *fs_msg)$/;"	f
+do_malloc	kernel/memman.c	/^PUBLIC u32 do_malloc(u32 size)$/;"	f
+do_malloc_4k	kernel/memman.c	/^PUBLIC u32 do_malloc_4k()$/;"	f
+do_open	kernel/fs.c	/^PRIVATE int do_open(MESSAGE *fs_msg)$/;"	f
+do_rdwt	kernel/fs.c	/^PRIVATE int do_rdwt(MESSAGE *fs_msg)$/;"	f
+do_unlink	kernel/fs.c	/^PRIVATE int do_unlink(MESSAGE *fs_msg)$/;"	f
+do_vclose	kernel/vfs.c	/^PUBLIC int do_vclose(int fd) {$/;"	f
+do_vcreate	kernel/vfs.c	/^PUBLIC int do_vcreate(char *filepath) { \/\/modified by mingxuan 2019-5-17$/;"	f
+do_vcreatedir	kernel/vfs.c	/^PUBLIC int do_vcreatedir(char *path) {$/;"	f
+do_vdelete	kernel/vfs.c	/^PUBLIC int do_vdelete(char *path) {$/;"	f
+do_vdeletedir	kernel/vfs.c	/^PUBLIC int do_vdeletedir(char *path) {$/;"	f
+do_vlseek	kernel/vfs.c	/^PUBLIC int do_vlseek(int fd, int offset, int whence) {$/;"	f
+do_vopen	kernel/vfs.c	/^PUBLIC int do_vopen(const char *path, int flags) {$/;"	f
+do_vopendir	kernel/vfs.c	/^PUBLIC int do_vopendir(char *path) {$/;"	f
+do_vread	kernel/vfs.c	/^PUBLIC int do_vread(int fd, char *buf, int count) {$/;"	f
+do_vunlink	kernel/vfs.c	/^PUBLIC int do_vunlink(const char *path) {$/;"	f
+do_vwrite	kernel/vfs.c	/^PUBLIC int do_vwrite(int fd, const char *buf, int count) {$/;"	f
+double_fault	kernel/kernel.asm	/^double_fault:					; vector_no	= 8$/;"	l
+driver_nr	include/fs_misc.h	/^	int driver_nr; \/**< The proc nr.\\ of the device driver. *\/$/;"	m	struct:dev_drv_map
+ds	include/proc.h	/^	u32	ds;			\/* ┃						│			*\/$/;"	m	struct:s_stackframe
+ds	include/protect.h	/^	u32	ds;$/;"	m	struct:s_tss
+dw	boot/floppy/boot.asm	/^dw 	0xaa55				; 结束标志$/;"	l
+dw	boot/grub/boot.asm	/^dw 	0xaa55				; 结束标志$/;"	l
+dw	boot/mbr/boot.asm	/^dw 	0xaa55				; 结束标志$/;"	l
+dw	boot/mbr/mbr.asm	/^dw 0x0000/;"	l
+dwBaseAddrHigh	boot/floppy/loader.asm	/^	dwBaseAddrHigh	equ	BaseOfLoaderPhyAddr + _dwBaseAddrHigh$/;"	d
+dwBaseAddrHigh	boot/grub/loader.asm	/^	dwBaseAddrHigh	equ	BaseOfLoaderPhyAddr + _dwBaseAddrHigh$/;"	d
+dwBaseAddrHigh	boot/mbr/loader.asm	/^	dwBaseAddrHigh	equ	BaseOfLoaderPhyAddr + _dwBaseAddrHigh$/;"	d
+dwBaseAddrLow	boot/floppy/loader.asm	/^	dwBaseAddrLow	equ	BaseOfLoaderPhyAddr + _dwBaseAddrLow$/;"	d
+dwBaseAddrLow	boot/grub/loader.asm	/^	dwBaseAddrLow	equ	BaseOfLoaderPhyAddr + _dwBaseAddrLow$/;"	d
+dwBaseAddrLow	boot/mbr/loader.asm	/^	dwBaseAddrLow	equ	BaseOfLoaderPhyAddr + _dwBaseAddrLow$/;"	d
+dwDispPos	boot/floppy/loader.asm	/^dwDispPos		equ	BaseOfLoaderPhyAddr + _dwDispPos$/;"	d
+dwDispPos	boot/grub/loader.asm	/^dwDispPos		equ	BaseOfLoaderPhyAddr + _dwDispPos$/;"	d
+dwDispPos	boot/mbr/loader.asm	/^dwDispPos		equ	BaseOfLoaderPhyAddr + _dwDispPos$/;"	d
+dwEchoSize	boot/floppy/loader.asm	/^dwEchoSize		equ	BaseOfLoaderPhyAddr + _dwEchoSize		;add by liang 2016.04.21$/;"	d
+dwEchoSize	boot/grub/loader.asm	/^dwEchoSize		equ	BaseOfLoaderPhyAddr + _dwEchoSize		;add by liang 2016.04.21$/;"	d
+dwEchoSize	boot/mbr/loader.asm	/^dwEchoSize		equ	BaseOfLoaderPhyAddr + _dwEchoSize		;add by liang 2016.04.21$/;"	d
+dwFMINumber	boot/floppy/loader.asm	/^dwFMINumber		equ	BaseOfLoaderPhyAddr + _dwFMINumber	;add by liang 2016.04.13$/;"	d
+dwFMINumber	boot/grub/loader.asm	/^dwFMINumber		equ	BaseOfLoaderPhyAddr + _dwFMINumber	;add by liang 2016.04.13$/;"	d
+dwFMINumber	boot/mbr/loader.asm	/^dwFMINumber		equ	BaseOfLoaderPhyAddr + _dwFMINumber	;add by liang 2016.04.13$/;"	d
+dwKernelSize	boot/floppy/loader.asm	/^dwKernelSize		dd	0		; KERNEL.BIN 文件大小$/;"	d
+dwKernelSize	boot/grub/loader.asm	/^dwKernelSize		dd	0		; KERNEL.BIN 文件大小$/;"	d
+dwKernelSize	boot/mbr/loader.asm	/^dwKernelSize		dd	0		; KERNEL.BIN 文件大小$/;"	d
+dwLengthHigh	boot/floppy/loader.asm	/^	dwLengthHigh	equ	BaseOfLoaderPhyAddr + _dwLengthHigh$/;"	d
+dwLengthHigh	boot/grub/loader.asm	/^	dwLengthHigh	equ	BaseOfLoaderPhyAddr + _dwLengthHigh$/;"	d
+dwLengthHigh	boot/mbr/loader.asm	/^	dwLengthHigh	equ	BaseOfLoaderPhyAddr + _dwLengthHigh$/;"	d
+dwLengthLow	boot/floppy/loader.asm	/^	dwLengthLow	equ	BaseOfLoaderPhyAddr + _dwLengthLow$/;"	d
+dwLengthLow	boot/grub/loader.asm	/^	dwLengthLow	equ	BaseOfLoaderPhyAddr + _dwLengthLow$/;"	d
+dwLengthLow	boot/mbr/loader.asm	/^	dwLengthLow	equ	BaseOfLoaderPhyAddr + _dwLengthLow$/;"	d
+dwMCRNumber	boot/floppy/loader.asm	/^dwMCRNumber		equ	BaseOfLoaderPhyAddr + _dwMCRNumber$/;"	d
+dwMCRNumber	boot/grub/loader.asm	/^dwMCRNumber		equ	BaseOfLoaderPhyAddr + _dwMCRNumber$/;"	d
+dwMCRNumber	boot/mbr/loader.asm	/^dwMCRNumber		equ	BaseOfLoaderPhyAddr + _dwMCRNumber$/;"	d
+dwMemSize	boot/floppy/loader.asm	/^dwMemSize		equ	BaseOfLoaderPhyAddr + _dwMemSize$/;"	d
+dwMemSize	boot/grub/loader.asm	/^dwMemSize		equ	BaseOfLoaderPhyAddr + _dwMemSize$/;"	d
+dwMemSize	boot/mbr/loader.asm	/^dwMemSize		equ	BaseOfLoaderPhyAddr + _dwMemSize$/;"	d
+dwType	boot/floppy/loader.asm	/^	dwType		equ	BaseOfLoaderPhyAddr + _dwType$/;"	d
+dwType	boot/grub/loader.asm	/^	dwType		equ	BaseOfLoaderPhyAddr + _dwType$/;"	d
+dwType	boot/mbr/loader.asm	/^	dwType		equ	BaseOfLoaderPhyAddr + _dwType$/;"	d
+e_ehsize	include/elf.h	/^	u16	e_ehsize;				\/\/elf header（本文件头）的长度 $/;"	m	struct:__anon4
+e_entry	include/elf.h	/^	u32	e_entry;				\/\/ELF程序的入口虚拟地址$/;"	m	struct:__anon4
+e_flags	include/elf.h	/^	u32	e_flags;				\/\/用于标识ELF文件平台相关的属性 $/;"	m	struct:__anon4
+e_ident	include/elf.h	/^	u8	e_ident[EI_NIDENT];		\/\/ELF魔数，ELF字长，字节序，ELF文件版本等$/;"	m	struct:__anon4
+e_machine	include/elf.h	/^	u16	e_machine;				\/\/ELF的CPU平台属性 $/;"	m	struct:__anon4
+e_phentsize	include/elf.h	/^	u16	e_phentsize;			\/\/program header table 中每一个条目的长度$/;"	m	struct:__anon4
+e_phnum	include/elf.h	/^	u16	e_phnum;				\/\/program header table 中有多少个条目$/;"	m	struct:__anon4
+e_phoff	include/elf.h	/^	u32	e_phoff;				\/\/program header table(program头)在文件中的偏移$/;"	m	struct:__anon4
+e_shentsize	include/elf.h	/^	u16	e_shentsize;			\/\/section header table 中每一个条目的长度$/;"	m	struct:__anon4
+e_shnum	include/elf.h	/^	u16	e_shnum;				\/\/section header table 中有多少个条目$/;"	m	struct:__anon4
+e_shoff	include/elf.h	/^	u32	e_shoff;				\/\/section header table(section头)在文件中的偏移$/;"	m	struct:__anon4
+e_shstrndx	include/elf.h	/^	u16	e_shstrndx;				\/\/section header table 中字符索引 $/;"	m	struct:__anon4
+e_type	include/elf.h	/^	u16	e_type;					\/\/ELF文件类型，REL, 可执行文件，共享目标文件等$/;"	m	struct:__anon4
+e_version	include/elf.h	/^	u32	e_version;				\/\/ELF版本号$/;"	m	struct:__anon4
+eax	include/proc.h	/^	u32	eax;		\/* ┛						│			*\/$/;"	m	struct:s_stackframe
+eax	include/protect.h	/^	u32	eax;$/;"	m	struct:s_tss
+ebp	include/proc.h	/^	u32	ebp;		\/* ┃						│			*\/$/;"	m	struct:s_stackframe
+ebp	include/protect.h	/^	u32	ebp;$/;"	m	struct:s_tss
+ebx	include/proc.h	/^	u32	ebx;		\/* ┃						↑栈从高地址往低地址增长*\/		$/;"	m	struct:s_stackframe
+ebx	include/protect.h	/^	u32	ebx;$/;"	m	struct:s_tss
+ecx	include/proc.h	/^	u32	ecx;		\/* ┃						│			*\/$/;"	m	struct:s_stackframe
+ecx	include/protect.h	/^	u32	ecx;$/;"	m	struct:s_tss
+edi	include/proc.h	/^	u32	edi;		\/* ┃						│			*\/$/;"	m	struct:s_stackframe
+edi	include/protect.h	/^	u32	edi;$/;"	m	struct:s_tss
+edx	include/proc.h	/^	u32	edx;		\/* ┃						│			*\/$/;"	m	struct:s_stackframe
+edx	include/protect.h	/^	u32	edx;$/;"	m	struct:s_tss
+eflags	include/proc.h	/^	u32	eflags;		\/*  ┣ these are pushed by CPU during interrupt	│			*\/$/;"	m	struct:s_stackframe
+eip	include/proc.h	/^	u32	eip;		\/*  ┓						│			*\/$/;"	m	struct:s_stackframe
+eip	include/protect.h	/^	u32	eip;$/;"	m	struct:s_tss
+enable_0	lib/kliba.asm	/^enable_0:$/;"	l
+enable_8	lib/kliba.asm	/^enable_8:$/;"	l
+enable_int	lib/kliba.asm	/^enable_int:$/;"	l
+enable_irq	lib/kliba.asm	/^enable_irq:$/;"	l
+end_cyl	include/hd.h	/^	u8 end_cyl;		\/**$/;"	m	struct:part_ent
+end_head	include/hd.h	/^	u8 end_head;		\/**$/;"	m	struct:part_ent
+end_sector	include/hd.h	/^	u8 end_sector;		\/**$/;"	m	struct:part_ent
+es	include/proc.h	/^	u32	es;			\/* ┃						│			*\/$/;"	m	struct:s_stackframe
+es	include/protect.h	/^	u32	es;$/;"	m	struct:s_tss
+esi	include/proc.h	/^	u32	esi;		\/* ┣ pushed by save()				│			*\/$/;"	m	struct:s_stackframe
+esi	include/protect.h	/^	u32	esi;$/;"	m	struct:s_tss
+esp	include/proc.h	/^	u32	esp;		\/*  ┃						│			*\/$/;"	m	struct:s_stackframe
+esp	include/protect.h	/^	u32	esp;$/;"	m	struct:s_tss
+esp0	include/protect.h	/^	u32	esp0;		\/* stack pointer to use during interrupt *\/$/;"	m	struct:s_tss
+esp1	include/protect.h	/^	u32	esp1;$/;"	m	struct:s_tss
+esp2	include/protect.h	/^	u32	esp2;$/;"	m	struct:s_tss
+esp_save_context	include/proc.h	/^	char* esp_save_context;	\/\/to save the position of esp in the kernel stack of the process$/;"	m	struct:s_proc
+esp_save_int	include/proc.h	/^	char* esp_save_int;		\/\/to save the position of esp in the kernel stack of the process$/;"	m	struct:s_proc
+esp_save_syscall	include/proc.h	/^	char* esp_save_syscall;	\/\/to save the position of esp in the kernel stack of the process$/;"	m	struct:s_proc
+exception_handler	kernel/protect.c	/^PUBLIC void exception_handler(int vec_no, int err_code, int eip, int cs, int eflags)$/;"	f
+exec	kernel/syscall.asm	/^exec:$/;"	l
+exec_elfcpy	kernel/exec.c	/^PRIVATE u32 exec_elfcpy(u32 fd,Elf32_Phdr Echo_Phdr,u32 attribute)  \/\/ 这部分代码将来要移动到exec.c文件中，包括下面exec()中的一部分$/;"	f
+exec_load	kernel/exec.c	/^PRIVATE u32 exec_load(u32 fd,const Elf32_Ehdr* Echo_Ehdr,const Elf32_Phdr Echo_Phdr[])$/;"	f
+exec_pcb_init	kernel/exec.c	/^PRIVATE int exec_pcb_init(char* path)$/;"	f
+extension	include/fat32.h	/^	BYTE extension[3];\/\/扩展名：占3个字节$/;"	m	struct:__anon7
+extern	command/start.asm	/^extern main$/;"	l
+extern	init/initstart.asm	/^extern main$/;"	l
+extern	kernel/kernel.asm	/^extern	clock_handler$/;"	l
+extern	kernel/kernel.asm	/^extern	cstart$/;"	l
+extern	kernel/kernel.asm	/^extern	delay$/;"	l
+extern	kernel/kernel.asm	/^extern	disp_int$/;"	l
+extern	kernel/kernel.asm	/^extern	disp_pos$/;"	l
+extern	kernel/kernel.asm	/^extern	disp_str$/;"	l
+extern	kernel/kernel.asm	/^extern	divide_error_handler	;added by xw, 18\/12\/22$/;"	l
+extern	kernel/kernel.asm	/^extern	exception_handler$/;"	l
+extern	kernel/kernel.asm	/^extern	gdt_ptr$/;"	l
+extern	kernel/kernel.asm	/^extern	idt_ptr$/;"	l
+extern	kernel/kernel.asm	/^extern	irq_table$/;"	l
+extern	kernel/kernel.asm	/^extern	k_reenter$/;"	l
+extern	kernel/kernel.asm	/^extern	kernel_initial		;added by xw, 18\/6\/10$/;"	l
+extern	kernel/kernel.asm	/^extern	kernel_main$/;"	l
+extern	kernel/kernel.asm	/^extern	p_proc_current$/;"	l
+extern	kernel/kernel.asm	/^extern	p_proc_next			;added by xw, 18\/4\/26$/;"	l
+extern	kernel/kernel.asm	/^extern	page_fault_handler$/;"	l
+extern	kernel/kernel.asm	/^extern	spurious_irq$/;"	l
+extern	kernel/kernel.asm	/^extern	sys_call_table$/;"	l
+extern	kernel/kernel.asm	/^extern	tss$/;"	l
+extern	kernel/kernel.asm	/^extern 	cr3_ready			;add by visual 2016.4.5$/;"	l
+extern	kernel/kernel.asm	/^extern  p_proc_current$/;"	l
+extern	kernel/kernel.asm	/^extern  schedule$/;"	l
+extern	kernel/kernel.asm	/^extern  switch_pde$/;"	l
+extern	lib/kliba.asm	/^extern	disp_pos$/;"	l
+extern	user/initstart.asm	/^extern main$/;"	l
+f	Makefile	/^	dd if=boot\/floppy\/boot.bin of=a.img bs=512 count=1 conv=notrunc	# modified by mingxuan 2019-5-17$/;"	m
+f	Makefile	/^	dd if=boot\/grub\/boot.bin of=c.img bs=1 count=512 seek=1051648 conv=notrunc$/;"	m
+f	Makefile	/^	dd if=boot\/mbr\/boot.bin of=b.img bs=1 count=420 seek=$(OSBOOT_START_OFFSET) conv=notrunc # FAT322规范规定第90~512个字节(共423个字节)是引导程序 # added by mingxuan 2020-10-5$/;"	m
+f	Makefile	/^	dd if=boot\/mbr\/mbr.bin of=b.img bs=1 count=446 conv=notrunc$/;"	m
+f	Makefile	/^	dd if=fs_flags\/fat32_flag.bin of=b.img bs=1 count=11 seek=$(FAT32_FS_START_OFFSET) conv=notrunc$/;"	m
+f	init/makefile	/^	dd if=$(INSTALL_FILENAME) of=$(HD) bs=512 conv=notrunc seek=$(INSTALL_PHY_SECTOR) count=$(INSTALL_NR_SECTORS) $/;"	m
+f	init/makefile	/^	dd if=\/dev\/zero of=$(HD) bs=1 conv=notrunc seek=$(SUPER_BLOCK_ADDR) count=1$/;"	m
+f	user/makefile	/^	dd if=$(INSTALL_FILENAME) of=$(HD) bs=512 conv=notrunc seek=$(INSTALL_PHY_SECTOR) count=$(INSTALL_NR_SECTORS) $/;"	m
+f_desc_table	kernel/vfs.c	/^PUBLIC struct file_desc f_desc_table[NR_FILE_DESC];$/;"	v	typeref:struct:file_desc
+f_desc_table_fat	kernel/fat32.c	/^File f_desc_table_fat[NR_FILE_DESC];$/;"	v
+f_op_table	kernel/vfs.c	/^PRIVATE struct file_op f_op_table[NR_FS_OP]; \/\/modified by mingxuan 2020-10-18$/;"	v	typeref:struct:file_op
+fake_open	kernel/file.c	/^PUBLIC u32 fake_open(char* path,char* mode)		\/\/modified by xw, 18\/5\/30$/;"	f
+fake_read	kernel/file.c	/^PUBLIC u32 fake_read(u32 fd,void* buffer,u32 size)	\/\/modified by xw, 18\/5\/30$/;"	f
+fake_seek	kernel/file.c	/^PUBLIC u32 fake_seek(u32 pos)	\/\/modified by xw, 18\/5\/30$/;"	f
+fat32_flag1	include/hd.h	/^	u32 fat32_flag1;$/;"	m	struct:fs_flags
+fat32_flag2	include/hd.h	/^	u32 fat32_flag2;$/;"	m	struct:fs_flags
+fd	include/shell.h	/^int fd;$/;"	v
+fd_file	include/fs_misc.h	/^	struct FILE* 	fd_file;	\/\/指向fat32的file结构体$/;"	m	union:ptr_node	typeref:struct:ptr_node::FILE
+fd_inode	include/fs_misc.h	/^	struct inode*	fd_inode;	\/**< Ptr to the i-node *\/$/;"	m	union:ptr_node	typeref:struct:ptr_node::inode
+fd_mode	include/fs_misc.h	/^	int		fd_mode;	\/**< R or W *\/$/;"	m	struct:file_desc
+fd_node	include/fs_misc.h	/^	union 	ptr_node fd_node;$/;"	m	struct:file_desc	typeref:union:file_desc::ptr_node
+fd_pos	include/fs_misc.h	/^	int		fd_pos;		\/**< Current position for R\/W. *\/$/;"	m	struct:file_desc
+features	include/hd.h	/^	u8	features;$/;"	m	struct:hd_cmd
+file_desc	include/fs_misc.h	/^struct file_desc {$/;"	s
+file_op	include/vfs.h	/^struct file_op{$/;"	s
+filelength	include/fat32.h	/^	DWORD filelength;\/\/文件的长度：占4个字节$/;"	m	struct:__anon7
+filename	include/fat32.h	/^	BYTE filename[8];\/\/文件名：占8个字节$/;"	m	struct:__anon7
+filp	include/proc.h	/^	struct file_desc * filp[NR_FILES];$/;"	m	struct:s_proc	typeref:struct:s_proc::file_desc
+flag	include/fat32.h	/^	UINT flag;\/\/文件读写标志$/;"	m	struct:__anon9
+flag	include/fs_misc.h	/^	int 	flag;	\/\/用于标志描述符是否被使用$/;"	m	struct:file_desc
+flags	include/protect.h	/^	u32	flags;$/;"	m	struct:s_tss
+flush	kernel/console.c	/^PRIVATE void flush(CONSOLE* con)$/;"	f
+fork	kernel/syscall.asm	/^fork:$/;"	l
+fork_mem_cpy	kernel/fork.c	/^PRIVATE int fork_mem_cpy(u32 ppid,u32 pid)$/;"	f
+fork_pcb_cpy	kernel/fork.c	/^PRIVATE int fork_pcb_cpy(PROCESS* p_child)$/;"	f
+fork_update_info	kernel/fork.c	/^PRIVATE int fork_update_info(PROCESS* p_child)$/;"	f
+free	include/memman.h	/^	struct FREEINFO free[MEMMAN_FREES];	\/\/空闲内存$/;"	m	struct:MEMMAN	typeref:struct:MEMMAN::FREEINFO
+free	kernel/syscall.asm	/^free:$/;"	l
+free_4k	kernel/syscall.asm	/^free_4k:$/;"	l
+free_PCB	kernel/proc.c	/^PUBLIC void free_PCB(PROCESS *p)$/;"	f
+frees	include/memman.h	/^	u32 frees,maxfrees,lostsize,losts;	\/\/frees为当前空闲内存块数$/;"	m	struct:MEMMAN
+front	include/hd.h	/^	RWInfo *front;$/;"	m	struct:__anon1
+fs	include/proc.h	/^	u32	fs;			\/* ┃						│			*\/$/;"	m	struct:s_stackframe
+fs	include/protect.h	/^	u32	fs;$/;"	m	struct:s_tss
+fs_flags	include/hd.h	/^struct fs_flags$/;"	s
+fs_name	include/vfs.h	/^    char * fs_name; 			\/\/设备名$/;"	m	struct:vfs
+fs_type	include/fs_misc.h	/^	int fs_type;	\/\/added by mingxuan 2020-10-30$/;"	m	struct:super_block
+fs_type	include/hd.h	/^	u32 fs_type;	\/\/added by mingxuan 2020-10-27$/;"	m	struct:part_info
+fullpath	include/fat32.h	/^	CHAR fullpath[256];\/\/绝对路径$/;"	m	struct:__anon10
+gdt	include/global.h	/^EXTERN	DESCRIPTOR	gdt[GDT_SIZE];$/;"	v
+gdt_ptr	include/global.h	/^EXTERN	u8		gdt_ptr[6];	\/\/ 0~15:Limit  16~47:Base$/;"	v
+general_protection	kernel/kernel.asm	/^general_protection:				; vector_no	= 13$/;"	l
+getFreeMemInfo	boot/floppy/loader.asm	/^getFreeMemInfo:$/;"	l
+getFreeMemInfo	boot/grub/loader.asm	/^getFreeMemInfo:$/;"	l
+getFreeMemInfo	boot/mbr/loader.asm	/^getFreeMemInfo:$/;"	l
+get_arg	kernel/kernel.asm	/^get_arg:$/;"	l
+get_byte_from_kb_buf	kernel/keyboard.c	/^PRIVATE u8 get_byte_from_kb_buf()$/;"	f
+get_fs_dev	kernel/fs.c	/^int get_fs_dev(int drive, int fs_type)$/;"	f
+get_fs_flags	kernel/hd.c	/^PRIVATE void get_fs_flags(int drive, int sect_nr, struct fs_flags * fs_flags_buf)$/;"	f
+get_index	kernel/vfs.c	/^PRIVATE int get_index(char path[]){$/;"	f
+get_inode	kernel/fs.c	/^PRIVATE struct inode * get_inode(int dev, int num)$/;"	f
+get_inode_sched	kernel/fs.c	/^PRIVATE struct inode * get_inode_sched(int dev, int num)$/;"	f
+get_page_phy_addr	kernel/pagetbl.c	/^PUBLIC inline u32 get_page_phy_addr(	u32 pid,\/\/页表物理地址				\/\/edit by visual 2016.5.19$/;"	f
+get_part_table	kernel/hd.c	/^PRIVATE void get_part_table(int drive, int sect_nr, struct part_ent * entry)$/;"	f
+get_pde_index	kernel/pagetbl.c	/^PUBLIC	inline u32 get_pde_index(u32 AddrLin)$/;"	f
+get_pde_phy_addr	kernel/pagetbl.c	/^ PUBLIC inline u32 get_pde_phy_addr(u32 pid)$/;"	f
+get_pid	kernel/syscall.asm	/^get_pid:$/;"	l
+get_pte_index	kernel/pagetbl.c	/^PUBLIC inline u32 get_pte_index(u32 AddrLin)$/;"	f
+get_pte_phy_addr	kernel/pagetbl.c	/^PUBLIC inline u32 get_pte_phy_addr(	u32 pid,\/\/页目录物理地址		\/\/edit by visual 2016.5.19$/;"	f
+get_super_block	include/vfs.h	/^	struct super_block* (*get_super_block) (int);$/;"	m	struct:sb_op	typeref:struct:sb_op::get_super_block
+get_super_block	kernel/fs.c	/^PUBLIC struct super_block * get_super_block(int dev)	\/\/modified by mingxuan 2020-10-30$/;"	f
+get_ticks	kernel/syscall.asm	/^get_ticks:$/;"	l
+getchar	lib/vsprintf.c	/^PUBLIC char getchar(){$/;"	f
+gets	lib/vsprintf.c	/^PUBLIC char* gets(char *str){$/;"	f
+gid	kernel/ktest.c	/^	char gid[8];		\/* 116 *\/$/;"	m	struct:posix_tar_header	file:
+global	command/start.asm	/^global _start$/;"	l
+global	init/init.c	/^int global=0;$/;"	v
+global	init/initstart.asm	/^global _start$/;"	l
+global	kernel/kernel.asm	/^global	bounds_check$/;"	l
+global	kernel/kernel.asm	/^global	breakpoint_exception$/;"	l
+global	kernel/kernel.asm	/^global	copr_error$/;"	l
+global	kernel/kernel.asm	/^global	copr_not_available$/;"	l
+global	kernel/kernel.asm	/^global	copr_seg_overrun$/;"	l
+global	kernel/kernel.asm	/^global	divide_error$/;"	l
+global	kernel/kernel.asm	/^global	double_fault$/;"	l
+global	kernel/kernel.asm	/^global	general_protection$/;"	l
+global	kernel/kernel.asm	/^global	hwint00$/;"	l
+global	kernel/kernel.asm	/^global	hwint01$/;"	l
+global	kernel/kernel.asm	/^global	hwint02$/;"	l
+global	kernel/kernel.asm	/^global	hwint03$/;"	l
+global	kernel/kernel.asm	/^global	hwint04$/;"	l
+global	kernel/kernel.asm	/^global	hwint05$/;"	l
+global	kernel/kernel.asm	/^global	hwint06$/;"	l
+global	kernel/kernel.asm	/^global	hwint07$/;"	l
+global	kernel/kernel.asm	/^global	hwint08$/;"	l
+global	kernel/kernel.asm	/^global	hwint09$/;"	l
+global	kernel/kernel.asm	/^global	hwint10$/;"	l
+global	kernel/kernel.asm	/^global	hwint11$/;"	l
+global	kernel/kernel.asm	/^global	hwint12$/;"	l
+global	kernel/kernel.asm	/^global	hwint13$/;"	l
+global	kernel/kernel.asm	/^global	hwint14$/;"	l
+global	kernel/kernel.asm	/^global	hwint15$/;"	l
+global	kernel/kernel.asm	/^global	inval_opcode$/;"	l
+global	kernel/kernel.asm	/^global	inval_tss$/;"	l
+global	kernel/kernel.asm	/^global	nmi$/;"	l
+global	kernel/kernel.asm	/^global	overflow$/;"	l
+global	kernel/kernel.asm	/^global	page_fault$/;"	l
+global	kernel/kernel.asm	/^global	segment_not_present$/;"	l
+global	kernel/kernel.asm	/^global	single_step_exception$/;"	l
+global	kernel/kernel.asm	/^global	stack_exception$/;"	l
+global	kernel/kernel.asm	/^global _start	; 导出 _start$/;"	l
+global	kernel/kernel.asm	/^global get_arg			;added by xw, 18\/6\/18$/;"	l
+global	kernel/kernel.asm	/^global halt  			;added by xw, 18\/6\/11$/;"	l
+global	kernel/kernel.asm	/^global read_cr2   ;\/\/add by visual 2016.5.9$/;"	l
+global	kernel/kernel.asm	/^global refresh_page_cache ; \/\/ add by visual 2016.5.12$/;"	l
+global	kernel/kernel.asm	/^global restart_initial	;Added by xw, 18\/4\/21$/;"	l
+global	kernel/kernel.asm	/^global restart_restore	;Added by xw, 18\/4\/21$/;"	l
+global	kernel/kernel.asm	/^global sched			;Added by xw, 18\/4\/21$/;"	l
+global	kernel/kernel.asm	/^global sys_call$/;"	l
+global	kernel/syscall.asm	/^global	close		;		\/\/added by xw, 18\/6\/18$/;"	l
+global	kernel/syscall.asm	/^global	create		;		\/\/added by mingxuan 2019-5-17$/;"	l
+global	kernel/syscall.asm	/^global	createdir	;		\/\/added by mingxuan 2019-5-17$/;"	l
+global	kernel/syscall.asm	/^global	delete		;		\/\/added by mingxuan 2019-5-17$/;"	l
+global	kernel/syscall.asm	/^global	exec		;		\/\/add by visual 2016.5.16$/;"	l
+global	kernel/syscall.asm	/^global	fork		;		\/\/add by visual 2016.4.8$/;"	l
+global	kernel/syscall.asm	/^global	free		;		\/\/add by visual 2016.4.7$/;"	l
+global	kernel/syscall.asm	/^global	free_4k		;		\/\/add by visual 2016.4.7$/;"	l
+global	kernel/syscall.asm	/^global	get_pid		;		\/\/add by visual 2016.4.6$/;"	l
+global	kernel/syscall.asm	/^global	get_ticks$/;"	l
+global	kernel/syscall.asm	/^global	kmalloc		;		\/\/add by visual 2016.4.6$/;"	l
+global	kernel/syscall.asm	/^global	kmalloc_4k	;		\/\/add by visual 2016.4.7$/;"	l
+global	kernel/syscall.asm	/^global	lseek		;		\/\/added by xw, 18\/6\/18$/;"	l
+global	kernel/syscall.asm	/^global	malloc		;		\/\/add by visual 2016.4.7$/;"	l
+global	kernel/syscall.asm	/^global	malloc_4k	;		\/\/add by visual 2016.4.7$/;"	l
+global	kernel/syscall.asm	/^global	open		;		\/\/added by xw, 18\/6\/18$/;"	l
+global	kernel/syscall.asm	/^global	print_E		;		\/\/added by xw$/;"	l
+global	kernel/syscall.asm	/^global	print_F		;		\/\/added by xw$/;"	l
+global	kernel/syscall.asm	/^global	pthread		;		\/\/add by visual 2016.4.11$/;"	l
+global	kernel/syscall.asm	/^global	read		;		\/\/added by xw, 18\/6\/18$/;"	l
+global	kernel/syscall.asm	/^global	udisp_int	;		\/\/add by visual 2016.5.16$/;"	l
+global	kernel/syscall.asm	/^global	udisp_str	;		\/\/add by visual 2016.5.16$/;"	l
+global	kernel/syscall.asm	/^global	unlink		;		\/\/added by xw, 18\/6\/19$/;"	l
+global	kernel/syscall.asm	/^global	write		;		\/\/added by xw, 18\/6\/18$/;"	l
+global	kernel/syscall.asm	/^global  deletedir	;		\/\/added by mingxuan 2019-5-17$/;"	l
+global	kernel/syscall.asm	/^global  opendir		;		\/\/added by mingxuan 2019-5-17$/;"	l
+global	kernel/syscall.asm	/^global  sleep		;		\/\/added by xw$/;"	l
+global	kernel/syscall.asm	/^global  yield		;		\/\/added by xw$/;"	l
+global	lib/kliba.asm	/^global	disable_int$/;"	l
+global	lib/kliba.asm	/^global	disp_color_str$/;"	l
+global	lib/kliba.asm	/^global	disp_str$/;"	l
+global	lib/kliba.asm	/^global	enable_int$/;"	l
+global	lib/kliba.asm	/^global	in_byte$/;"	l
+global	lib/kliba.asm	/^global	out_byte$/;"	l
+global	lib/kliba.asm	/^global	port_read$/;"	l
+global	lib/kliba.asm	/^global	port_write$/;"	l
+global	lib/kliba.asm	/^global  disable_irq$/;"	l
+global	lib/kliba.asm	/^global  enable_irq$/;"	l
+global	lib/kliba.asm	/^global  write_char	; added by mingxuan 2019-5-19$/;"	l
+global	lib/string.asm	/^global	memcpy$/;"	l
+global	lib/string.asm	/^global	memset$/;"	l
+global	lib/string.asm	/^global  strcpy$/;"	l
+global	lib/string.asm	/^global  strlen$/;"	l
+global	user/execTest.c	/^int global=0;$/;"	v
+global	user/forkTest.c	/^int global=0;$/;"	v
+global	user/initstart.asm	/^global _start$/;"	l
+global	user/pthreadTest.c	/^int global=0;$/;"	v
+globalSectorIndex	kernel/base.c	/^DWORD globalSectorIndex=-1;$/;"	v
+gname	kernel/ktest.c	/^	char gname[32];		\/* 297 *\/$/;"	m	struct:posix_tar_header	file:
+gs	include/proc.h	/^	u32	gs;			\/* ┓						│			*\/$/;"	m	struct:s_stackframe
+gs	include/protect.h	/^	u32	gs;$/;"	m	struct:s_tss
+halt	kernel/kernel.asm	/^halt:$/;"	l
+hd_close	kernel/hd.c	/^PUBLIC void hd_close(int device)$/;"	f
+hd_cmd	include/hd.h	/^struct hd_cmd {$/;"	s
+hd_cmd_out	kernel/hd.c	/^PRIVATE void hd_cmd_out(struct hd_cmd* cmd)$/;"	f
+hd_handler	kernel/hd.c	/^PRIVATE void hd_handler(int irq)$/;"	f
+hd_identify	kernel/hd.c	/^PRIVATE void hd_identify(int drive)$/;"	f
+hd_info	include/hd.h	/^struct hd_info$/;"	s
+hd_info	kernel/hd.c	/^PUBLIC	struct hd_info hd_info[1];		\/\/modified by mingxuan 2020-10-27$/;"	v	typeref:struct:hd_info
+hd_int_waiting_flag	kernel/hd.c	/^PRIVATE volatile int hd_int_waiting_flag;$/;"	v
+hd_ioctl	kernel/hd.c	/^PUBLIC void hd_ioctl(MESSAGE * p)$/;"	f
+hd_open	kernel/hd.c	/^PUBLIC void hd_open(int drive)	\/\/modified by mingxuan 2020-10-27$/;"	f
+hd_rdwt	kernel/hd.c	/^PUBLIC void hd_rdwt(MESSAGE * p)$/;"	f
+hd_rdwt_real	kernel/hd.c	/^PRIVATE void hd_rdwt_real(RWInfo *p)$/;"	f
+hd_rdwt_sched	kernel/hd.c	/^PUBLIC void hd_rdwt_sched(MESSAGE *p)$/;"	f
+hd_service	kernel/hd.c	/^PUBLIC void hd_service()$/;"	f
+hd_status	kernel/hd.c	/^PRIVATE	u8 hd_status;$/;"	v
+hdbuf	kernel/hd.c	/^PRIVATE	u8 hdbuf[SECTOR_SIZE * 2];$/;"	v
+hdque	kernel/hd.c	/^PRIVATE HDQueue hdque;$/;"	v
+heap_lin_base	include/proc.h	/^	u32 heap_lin_base;						\/\/堆基址$/;"	m	struct:s_lin_memmap
+heap_lin_limit	include/proc.h	/^	u32 heap_lin_limit;						\/\/堆界限	$/;"	m	struct:s_lin_memmap
+highClusterNum	include/fat32.h	/^	WORD highClusterNum;\/\/文件的起始簇号的高16位：占2个字节$/;"	m	struct:__anon7
+hwint00	kernel/kernel.asm	/^hwint00:		; Interrupt routine for irq 0 (the clock).$/;"	l
+hwint01	kernel/kernel.asm	/^hwint01:		; Interrupt routine for irq 1 (keyboard)$/;"	l
+hwint02	kernel/kernel.asm	/^hwint02:		; Interrupt routine for irq 2 (cascade!)$/;"	l
+hwint03	kernel/kernel.asm	/^hwint03:		; Interrupt routine for irq 3 (second serial)$/;"	l
+hwint04	kernel/kernel.asm	/^hwint04:		; Interrupt routine for irq 4 (first serial)$/;"	l
+hwint05	kernel/kernel.asm	/^hwint05:		; Interrupt routine for irq 5 (XT winchester)$/;"	l
+hwint06	kernel/kernel.asm	/^hwint06:		; Interrupt routine for irq 6 (floppy)$/;"	l
+hwint07	kernel/kernel.asm	/^hwint07:		; Interrupt routine for irq 7 (printer)$/;"	l
+hwint08	kernel/kernel.asm	/^hwint08:		; Interrupt routine for irq 8 (realtime clock).$/;"	l
+hwint09	kernel/kernel.asm	/^hwint09:		; Interrupt routine for irq 9 (irq 2 redirected)$/;"	l
+hwint10	kernel/kernel.asm	/^hwint10:		; Interrupt routine for irq 10$/;"	l
+hwint11	kernel/kernel.asm	/^hwint11:		; Interrupt routine for irq 11$/;"	l
+hwint12	kernel/kernel.asm	/^hwint12:		; Interrupt routine for irq 12$/;"	l
+hwint13	kernel/kernel.asm	/^hwint13:		; Interrupt routine for irq 13 (FPU exception)$/;"	l
+hwint14	kernel/kernel.asm	/^hwint14:		; Interrupt routine for irq 14 (AT winchester)$/;"	l
+hwint15	kernel/kernel.asm	/^hwint15:		; Interrupt routine for irq 15$/;"	l
+i2a	lib/vsprintf.c	/^PRIVATE char* i2a(int val, int base, char ** ps)$/;"	f
+i_cnt	include/fs_misc.h	/^	int	i_cnt;		\/**< How many procs share this inode  *\/$/;"	m	struct:inode
+i_dev	include/fs_misc.h	/^	int	i_dev;$/;"	m	struct:inode
+i_mode	include/fs_misc.h	/^	u32	i_mode;		\/**< Accsess mode *\/$/;"	m	struct:inode
+i_nr_sects	include/fs_misc.h	/^	u32	i_nr_sects;	\/**< How many sectors the file occupies *\/$/;"	m	struct:inode
+i_num	include/fs_misc.h	/^	int	i_num;		\/**< inode nr.  *\/$/;"	m	struct:inode
+i_size	include/fs_misc.h	/^	u32	i_size;		\/**< File size *\/$/;"	m	struct:inode
+i_start_sect	include/fs_misc.h	/^	u32	i_start_sect;	\/**< The first sector of the data *\/$/;"	m	struct:inode
+ibuf	include/tty.h	/^	u32	ibuf[TTY_IN_BYTES];	\/* TTY input buffer *\/$/;"	m	struct:s_tty
+ibuf_cnt	include/tty.h	/^	int	ibuf_cnt;		\/* how many *\/$/;"	m	struct:s_tty
+ibuf_head	include/tty.h	/^	u32*	ibuf_head;		\/* the next free slot *\/$/;"	m	struct:s_tty
+ibuf_read	include/tty.h	/^	u32*	ibuf_read;		$/;"	m	struct:s_tty
+ibuf_read_cnt	include/tty.h	/^	int ibuf_read_cnt;$/;"	m	struct:s_tty
+ibuf_tail	include/tty.h	/^	u32*	ibuf_tail;		\/* 缓冲区显示位置指针 *\/$/;"	m	struct:s_tty
+idt	include/global.h	/^EXTERN	GATE		idt[IDT_SIZE];$/;"	v
+idt_ptr	include/global.h	/^EXTERN	u8		idt_ptr[6];	\/\/ 0~15:Limit  16~47:Base$/;"	v
+in_byte	lib/kliba.asm	/^in_byte:$/;"	l
+in_hd_queue	kernel/hd.c	/^PRIVATE void in_hd_queue(HDQueue *hdq, RWInfo *p)$/;"	f
+in_process	kernel/tty.c	/^PUBLIC void in_process(TTY* p_tty , u32 key){$/;"	f
+inc	boot/floppy/boot.asm	/^	inc	di$/;"	d
+inc	boot/floppy/loader.asm	/^	inc	di$/;"	d
+inc	boot/mbr/mbr.asm	/^	inc		dh$/;"	d
+increment	include/fat32.h	/^	UINT increment;\/\/当数组容量不足时，动态增长的步长$/;"	m	struct:__anon11
+info	include/proc.h	/^	TREE_INFO info;				\/\/记录进程树关系	add by visual 2016.5.25$/;"	m	struct:s_proc
+inform_int	kernel/hd.c	/^PRIVATE void inform_int()$/;"	f
+init	kernel/memman.c	/^void init()	\/\/初始化$/;"	f
+init_8259A	kernel/i8259.c	/^PUBLIC void init_8259A()$/;"	f
+init_descriptor	kernel/protect.c	/^PRIVATE void init_descriptor(DESCRIPTOR * p_desc, u32 base, u32 limit, u16 attribute)$/;"	f
+init_file_desc_table	kernel/vfs.c	/^PUBLIC void init_file_desc_table(){$/;"	f
+init_fileop_table	kernel/vfs.c	/^PUBLIC void init_fileop_table(){$/;"	f
+init_fs	kernel/fs.c	/^PUBLIC void init_fs() $/;"	f
+init_fs_fat	kernel/fat32.c	/^PUBLIC void init_fs_fat() {$/;"	f
+init_hd	kernel/hd.c	/^PUBLIC void init_hd()$/;"	f
+init_hd_queue	kernel/hd.c	/^PUBLIC void init_hd_queue(HDQueue *hdq)$/;"	f
+init_idt_desc	kernel/protect.c	/^PUBLIC void init_idt_desc(unsigned char vector, u8 desc_type, int_handler handler, unsigned char privilege)$/;"	f
+init_kb	kernel/keyboard.c	/^PUBLIC void init_kb(){$/;"	f
+init_mouse	kernel/keyboard.c	/^PUBLIC void init_mouse(){$/;"	f
+init_page_pte	kernel/pagetbl.c	/^PUBLIC	u32 init_page_pte(u32 pid)$/;"	f
+init_prot	kernel/protect.c	/^PUBLIC void init_prot()$/;"	f
+init_sb_op_table	kernel/vfs.c	/^PUBLIC void init_sb_op_table(){$/;"	f
+init_screen	kernel/console.c	/^PUBLIC void init_screen(TTY* tty)$/;"	f
+init_shell	kernel/shell.c	/^PUBLIC void init_shell() {$/;"	f
+init_super_block_table	kernel/vfs.c	/^PUBLIC void init_super_block_table(){$/;"	f
+init_tty	kernel/tty.c	/^PRIVATE void init_tty(TTY* p_tty){$/;"	f
+init_vfs	kernel/vfs.c	/^PUBLIC void init_vfs(){$/;"	f
+init_vfs_table	kernel/vfs.c	/^PRIVATE void init_vfs_table(){  \/\/ modified by mingxuan 2020-10-30$/;"	f
+initial	kernel/ktest.c	/^void initial()$/;"	f
+initial_eip	include/proc.h	/^	task_f	initial_eip;$/;"	m	struct:s_task
+initialize_cpus	kernel/main.c	/^PRIVATE int initialize_cpus()$/;"	f
+initialize_processes	kernel/main.c	/^PRIVATE int initialize_processes()$/;"	f
+initlock	kernel/spinlock.c	/^initlock(struct spinlock *lock, char *name)$/;"	f
+inode	include/fs_misc.h	/^struct inode {$/;"	s
+inode_isize_off	include/fs_misc.h	/^	u32	inode_isize_off;  \/**< Offset of `struct inode::i_size' *\/$/;"	m	struct:super_block
+inode_nr	include/fs_misc.h	/^	int	inode_nr;		\/**< inode nr. *\/$/;"	m	struct:dir_entry
+inode_size	include/fs_misc.h	/^	u32	inode_size;       \/**< INODE_SIZE *\/$/;"	m	struct:super_block
+inode_start_off	include/fs_misc.h	/^	u32	inode_start_off;  \/**< Offset of `struct inode::i_start_sect' *\/$/;"	m	struct:super_block
+inode_table	kernel/fs.c	/^PRIVATE struct inode inode_table[NR_INODE];	$/;"	v	typeref:struct:inode
+instack	kernel/kernel.asm	/^instack:						;already in the irq-stack$/;"	l
+int_handler	include/type.h	/^typedef	void	(*int_handler)	();$/;"	t
+interrupt_wait	kernel/hd.c	/^PRIVATE void interrupt_wait()$/;"	f
+inval_opcode	kernel/kernel.asm	/^inval_opcode:					; vector_no	= 6$/;"	l
+inval_tss	kernel/kernel.asm	/^inval_tss:						; vector_no	= 10$/;"	l
+iobase	include/protect.h	/^	u16	iobase;	\/* I\/O位图基址大于或等于TSS段界限，就表示没有I\/O许可位图 *\/$/;"	m	struct:s_tss
+irq_handler	include/type.h	/^typedef	void	(*irq_handler)	(int irq);$/;"	t
+irq_table	kernel/global.c	/^PUBLIC	irq_handler		irq_table[NR_IRQ];$/;"	v
+is_current_console	kernel/console.c	/^PUBLIC int is_current_console(CONSOLE* con)$/;"	f
+is_full	include/console.h	/^	int		is_full;$/;"	m	struct:s_console
+is_special	include/fs_const.h	125;"	d
+isdigit	include/stdio.h	59;"	d
+isspace	include/stdio.h	55;"	d
+isxdigit	include/stdio.h	58;"	d
+itoa	lib/klib.c	/^PUBLIC char * itoa(char * str, int num)\/* 数字前面的 0 不被显示出来, 比如 0000B800 被显示成 B800 *\/$/;"	f
+k_reenter	include/global.h	/^EXTERN	u32		k_reenter;$/;"	v
+kb_ack	kernel/keyboard.c	/^PRIVATE void kb_ack()$/;"	f
+kb_handler	kernel/keyboard.c	/^void kb_handler(int irq){$/;"	f
+kb_in	kernel/keyboard.c	/^PRIVATE KB_INPUT kb_in;$/;"	v
+kb_inbuf	include/keyboard.h	/^typedef struct kb_inbuf {$/;"	s
+kb_wait	kernel/keyboard.c	/^PRIVATE void kb_wait()	\/* 等待 8042 的输入缓冲区空 *\/$/;"	f
+kbuf	include/hd.h	/^	void *kbuf;$/;"	m	struct:rdwt_info
+kernel_esp	include/proc.h	/^	u32	kernel_esp;	\/* <- 'popad' will ignore it			│			*\/$/;"	m	struct:s_stackframe
+kernel_initial	include/global.h	/^EXTERN	int		kernel_initial;$/;"	v
+kernel_lin_base	include/proc.h	/^	u32 kernel_lin_base;					\/\/内核基址$/;"	m	struct:s_lin_memmap
+kernel_lin_limit	include/proc.h	/^	u32 kernel_lin_limit;					\/\/内核界限$/;"	m	struct:s_lin_memmap
+kernel_main	kernel/main.c	/^PUBLIC int kernel_main()$/;"	f
+keyboard_read	kernel/keyboard.c	/^PUBLIC void keyboard_read(TTY* p_tty)$/;"	f
+keymap	include/keymap.h	/^u32 keymap[NR_SCAN_CODES * MAP_COLS] = {$/;"	v
+kmalloc	kernel/syscall.asm	/^kmalloc:$/;"	l
+kmalloc_4k	kernel/syscall.asm	/^kmalloc_4k:$/;"	l
+lastAccessDate	include/fat32.h	/^		CHAR lastAccessDate[11];\/\/最后访问时间，当type为文件值有效$/;"	m	union:__anon12::__anon13
+lastAccessDate	include/fat32.h	/^	WORD lastAccessDate;\/\/文件最后访问日期：占2个字节$/;"	m	struct:__anon7
+lastModifiedDate	include/fat32.h	/^	WORD lastModifiedDate;\/\/文件的最近修改日期$/;"	m	struct:__anon7
+lastModifiedTime	include/fat32.h	/^	CHAR  lastModifiedTime[20];\/\/最后修改时间$/;"	m	struct:__anon12
+lastModifiedTime	include/fat32.h	/^	WORD lastModifiedTime;\/\/文件的最近修改时间$/;"	m	struct:__anon7
+lba_high	include/hd.h	/^	u8	lba_high;$/;"	m	struct:hd_cmd
+lba_low	include/hd.h	/^	u8	lba_low;$/;"	m	struct:hd_cmd
+lba_mid	include/hd.h	/^	u8	lba_mid;$/;"	m	struct:hd_cmd
+ldt	include/protect.h	/^	u32	ldt;$/;"	m	struct:s_tss
+ldt_seg_linear	kernel/proc.c	/^PUBLIC int ldt_seg_linear(PROCESS *p, int idx)$/;"	f
+ldt_sel	include/proc.h	/^	u16 ldt_sel;               \/* gdt selector giving ldt base and limit *\/$/;"	m	struct:s_proc
+ldts	include/proc.h	/^	DESCRIPTOR ldts[LDT_SIZE]; \/* local descriptors for code and data *\/$/;"	m	struct:s_proc
+limit_high_attr2	include/protect.h	/^	u8	limit_high_attr2;	\/* G(1) D(1) 0(1) AVL(1) LimitHigh(4) *\/$/;"	m	struct:s_descriptor
+limit_low	include/protect.h	/^	u16	limit_low;		\/* Limit *\/$/;"	m	struct:s_descriptor
+lin_mapping_phy	kernel/pagetbl.c	/^PUBLIC int lin_mapping_phy(u32 AddrLin,\/\/线性地址$/;"	f
+linkname	kernel/ktest.c	/^	char linkname[100];	\/* 157 *\/$/;"	m	struct:posix_tar_header	file:
+load_disk	kernel/fat32.c	/^PRIVATE void load_disk(int dev) {$/;"	f
+location	include/fat32.h	/^	CHAR  location[256];\/\/文件或目录的位置，绝对路径$/;"	m	struct:__anon12
+locked	include/spinlock.h	/^  uint locked;   \/\/ Is the lock held?$/;"	m	struct:spinlock
+logical	include/hd.h	/^	struct part_info	logical[NR_SUB_PER_DRIVE];	\/\/ NR_SUB_PER_DRIVE = 16 *4 =64$/;"	m	struct:hd_info	typeref:struct:hd_info::part_info
+longNameFlag	include/fat32.h	/^	BYTE longNameFlag;\/\/长文件名目录项标志，取值0FH$/;"	m	struct:__anon8
+losts	include/memman.h	/^	u32 frees,maxfrees,lostsize,losts;	\/\/frees为当前空闲内存块数$/;"	m	struct:MEMMAN
+lostsize	include/memman.h	/^	u32 frees,maxfrees,lostsize,losts;	\/\/frees为当前空闲内存块数$/;"	m	struct:MEMMAN
+lowClusterNum	include/fat32.h	/^	WORD lowClusterNum;\/\/文件的起始簇号的低16位：占2个字节$/;"	m	struct:__anon7
+lseek	include/vfs.h	/^	int (*lseek)   (int ,int ,int);$/;"	m	struct:file_op
+lseek	kernel/syscall.asm	/^lseek:$/;"	l
+m1	include/type.h	/^		struct mess1 m1;$/;"	m	union:__anon2::__anon3	typeref:struct:__anon2::__anon3::mess1
+m1i1	include/type.h	/^	int m1i1;$/;"	m	struct:mess1
+m1i2	include/type.h	/^	int m1i2;$/;"	m	struct:mess1
+m1i3	include/type.h	/^	int m1i3;$/;"	m	struct:mess1
+m1i4	include/type.h	/^	int m1i4;$/;"	m	struct:mess1
+m2	include/type.h	/^		struct mess2 m2;$/;"	m	union:__anon2::__anon3	typeref:struct:__anon2::__anon3::mess2
+m2p1	include/type.h	/^	void* m2p1;$/;"	m	struct:mess2
+m2p2	include/type.h	/^	void* m2p2;$/;"	m	struct:mess2
+m2p3	include/type.h	/^	void* m2p3;$/;"	m	struct:mess2
+m2p4	include/type.h	/^	void* m2p4;$/;"	m	struct:mess2
+m3	include/type.h	/^		struct mess3 m3;$/;"	m	union:__anon2::__anon3	typeref:struct:__anon2::__anon3::mess3
+m3i1	include/type.h	/^	int	m3i1;$/;"	m	struct:mess3
+m3i2	include/type.h	/^	int	m3i2;$/;"	m	struct:mess3
+m3i3	include/type.h	/^	int	m3i3;$/;"	m	struct:mess3
+m3i4	include/type.h	/^	int	m3i4;$/;"	m	struct:mess3
+m3l1	include/type.h	/^	u64	m3l1;$/;"	m	struct:mess3
+m3l2	include/type.h	/^	u64	m3l2;$/;"	m	struct:mess3
+m3p1	include/type.h	/^	void*	m3p1;$/;"	m	struct:mess3
+m3p2	include/type.h	/^	void*	m3p2;$/;"	m	struct:mess3
+magic	include/fs_misc.h	/^	u32	magic;		  \/**< Magic number *\/$/;"	m	struct:super_block
+magic	kernel/ktest.c	/^	char magic[6];		\/* 257 *\/$/;"	m	struct:posix_tar_header	file:
+main	command/echo.c	/^int main(int argc, char* argv[])$/;"	f
+main	init/init.c	/^void main(int arg,char *argv[])$/;"	f
+main	user/execTest.c	/^void main(int arg,char *argv[])$/;"	f
+main	user/forkTest.c	/^void main(int arg,char *argv[])$/;"	f
+main	user/pthreadTest.c	/^int main(int arg,char *argv[])$/;"	f
+main	user/shell_0.c	/^void main(int arg,char *argv[])$/;"	f
+main	user/shell_1.c	/^void main(int arg,char *argv[])$/;"	f
+main	user/shell_2.c	/^void main(int arg,char *argv[])$/;"	f
+main	user/sleepTest.c	/^void main(int arg,char *argv[])$/;"	f
+main	user/yieldTest.c	/^void main(int arg,char *argv[])$/;"	f
+malloc	kernel/syscall.asm	/^malloc:$/;"	l
+malloc_4k	kernel/syscall.asm	/^malloc_4k:$/;"	l
+max	include/const.h	188;"	d
+max	include/fs_const.h	11;"	d
+maxfrees	include/memman.h	/^	u32 frees,maxfrees,lostsize,losts;	\/\/frees为当前空闲内存块数$/;"	m	struct:MEMMAN
+memarg	kernel/syscallc.c	/^struct memfree *memarg = 0;$/;"	v	typeref:struct:memfree
+memcmp	kernel/fs.c	/^PRIVATE int memcmp(const void * s1, const void *s2, int n)$/;"	f
+memcpy	lib/string.asm	/^memcpy:$/;"	l
+memfree	include/global.h	/^struct memfree{$/;"	s
+memman	kernel/memman.c	/^struct MEMMAN *memman = &s_memman;\/\/(struct MEMMAN *) MEMMAN_ADDR;$/;"	v	typeref:struct:MEMMAN
+memman_alloc	kernel/memman.c	/^PUBLIC u32 memman_alloc(struct MEMMAN *man,u32 size)$/;"	f
+memman_alloc_4k	kernel/memman.c	/^PUBLIC u32 memman_alloc_4k(struct MEMMAN *man)$/;"	f
+memman_free	kernel/memman.c	/^PUBLIC u32 memman_free(struct MEMMAN *man, u32 addr, u32 size)$/;"	f
+memman_free_4k	kernel/memman.c	/^PUBLIC u32 memman_free_4k(struct MEMMAN *man, u32 addr)$/;"	f
+memman_init	kernel/memman.c	/^void memman_init(struct MEMMAN *man)$/;"	f
+memman_kalloc	kernel/memman.c	/^PUBLIC u32 memman_kalloc(struct MEMMAN *man,u32 size)$/;"	f
+memman_kalloc_4k	kernel/memman.c	/^PUBLIC u32 memman_kalloc_4k(struct MEMMAN *man)$/;"	f
+memman_test	kernel/memman.c	/^PUBLIC void memman_test()$/;"	f
+memman_total	kernel/memman.c	/^u32 memman_total(struct MEMMAN *man)$/;"	f
+memmap	include/proc.h	/^	LIN_MEMMAP	memmap;			\/\/线性内存分部信息 		add by visual 2016.5.4$/;"	m	struct:s_proc
+memset	lib/string.asm	/^memset:$/;"	l
+memtest	boot/floppy/loader.asm	/^memtest:$/;"	l
+memtest	boot/grub/loader.asm	/^memtest:$/;"	l
+memtest	boot/mbr/loader.asm	/^memtest:$/;"	l
+mess1	include/type.h	/^struct mess1 {$/;"	s
+mess2	include/type.h	/^struct mess2 {$/;"	s
+mess3	include/type.h	/^struct mess3 {$/;"	s
+milli_delay	kernel/clock.c	/^PUBLIC void milli_delay(int milli_sec)$/;"	f
+min	include/const.h	189;"	d
+min	include/fs_const.h	12;"	d
+mkfs	kernel/fs.c	/^PRIVATE void mkfs()$/;"	f
+mkfs_fat	kernel/fat32.c	/^PRIVATE void mkfs_fat() {$/;"	f
+mode	kernel/ktest.c	/^	char mode[8];		\/* 100 *\/$/;"	m	struct:posix_tar_header	file:
+mouse_X	include/tty.h	/^	int mouse_X;$/;"	m	struct:s_tty
+mouse_Y	include/tty.h	/^	int mouse_Y;$/;"	m	struct:s_tty
+mouse_handler	kernel/keyboard.c	/^void mouse_handler(int irq){$/;"	f
+mouse_in	kernel/keyboard.c	/^PRIVATE MOUSE_INPUT mouse_in;$/;"	v
+mouse_inbuf	include/keyboard.h	/^typedef struct mouse_inbuf{$/;"	s
+mouse_init	kernel/keyboard.c	/^PRIVATE int mouse_init;$/;"	v
+mouse_left_button	include/tty.h	/^	int mouse_left_button;$/;"	m	struct:s_tty
+mouse_mid_button	include/tty.h	/^	int mouse_mid_button;$/;"	m	struct:s_tty
+msg	include/hd.h	/^	MESSAGE *msg;$/;"	m	struct:rdwt_info
+msgtype	include/type.h	/^enum msgtype {$/;"	g
+mtime	kernel/ktest.c	/^	char mtime[12];		\/* 136 *\/$/;"	m	struct:posix_tar_header	file:
+mul	boot/floppy/boot.asm	/^	mul	dh$/;"	d
+mul	boot/floppy/loader.asm	/^	mul	dh$/;"	d
+mul	boot/grub/loader.asm	/^	mul	dh$/;"	d
+mul	boot/mbr/loader.asm	/^	mul		dh$/;"	d
+mul	boot/mbr/mbr.asm	/^	mul		dh$/;"	d
+mul	boot/mbr/mbr.asm	/^	mul		dl$/;"	d
+n_1st_sect	include/fs_misc.h	/^	u32	n_1st_sect;	  \/**< Number of the 1st data sector *\/$/;"	m	struct:super_block
+name	include/fat32.h	/^	CHAR  name[256];\/\/文件或目录名称$/;"	m	struct:__anon12
+name	include/fat32.h	/^	CHAR name[256];\/\/文件名$/;"	m	struct:__anon9
+name	include/fat32.h	/^	CHAR name[256];\/\/文件名或目录名$/;"	m	struct:__anon10
+name	include/fs_misc.h	/^	char name[MAX_FILENAME_LEN];	\/**< Filename *\/$/;"	m	struct:dir_entry
+name	include/proc.h	/^	char	name[32];$/;"	m	struct:s_task
+name	include/spinlock.h	/^  char *name;    \/\/ Name of lock.$/;"	m	struct:spinlock
+name	kernel/ktest.c	/^	char name[100];		\/*   0 *\/$/;"	m	struct:posix_tar_header	file:
+name1	include/fat32.h	/^	BYTE name1[10];\/\/长文件名第1段$/;"	m	struct:__anon8
+name2	include/fat32.h	/^	BYTE name2[19];\/\/长文件名第2段$/;"	m	struct:__anon8
+new_dir_entry	kernel/fs.c	/^PRIVATE void new_dir_entry(struct inode *dir_inode,int inode_nr,char *filename)$/;"	f
+new_inode	kernel/fs.c	/^PRIVATE struct inode * new_inode(int dev, int inode_nr, int start_sect)$/;"	f
+next	include/hd.h	/^	struct rdwt_info *next;$/;"	m	struct:rdwt_info	typeref:struct:rdwt_info::rdwt_info
+nmi	kernel/kernel.asm	/^nmi:							; vector_no	= 2$/;"	l
+nr_imap_sects	include/fs_misc.h	/^	u32	nr_imap_sects;	  \/**< How many inode-map sectors *\/$/;"	m	struct:super_block
+nr_inode_sects	include/fs_misc.h	/^	u32	nr_inode_sects;   \/**< How many inode sectors *\/$/;"	m	struct:super_block
+nr_inodes	include/fs_misc.h	/^	u32	nr_inodes;	  \/**< How many inodes *\/$/;"	m	struct:super_block
+nr_sects	include/fs_misc.h	/^	u32	nr_sects;	  \/**< How many sectors *\/$/;"	m	struct:super_block
+nr_sects	include/hd.h	/^	u32 nr_sects;		\/**$/;"	m	struct:part_ent
+nr_smap_sects	include/fs_misc.h	/^	u32	nr_smap_sects;	  \/**< How many sector-map sectors *\/$/;"	m	struct:super_block
+num_1K	include/const.h	100;"	d
+num_4B	include/const.h	99;"	d
+num_4K	include/const.h	101;"	d
+num_4M	include/const.h	102;"	d
+num_lock	kernel/keyboard.c	/^PRIVATE	int		num_lock;	\/* Num Lock		*\/$/;"	v
+off	include/fat32.h	/^	DWORD off;\/\/总偏移量,以字节为单位$/;"	m	struct:__anon9
+offset	include/fat32.h	/^	UINT offset;\/\/读取数组时的偏移量$/;"	m	struct:__anon11
+offset_high	include/protect.h	/^	u16	offset_high;	\/* Offset High *\/$/;"	m	struct:s_gate
+offset_low	include/protect.h	/^	u16	offset_low;	\/* Offset Low *\/$/;"	m	struct:s_gate
+op	include/vfs.h	/^    struct file_op * op;        \/\/指向操作表的一项$/;"	m	struct:vfs	typeref:struct:vfs::file_op
+open	include/vfs.h	/^	int (*open)    (const char* ,int);$/;"	m	struct:file_op
+open	kernel/syscall.asm	/^open:$/;"	l
+open_cnt	include/hd.h	/^	int					open_cnt;$/;"	m	struct:hd_info
+opendir	include/vfs.h	/^	int (*opendir) (const char *);$/;"	m	struct:file_op
+opendir	kernel/syscall.asm	/^opendir:$/;"	l
+orange_flag	include/hd.h	/^	u8 orange_flag;$/;"	m	struct:fs_flags
+org	boot/floppy/loader.asm	/^org  0100h$/;"	l
+org	boot/grub/loader.asm	/^org  0100h$/;"	l
+org	boot/mbr/loader.asm	/^org  0100h$/;"	l
+org	boot/mbr/mbr.asm	/^org 07c00h$/;"	l
+orig	include/console.h	/^	unsigned int	orig;	    \/* start addr of the console *\/$/;"	m	struct:s_console
+out_byte	lib/kliba.asm	/^out_byte:$/;"	l
+out_char	kernel/console.c	/^PUBLIC void out_char(CONSOLE* con, char ch)$/;"	f
+out_hd_queue	kernel/hd.c	/^PRIVATE int out_hd_queue(HDQueue *hdq, RWInfo **p)$/;"	f
+overflow	kernel/kernel.asm	/^overflow:						; vector_no	= 4$/;"	l
+p_align	include/elf.h	/^	u32	p_align;				\/\/该program	对齐方式$/;"	m	struct:__anon5
+p_filesz	include/elf.h	/^	u32	p_filesz;				\/\/该program	在文件中的长度$/;"	m	struct:__anon5
+p_flags	include/elf.h	/^	u32	p_flags;				\/\/该program	读写权限$/;"	m	struct:__anon5
+p_head	include/keyboard.h	/^	u8*	p_head;	\/**< points to the next free slot *\/$/;"	m	struct:kb_inbuf
+p_memsz	include/elf.h	/^	u32	p_memsz;				\/\/该program	在内存中的长度（不一定和filesz相等）$/;"	m	struct:__anon5
+p_name	include/proc.h	/^	char p_name[16];           \/* name of the process *\/$/;"	m	struct:s_proc
+p_offset	include/elf.h	/^	u32	p_offset;				\/\/该program	在文件中的偏移量$/;"	m	struct:__anon5
+p_paddr	include/elf.h	/^	u32	p_paddr;				\/\/该program	应该放在这个物理地址（对只使用物理地址的系统有效）$/;"	m	struct:__anon5
+p_proc_current	include/global.h	/^EXTERN	PROCESS*	p_proc_current;$/;"	v
+p_proc_next	include/global.h	/^EXTERN	PROCESS*	p_proc_next;	\/\/the next process that will run. added by xw, 18\/4\/26$/;"	v
+p_tail	include/keyboard.h	/^	u8*	p_tail;	\/**< points to the byte to be handled *\/$/;"	m	struct:kb_inbuf
+p_type	include/elf.h	/^	u32	p_type;					\/\/该program 	类型$/;"	m	struct:__anon5
+p_vaddr	include/elf.h	/^	u32	p_vaddr;				\/\/该program	应该放在这个线性地址$/;"	m	struct:__anon5
+page_fault	kernel/kernel.asm	/^page_fault:						; vector_no	= 14$/;"	l
+page_fault_handler	kernel/pagetbl.c	/^PUBLIC void page_fault_handler(	u32 vec_no,\/\/异常编号，此时应该是14，代表缺页异常$/;"	f
+parent	include/fat32.h	/^	CHAR parent[256];\/\/父路径$/;"	m	struct:__anon9
+part_ent	include/hd.h	/^struct part_ent {$/;"	s
+part_info	include/hd.h	/^struct part_info {$/;"	s
+partition	kernel/hd.c	/^PRIVATE void partition(int device, int style)$/;"	f
+pcs	include/spinlock.h	/^  uint pcs[10];  \/\/ The call stack (an array of program counters)$/;"	m	struct:spinlock
+phy_exist	kernel/pagetbl.c	/^PUBLIC u32 phy_exist(u32 PageTblPhyAddr,\/\/页表物理地址$/;"	f
+phys_copy	include/string.h	14;"	d
+phys_set	include/string.h	15;"	d
+pid	include/proc.h	/^	u32 pid;                   \/* process id passed in from MM *\/$/;"	m	struct:s_proc
+pop	boot/floppy/boot.asm	/^	pop	dx$/;"	d
+pop	boot/floppy/loader.asm	/^	pop	dx$/;"	d
+pop	boot/grub/boot.asm	/^	 pop  di$/;"	d
+pop	boot/grub/boot.asm	/^	pop	di$/;"	d
+pop	boot/grub/loader.asm	/^	 pop  di$/;"	d
+pop	boot/grub/loader.asm	/^	pop	di$/;"	d
+pop	boot/grub/loader.asm	/^	pop	dx$/;"	d
+pop	boot/mbr/boot.asm	/^	 pop  di$/;"	d
+pop	boot/mbr/boot.asm	/^	pop		di$/;"	d
+pop	boot/mbr/loader.asm	/^	 pop  di$/;"	d
+pop	boot/mbr/loader.asm	/^	pop		di$/;"	d
+pop	boot/mbr/loader.asm	/^	pop	di$/;"	d
+pop	boot/mbr/loader.asm	/^	pop	dx$/;"	d
+pop	boot/mbr/mbr.asm	/^	pop		dx$/;"	d
+pop	kernel/kernel.asm	/^	pop		ds$/;"	d
+port_read	lib/kliba.asm	/^port_read:$/;"	l
+port_write	lib/kliba.asm	/^port_write:$/;"	l
+position	kernel/file.c	/^static u32 position=0;$/;"	v	file:
+posix_tar_header	kernel/ktest.c	/^struct posix_tar_header$/;"	s	file:
+ppid	include/proc.h	/^	int ppid;			\/\/当前父进程	$/;"	m	struct:s_tree_info
+prefix	kernel/ktest.c	/^	char prefix[155];	\/* 345 *\/$/;"	m	struct:posix_tar_header	file:
+primary	include/hd.h	/^	struct part_info	primary[NR_PRIM_PER_DRIVE];	\/\/ NR_PRIM_PER_DRIVE = 5$/;"	m	struct:hd_info	typeref:struct:hd_info::part_info
+print_E	kernel/syscall.asm	/^print_E:$/;"	l
+print_F	kernel/syscall.asm	/^print_F:$/;"	l
+print_hdinfo	kernel/hd.c	/^PRIVATE void print_hdinfo(struct hd_info * hdi)$/;"	f
+print_identify_info	kernel/hd.c	/^PRIVATE void print_identify_info(u16* hdinfo)$/;"	f
+printf	lib/printf.c	/^PUBLIC int printf(const char *fmt,...){$/;"	f
+priority	include/proc.h	/^    int priority;$/;"	m	struct:s_proc
+proByte	include/fat32.h	/^	BYTE proByte;\/\/属性字节$/;"	m	struct:__anon8
+proByte	include/fat32.h	/^	BYTE proByte;\/\/属性字节：占1个字节$/;"	m	struct:__anon7
+proc	include/hd.h	/^	PROCESS *proc;$/;"	m	struct:rdwt_info
+proc2pid	include/proc.h	174;"	d
+proc_stat	include/proc.h	/^enum proc_stat	{IDLE,READY,SLEEPING,KILLED};	\/* add KILLED state. when a process's state is KILLED, the process$/;"	g
+proc_table	kernel/global.c	/^PUBLIC	PROCESS			proc_table[NR_PCBS];										\/\/edit by visual 2016.4.5	$/;"	v
+pte_exist	kernel/pagetbl.c	/^PUBLIC u32 pte_exist(	u32 PageDirPhyAddr,\/\/页目录物理地址$/;"	f
+pthread	kernel/syscall.asm	/^pthread:$/;"	l
+pthread_heap_init	kernel/pthread.c	/^PRIVATE int pthread_heap_init(PROCESS* p_child,PROCESS *p_parent)$/;"	f
+pthread_pcb_cpy	kernel/pthread.c	/^PRIVATE int pthread_pcb_cpy(PROCESS *p_child,PROCESS *p_parent)$/;"	f
+pthread_stack_init	kernel/pthread.c	/^PRIVATE int pthread_stack_init(PROCESS* p_child,PROCESS *p_parent)$/;"	f
+pthread_test1	init/init.c	/^void pthread_test1()$/;"	f
+pthread_test1	user/pthreadTest.c	/^void pthread_test1()$/;"	f
+pthread_test2	init/init.c	/^void pthread_test2()$/;"	f
+pthread_test2	user/pthreadTest.c	/^void pthread_test2()$/;"	f
+pthread_test3	init/init.c	/^void pthread_test3()$/;"	f
+pthread_test3	user/pthreadTest.c	/^void pthread_test3()$/;"	f
+pthread_update_info	kernel/pthread.c	/^PRIVATE int pthread_update_info(PROCESS* p_child,PROCESS *p_parent)$/;"	f
+ptr_node	include/fs_misc.h	/^union ptr_node{$/;"	u
+push	boot/floppy/boot.asm	/^	push	dx$/;"	d
+push	boot/floppy/loader.asm	/^	push	dx$/;"	d
+push	boot/grub/loader.asm	/^	push	dx$/;"	d
+push	boot/mbr/loader.asm	/^	push	dx$/;"	d
+push	boot/mbr/mbr.asm	/^	push	dx$/;"	d
+push	kernel/kernel.asm	/^        push    ds      ;  |$/;"	d
+push	kernel/kernel.asm	/^    push    ds      ;  |$/;"	d
+put_inode	kernel/fs.c	/^PRIVATE void put_inode(struct inode * pinode)$/;"	f
+put_irq_handler	kernel/i8259.c	/^PUBLIC void put_irq_handler(int irq, irq_handler handler)$/;"	f
+put_key	kernel/tty.c	/^PRIVATE void put_key(TTY* tty, u32 key)$/;"	f
+rdwt_info	include/hd.h	/^typedef struct rdwt_info$/;"	s
+read	include/vfs.h	/^	int (*read)    (int,void * ,int);$/;"	m	struct:file_op
+read	kernel/syscall.asm	/^read:$/;"	l
+read_Ehdr	kernel/elf.c	/^void read_Ehdr(u32 fd,Elf32_Ehdr *File_Ehdr,u32 offset)$/;"	f
+read_Phdr	kernel/elf.c	/^void read_Phdr(u32 fd,Elf32_Phdr *File_Phdr,u32 offset)$/;"	f
+read_Shdr	kernel/elf.c	/^void read_Shdr(u32 fd,Elf32_Shdr *File_Shdr,u32 offset)$/;"	f
+read_cr2	kernel/kernel.asm	/^read_cr2:$/;"	l
+read_elf	kernel/elf.c	/^PUBLIC void read_elf(u32 fd,Elf32_Ehdr* Echo_Ehdr,Elf32_Phdr Echo_Phdr[],Elf32_Shdr Echo_Shdr[])$/;"	f
+read_super_block	include/vfs.h	/^	void (*read_super_block) (int);$/;"	m	struct:sb_op
+read_super_block	kernel/fs.c	/^PUBLIC void read_super_block(int dev)	\/\/modified by mingxuan 2020-10-30$/;"	f
+real_close	kernel/fs.c	/^PUBLIC int real_close(int fd)	\/\/modified by mingxuan 2019-5-17$/;"	f
+real_lseek	kernel/fs.c	/^PUBLIC int real_lseek(int fd, int offset, int whence)	\/\/modified by mingxuan 2019-5-17$/;"	f
+real_open	kernel/fs.c	/^PUBLIC int real_open(const char *pathname, int flags)	\/\/modified by mingxuan 2019-5-17$/;"	f
+real_ppid	include/proc.h	/^	int real_ppid;  	\/\/亲父进程，创建它的那个进程$/;"	m	struct:s_tree_info
+real_read	kernel/fs.c	/^PUBLIC int real_read(int fd, char *buf, int count)	\/\/注意:buf的类型被修改成char \/\/modified by mingxuan 2019-5-17$/;"	f
+real_unlink	kernel/fs.c	/^PUBLIC int real_unlink(const char * pathname)	\/\/modified by mingxuan 2019-5-17$/;"	f
+real_write	kernel/fs.c	/^PUBLIC int real_write(int fd, const char *buf, int count)	\/\/注意:buf的类型被修改成char \/\/modified by mingxuan 2019-5-17$/;"	f
+rear	include/hd.h	/^	RWInfo *rear;$/;"	m	struct:__anon1
+refresh_page_cache	kernel/kernel.asm	/^refresh_page_cache:$/;"	l
+regs	include/proc.h	/^	STACK_FRAME regs;          \/* process registers saved in stack frame *\/$/;"	m	struct:s_proc
+release	kernel/spinlock.c	/^release(struct spinlock *lock)$/;"	f
+renew_env	kernel/kernel.asm	/^renew_env:$/;"	l
+reserved	include/hd.h	/^	u16 reserved;$/;"	m	struct:fs_flags
+restart_exception	kernel/kernel.asm	/^restart_exception:$/;"	l
+restart_initial	kernel/kernel.asm	/^restart_initial:$/;"	l
+restart_int	kernel/kernel.asm	/^restart_int:$/;"	l
+restart_restore	kernel/kernel.asm	/^restart_restore:$/;"	l
+restart_syscall	kernel/kernel.asm	/^restart_syscall:$/;"	l
+retaddr	include/proc.h	/^	u32	retaddr;	\/* return address for assembly code save()	│			*\/$/;"	m	struct:s_stackframe
+root_inode	include/fs_misc.h	/^	u32	root_inode;       \/**< Inode nr of root directory *\/$/;"	m	struct:super_block
+root_inode	kernel/fs.c	/^PRIVATE struct inode* root_inode;$/;"	v	typeref:struct:inode
+rw_sector	kernel/fs.c	/^PRIVATE int rw_sector(int io_type, int dev, u64 pos, int bytes, int proc_nr, void* buf)$/;"	f
+rw_sector_fat	kernel/fat32.c	/^PUBLIC int rw_sector_fat(int io_type, int dev, u64 pos, int bytes, int proc_nr, void* buf)$/;"	f
+rw_sector_sched	kernel/fs.c	/^PRIVATE int rw_sector_sched(int io_type, int dev, int pos, int bytes, int proc_nr, void* buf)$/;"	f
+rw_sector_sched_fat	kernel/fat32.c	/^PUBLIC int rw_sector_sched_fat(int io_type, int dev, int pos, int bytes, int proc_nr, void* buf)$/;"	f
+s_addr	include/elf.h	/^	u32 s_addr;    	\/\/该section 的虚拟地址$/;"	m	struct:__anon6
+s_addralign	include/elf.h	/^	u32 s_addralign; \/\/该section 对齐方式$/;"	m	struct:__anon6
+s_console	include/console.h	/^typedef struct s_console$/;"	s
+s_descriptor	include/protect.h	/^typedef struct s_descriptor		\/* 共 8 个字节 *\/$/;"	s
+s_entsize	include/elf.h	/^	u32 s_entsize;	\/\/该section 若有固定项目，则给出固定项目的大小，如符号表$/;"	m	struct:__anon6
+s_flags	include/elf.h	/^	u32 s_flags;    \/\/该section 在进程虚拟地址空间中的属性$/;"	m	struct:__anon6
+s_gate	include/protect.h	/^typedef struct s_gate$/;"	s
+s_info	include/elf.h	/^	u32 s_info;		\/\/该section	附加信息$/;"	m	struct:__anon6
+s_lin_memmap	include/proc.h	/^typedef struct s_lin_memmap {\/\/线性地址分布结构体	edit by visual 2016.5.25$/;"	s
+s_link	include/elf.h	/^	u32 s_link; 	\/\/该section	头部表符号链接$/;"	m	struct:__anon6
+s_memman	kernel/memman.c	/^struct MEMMAN s_memman;$/;"	v	typeref:struct:MEMMAN
+s_name	include/elf.h	/^	u32 s_name;   	\/\/该section 段的名字$/;"	m	struct:__anon6
+s_offset	include/elf.h	/^	u32 s_offset;   \/\/该section 在文件中的偏移$/;"	m	struct:__anon6
+s_op	include/vfs.h	/^	struct sb_op *s_op;			\/\/added by mingxuan 2020-10-29$/;"	m	struct:vfs	typeref:struct:vfs::sb_op
+s_proc	include/proc.h	/^typedef struct s_proc {$/;"	s
+s_size	include/elf.h	/^	u32 s_size;    	\/\/该section 的长度$/;"	m	struct:__anon6
+s_stackframe	include/proc.h	/^typedef struct s_stackframe {	\/* proc_ptr points here				↑ Low			*\/$/;"	s
+s_task	include/proc.h	/^typedef struct s_task {$/;"	s
+s_tree_info	include/proc.h	/^typedef struct s_tree_info{\/\/进程树记录，包括父进程，子进程，子线程  \/\/add by visual 2016.5.25$/;"	s
+s_tss	include/protect.h	/^typedef struct s_tss {$/;"	s
+s_tty	include/tty.h	/^typedef struct s_tty$/;"	s
+s_type	include/elf.h	/^	u32 s_type;    	\/\/该section 的类型，代码段，数据段，符号表等$/;"	m	struct:__anon6
+save_exception	kernel/kernel.asm	/^save_exception:$/;"	l
+save_int	kernel/kernel.asm	/^save_int:$/;"	l
+save_syscall	kernel/kernel.asm	/^save_syscall:			;can't modify EAX, for it contains syscall number$/;"	l
+sb	include/vfs.h	/^	struct super_block *sb;		\/\/added by mingxuan 2020-10-29$/;"	m	struct:vfs	typeref:struct:vfs::super_block
+sb_dev	include/fs_misc.h	/^	int	sb_dev; 	\/**< the super block's home device *\/$/;"	m	struct:super_block
+sb_op	include/vfs.h	/^struct sb_op{$/;"	s
+sb_op_table	kernel/vfs.c	/^PRIVATE struct sb_op   sb_op_table[NR_SB_OP];   \/\/added by mingxuan 2020-10-30$/;"	v	typeref:struct:sb_op
+scanf	lib/scanf.c	/^PUBLIC int scanf(char *str, ...)$/;"	f
+sched	kernel/kernel.asm	/^sched:$/;"	l
+schedule	kernel/proc.c	/^PUBLIC void schedule()$/;"	f
+scroll_lock	kernel/keyboard.c	/^PRIVATE	int		scroll_lock;	\/* Scroll Lock		*\/$/;"	v
+scroll_screen	kernel/console.c	/^PUBLIC void scroll_screen(CONSOLE* con, int dir)$/;"	f
+search_file	kernel/fs.c	/^PRIVATE int search_file(char * path)$/;"	f
+seg2phys	kernel/protect.c	/^PUBLIC u32 seg2phys(u16 seg)$/;"	f
+segment_not_present	kernel/kernel.asm	/^segment_not_present:			; vector_no	= 11$/;"	l
+select_console	kernel/console.c	/^PUBLIC void select_console(int nr_console)$/;"	f
+selector	include/protect.h	/^	u16	selector;	\/* Selector *\/$/;"	m	struct:s_gate
+set_cursor	kernel/console.c	/^PRIVATE void set_cursor(unsigned int position)$/;"	f
+set_leds	kernel/keyboard.c	/^PRIVATE void set_leds()$/;"	f
+set_mouse_leds	kernel/keyboard.c	/^PRIVATE void set_mouse_leds(){$/;"	f
+set_video_start_addr	kernel/console.c	/^PRIVATE void set_video_start_addr(u32 addr)$/;"	f
+share	include/fat32.h	/^	}share;$/;"	m	struct:__anon12	typeref:union:__anon12::__anon13
+shell	kernel/shell.c	/^PUBLIC void shell(char* s) {$/;"	f
+shift_l	kernel/keyboard.c	/^PRIVATE	int		shift_l;	\/* l shift state	*\/$/;"	v
+shift_r	kernel/keyboard.c	/^PRIVATE	int		shift_r;	\/* r shift state	*\/$/;"	v
+single_step_exception	kernel/kernel.asm	/^single_step_exception:			; vector_no	= 1$/;"	l
+size	include/fat32.h	/^	DWORD size;\/\/文件的大小或整个目录中(包括子目录中)的文件总大小$/;"	m	struct:__anon12
+size	include/fat32.h	/^	DWORD size;\/\/文件的大小，以字节为单位$/;"	m	struct:__anon9
+size	include/global.h	/^	u32	size;$/;"	m	struct:memfree
+size	include/hd.h	/^	u32	size;		\/* how many sectors in this partition *\/$/;"	m	struct:part_info
+size	include/memman.h	/^	u32 addr,size;$/;"	m	struct:FREEINFO
+size	kernel/ktest.c	/^	char size[12];		\/* 124 *\/$/;"	m	struct:posix_tar_header	file:
+sleep	kernel/syscall.asm	/^sleep:$/;"	l
+source	include/type.h	/^	int source;$/;"	m	struct:__anon2
+spinlock	include/spinlock.h	/^struct spinlock {$/;"	s
+split	kernel/shell.c	/^PUBLIC void split(char* s) {$/;"	f
+spurious_irq	kernel/i8259.c	/^PUBLIC void spurious_irq(int irq)$/;"	f
+ss	include/proc.h	/^	u32	ss;			\/*  ┛						┷High			*\/$/;"	m	struct:s_stackframe
+ss	include/protect.h	/^	u32	ss;$/;"	m	struct:s_tss
+ss0	include/protect.h	/^	u32	ss0;		\/*   "   segment  "  "    "        "     *\/$/;"	m	struct:s_tss
+ss1	include/protect.h	/^	u32	ss1;$/;"	m	struct:s_tss
+ss2	include/protect.h	/^	u32	ss2;$/;"	m	struct:s_tss
+stack	include/proc.h	/^	char stack[INIT_STACK_SIZE\/sizeof(char)];$/;"	m	union:task_union
+stack_child_limit	include/proc.h	/^	u32 stack_child_limit;					\/\/分给子线程的栈的界限		\/\/add by visual 2016.5.27$/;"	m	struct:s_lin_memmap
+stack_exception	kernel/kernel.asm	/^stack_exception:				; vector_no	= 12$/;"	l
+stack_lin_base	include/proc.h	/^	u32 stack_lin_base;						\/\/栈基址$/;"	m	struct:s_lin_memmap
+stack_lin_limit	include/proc.h	/^	u32 stack_lin_limit;					\/\/栈界限（使用时注意栈的生长方向）$/;"	m	struct:s_lin_memmap
+stacksize	include/proc.h	/^	int	stacksize;$/;"	m	struct:s_task
+start	include/fat32.h	/^	DWORD start;\/\/起始地址$/;"	m	struct:__anon9
+start_cyl	include/hd.h	/^	u8 start_cyl;		\/**$/;"	m	struct:part_ent
+start_head	include/hd.h	/^	u8 start_head;		\/**$/;"	m	struct:part_ent
+start_sect	include/hd.h	/^	u32 start_sect;	\/**$/;"	m	struct:part_ent
+start_sector	include/hd.h	/^	u8 start_sector;	\/**$/;"	m	struct:part_ent
+stat	include/proc.h	/^	enum proc_stat stat;			\/\/add by visual 2016.4.5$/;"	m	struct:s_proc	typeref:enum:s_proc::proc_stat
+state	kernel/fat32.c	/^STATE state;$/;"	v
+status	include/tty.h	/^	int status;$/;"	m	struct:s_tty
+str2	init/init.c	/^char *str2,*str3;$/;"	v
+str2	user/execTest.c	/^char *str2,*str3;$/;"	v
+str2	user/forkTest.c	/^char *str2,*str3;$/;"	v
+str2	user/pthreadTest.c	/^char *str2,*str3;$/;"	v
+str3	init/init.c	/^char *str2,*str3;$/;"	v
+str3	user/execTest.c	/^char *str2,*str3;$/;"	v
+str3	user/forkTest.c	/^char *str2,*str3;$/;"	v
+str3	user/pthreadTest.c	/^char *str2,*str3;$/;"	v
+strcat	lib/string.c	/^char* strcat(char *dst, const char *src)$/;"	f
+strcmp	kernel/base.c	/^int strcmp(const char * s1, const char *s2)$/;"	f
+strcmp	kernel/fs.c	/^PRIVATE int strcmp(const char * s1, const char *s2)$/;"	f
+strcmp	kernel/shell.c	/^PRIVATE int strcmp(const char * s1, const char *s2)$/;"	f
+strcmp	kernel/vfs.c	/^PRIVATE int strcmp(const char * s1, const char *s2)$/;"	f
+strcpy	lib/string.asm	/^strcpy:$/;"	l
+strip_path	kernel/fs.c	/^PRIVATE int strip_path(char * filename, const char * pathname, struct inode** ppinode)$/;"	f
+strlen	lib/string.asm	/^strlen:$/;"	l
+strncpy	kernel/shell.c	/^PUBLIC void strncpy(char *s1, char *s2, int len) {$/;"	f
+strtol	lib/vsprintf.c	/^long strtol(const char *cp,char **endp,unsigned int base)$/;"	f
+strtoul	lib/vsprintf.c	/^unsigned long strtoul(const char *cp,char **endp,unsigned int base)$/;"	f
+super_block	include/fs_misc.h	/^struct super_block {$/;"	s
+super_block	kernel/vfs.c	/^PUBLIC struct super_block super_block[NR_SUPER_BLOCK]; \/\/added by mingxuan 2020-10-30$/;"	v	typeref:struct:super_block
+switch_pde	kernel/pagetbl.c	/^PUBLIC	void switch_pde()$/;"	f
+sync_inode	kernel/fs.c	/^PRIVATE void sync_inode(struct inode * p)$/;"	f
+sysReserved	include/fat32.h	/^	BYTE sysReserved;\/\/系统保留$/;"	m	struct:__anon8
+sysReserved	include/fat32.h	/^	BYTE sysReserved;\/\/系统保留：占1个字节$/;"	m	struct:__anon7
+sys_CloseFile	kernel/fat32.c	/^int sys_CloseFile(void *uesp)$/;"	f
+sys_CreateDir	kernel/fat32.c	/^int sys_CreateDir(void *uesp)$/;"	f
+sys_CreateFile	kernel/fat32.c	/^int sys_CreateFile(void *uesp)$/;"	f
+sys_DeleteDir	kernel/fat32.c	/^int sys_DeleteDir(void *uesp)$/;"	f
+sys_DeleteFile	kernel/fat32.c	/^int sys_DeleteFile(void *uesp)$/;"	f
+sys_ListDir	kernel/fat32.c	/^int sys_ListDir(void *uesp) {$/;"	f
+sys_OpenDir	kernel/fat32.c	/^int sys_OpenDir(void *uesp)$/;"	f
+sys_OpenFile	kernel/fat32.c	/^int sys_OpenFile(void *uesp)$/;"	f
+sys_ReadFile	kernel/fat32.c	/^int sys_ReadFile(void *uesp)$/;"	f
+sys_WriteFile	kernel/fat32.c	/^int sys_WriteFile(void *uesp)$/;"	f
+sys_call	kernel/kernel.asm	/^sys_call:$/;"	l
+sys_call_table	kernel/global.c	/^PUBLIC	system_call		sys_call_table[NR_SYS_CALL] = {	sys_get_ticks, 									\/\/1st$/;"	v
+sys_close	kernel/vfs.c	/^PUBLIC int sys_close(void *uesp)$/;"	f
+sys_create	kernel/vfs.c	/^PUBLIC int sys_create(void *uesp) {$/;"	f
+sys_createdir	kernel/vfs.c	/^PUBLIC int sys_createdir(void *uesp) {$/;"	f
+sys_delete	kernel/vfs.c	/^PUBLIC int sys_delete(void *uesp) {$/;"	f
+sys_deletedir	kernel/vfs.c	/^PUBLIC int sys_deletedir(void *uesp) {$/;"	f
+sys_exec	kernel/exec.c	/^PUBLIC u32 sys_exec(char *path)$/;"	f
+sys_fork	kernel/fork.c	/^PUBLIC int sys_fork()$/;"	f
+sys_free	kernel/syscallc.c	/^PUBLIC int sys_free(void *arg)$/;"	f
+sys_free_4k	kernel/syscallc.c	/^PUBLIC int sys_free_4k(void* AddrLin)$/;"	f
+sys_get_pid	kernel/syscallc.c	/^PUBLIC int sys_get_pid()$/;"	f
+sys_get_ticks	kernel/syscallc.c	/^PUBLIC int sys_get_ticks()$/;"	f
+sys_id	include/hd.h	/^	u8 sys_id;		\/**$/;"	m	struct:part_ent
+sys_kmalloc	kernel/syscallc.c	/^PUBLIC void* sys_kmalloc(int size)$/;"	f
+sys_kmalloc_4k	kernel/syscallc.c	/^PUBLIC void* sys_kmalloc_4k()$/;"	f
+sys_lseek	kernel/vfs.c	/^PUBLIC int sys_lseek(void *uesp)$/;"	f
+sys_malloc	kernel/syscallc.c	/^PUBLIC void* sys_malloc(int size)		$/;"	f
+sys_malloc_4k	kernel/syscallc.c	/^PUBLIC void* sys_malloc_4k()$/;"	f
+sys_open	kernel/vfs.c	/^PUBLIC int sys_open(void *uesp)$/;"	f
+sys_opendir	kernel/vfs.c	/^PUBLIC int sys_opendir(void *uesp) {$/;"	f
+sys_print_E	kernel/testfunc.c	/^PUBLIC void sys_print_E()$/;"	f
+sys_print_F	kernel/testfunc.c	/^PUBLIC void sys_print_F()$/;"	f
+sys_pthread	kernel/pthread.c	/^PUBLIC int sys_pthread(void *entry)$/;"	f
+sys_read	kernel/vfs.c	/^PUBLIC int sys_read(void *uesp)$/;"	f
+sys_sleep	kernel/proc.c	/^PUBLIC void sys_sleep(int n)$/;"	f
+sys_udisp_int	kernel/syscallc.c	/^PUBLIC void sys_udisp_int(int arg)$/;"	f
+sys_udisp_str	kernel/syscallc.c	/^PUBLIC void sys_udisp_str(char *arg)$/;"	f
+sys_unlink	kernel/vfs.c	/^PUBLIC int sys_unlink(void *uesp) {$/;"	f
+sys_wakeup	kernel/proc.c	/^PUBLIC void sys_wakeup(void *channel)$/;"	f
+sys_write	kernel/vfs.c	/^PUBLIC int sys_write(void *uesp)$/;"	f
+sys_yield	kernel/proc.c	/^PUBLIC void sys_yield()$/;"	f
+system_call	include/type.h	/^typedef void*	system_call;$/;"	t
+szMemChkTitle	boot/floppy/loader.asm	/^szMemChkTitle		equ	BaseOfLoaderPhyAddr + _szMemChkTitle$/;"	d
+szMemChkTitle	boot/grub/loader.asm	/^szMemChkTitle		equ	BaseOfLoaderPhyAddr + _szMemChkTitle$/;"	d
+szMemChkTitle	boot/mbr/loader.asm	/^szMemChkTitle		equ	BaseOfLoaderPhyAddr + _szMemChkTitle$/;"	d
+szRAMSize	boot/floppy/loader.asm	/^szRAMSize		equ	BaseOfLoaderPhyAddr + _szRAMSize$/;"	d
+szRAMSize	boot/grub/loader.asm	/^szRAMSize		equ	BaseOfLoaderPhyAddr + _szRAMSize$/;"	d
+szRAMSize	boot/mbr/loader.asm	/^szRAMSize		equ	BaseOfLoaderPhyAddr + _szRAMSize$/;"	d
+szReturn	boot/floppy/loader.asm	/^szReturn		equ	BaseOfLoaderPhyAddr + _szReturn$/;"	d
+szReturn	boot/grub/loader.asm	/^szReturn		equ	BaseOfLoaderPhyAddr + _szReturn$/;"	d
+szReturn	boot/mbr/loader.asm	/^szReturn		equ	BaseOfLoaderPhyAddr + _szReturn$/;"	d
+tag	include/fat32.h	/^	UINT tag;\/\/1表示文件，0表示目录$/;"	m	struct:__anon10
+task	include/proc.h	/^	PROCESS_0 task;$/;"	m	union:task_union
+task_f	include/type.h	/^typedef	void	(*task_f)	();$/;"	t
+task_table	kernel/global.c	/^PUBLIC	TASK	task_table[NR_TASKS] = {\/\/{TestA, STACK_SIZE_TASK, "TestA"},	\/\/edit by visual 2016.4.5	\/\/deleted by mingxuan 2019-5-19$/;"	v
+task_tty	kernel/tty.c	/^PUBLIC void task_tty(){$/;"	f
+task_union	include/proc.h	/^typedef union task_union {$/;"	u
+text_hold	include/proc.h	/^	int text_hold;			\/\/是否拥有代码$/;"	m	struct:s_tree_info
+text_lin_base	include/proc.h	/^	u32 text_lin_base;						\/\/代码段基址$/;"	m	struct:s_lin_memmap
+text_lin_limit	include/proc.h	/^	u32 text_lin_limit;						\/\/代码段界限$/;"	m	struct:s_lin_memmap
+ticks	include/global.h	/^EXTERN	int		ticks;$/;"	v
+ticks	include/proc.h	/^    int ticks;                 \/* remained ticks *\/$/;"	m	struct:s_proc
+times	boot/floppy/boot.asm	/^times 	510-($-$$)	db	0	; 填充剩下的空间，使生成的二进制代码恰好为512字节$/;"	l
+times	boot/grub/boot.asm	/^times 	510-($-$$)	db	0	; 填充剩下的空间，使生成的二进制代码恰好为512字节$/;"	l
+times	boot/mbr/boot.asm	/^times 	510-($-$$)	db	0	; 填充剩下的空间，使生成的二进制代码恰好为512字节$/;"	l
+times	boot/mbr/mbr.asm	/^times 444 -($-$$) db 0$/;"	l
+trap	include/protect.h	/^	u16	trap;$/;"	m	struct:s_tss
+tss	include/global.h	/^EXTERN	TSS		tss;$/;"	v
+tty_dev_read	kernel/tty.c	/^PRIVATE void tty_dev_read(TTY* tty)$/;"	f
+tty_dev_write	kernel/tty.c	/^PRIVATE void tty_dev_write(TTY* tty){$/;"	f
+tty_mouse	kernel/tty.c	/^PRIVATE void tty_mouse(TTY* tty){$/;"	f
+tty_read	kernel/tty.c	/^PUBLIC int tty_read(TTY* tty, char* buf, int len){$/;"	f
+tty_table	kernel/global.c	/^PUBLIC TTY tty_table[NR_CONSOLES];			\/\/added by mingxuan 2019-5-19$/;"	v
+tty_write	kernel/tty.c	/^PUBLIC void tty_write(TTY* tty, char* buf, int len)$/;"	f
+type	include/fat32.h	/^	BYTE  type;\/\/0x10表示目录，否则表示文件$/;"	m	struct:__anon12
+type	include/proc.h	/^	int type;			\/\/当前是进程还是线程$/;"	m	struct:s_tree_info
+type	include/type.h	/^	int type;$/;"	m	struct:__anon2
+typeflag	kernel/ktest.c	/^	char typeflag;		\/* 156 *\/$/;"	m	struct:posix_tar_header	file:
+u	include/type.h	/^	} u;$/;"	m	struct:__anon2	typeref:union:__anon2::__anon3
+u16	include/type.h	/^typedef	unsigned short		u16;$/;"	t
+u32	include/type.h	/^typedef	unsigned int		u32;$/;"	t
+u64	include/type.h	/^typedef	unsigned long long	u64;$/;"	t
+u8	include/type.h	/^typedef	unsigned char		u8;$/;"	t
+u_proc_sum	include/global.h	/^EXTERN  int     u_proc_sum; 		\/\/内核中用户进程\/线程数量 add by visual 2016.5.25$/;"	v
+udisp_int	kernel/syscall.asm	/^udisp_int:$/;"	l
+udisp_str	kernel/syscall.asm	/^udisp_str:$/;"	l
+uid	kernel/ktest.c	/^	char uid[8];		\/* 108 *\/$/;"	m	struct:posix_tar_header	file:
+uint	include/spinlock.h	6;"	d
+uname	kernel/ktest.c	/^	char uname[32];		\/* 265 *\/$/;"	m	struct:posix_tar_header	file:
+unlink	include/vfs.h	/^	int (*unlink)  (const char*);$/;"	m	struct:file_op
+unlink	kernel/syscall.asm	/^unlink:$/;"	l
+untar	kernel/ktest.c	/^PRIVATE void untar(const char * filename)$/;"	f
+used	include/fat32.h	/^	UINT used;\/\/数组当前已使用的容量$/;"	m	struct:__anon11
+va2la	kernel/proc.c	/^PUBLIC void* va2la(int pid, void* va)$/;"	f
+va_arg	include/stdio.h	53;"	d
+va_end	include/stdio.h	54;"	d
+va_list	include/type.h	/^typedef	char *	va_list;	\/\/added by mingxuan 2019-5-19$/;"	t
+va_start	include/stdio.h	52;"	d
+version	kernel/ktest.c	/^	char version[2];	\/* 263 *\/$/;"	m	struct:posix_tar_header	file:
+vfs	include/vfs.h	/^struct vfs{$/;"	s
+vfs_table	kernel/vfs.c	/^PRIVATE struct vfs  vfs_table[NR_FS];   \/\/modified by mingxuan 2020-10-18$/;"	v	typeref:struct:vfs
+vir2phys	include/protect.h	156;"	d
+vmalloc	kernel/pagetbl.c	/^PUBLIC u32 vmalloc(	u32 size)$/;"	f
+vpage_lin_base	include/proc.h	/^	u32 vpage_lin_base;						\/\/保留内存基址$/;"	m	struct:s_lin_memmap
+vpage_lin_limit	include/proc.h	/^	u32 vpage_lin_limit;					\/\/保留内存界限$/;"	m	struct:s_lin_memmap
+vsprintf	lib/vsprintf.c	/^PUBLIC int vsprintf(char *buf, const char *fmt, va_list args)$/;"	f
+wRootDirSizeForLoop	boot/floppy/boot.asm	/^wRootDirSizeForLoop	dw	RootDirSectors	; Root Directory 占用的扇区数, 在循环中会递减至零.$/;"	d
+wRootDirSizeForLoop	boot/floppy/loader.asm	/^wRootDirSizeForLoop	dw	RootDirSectors	; Root Directory 占用的扇区数$/;"	d
+wSectorNo	boot/floppy/boot.asm	/^wSectorNo		dw	0		; 要读取的扇区号$/;"	d
+wSectorNo	boot/floppy/loader.asm	/^wSectorNo		dw	0		; 要读取的扇区号$/;"	d
+wSectorNo	boot/grub/loader.asm	/^wSectorNo		dw	0		; 要读取的扇区号$/;"	d
+wSectorNo	boot/mbr/loader.asm	/^wSectorNo		dw	0		; 要读取的扇区号$/;"	d
+w_copy	kernel/console.c	/^PRIVATE	void w_copy(unsigned int dst, const unsigned int src, int size)$/;"	f
+wait_KB_read	include/const.h	159;"	d
+wait_KB_write	include/const.h	158;"	d
+waitfor	kernel/hd.c	/^PRIVATE int waitfor(int mask, int val, int timeout)$/;"	f
+write	include/vfs.h	/^	int (*write)   (int ,const void* ,int);$/;"	m	struct:file_op
+write	kernel/syscall.asm	/^write:$/;"	l
+write_char	lib/kliba.asm	/^write_char:$/;"	l
+write_page_pde	kernel/pagetbl.c	/^PUBLIC void write_page_pde(	u32 PageDirPhyAddr,\/\/页目录物理地址$/;"	f
+write_page_pte	kernel/pagetbl.c	/^PUBLIC void write_page_pte(	u32 TblPhyAddr,\/\/页表物理地址$/;"	f
+yield	kernel/syscall.asm	/^yield:$/;"	l
